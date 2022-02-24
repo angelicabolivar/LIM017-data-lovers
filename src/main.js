@@ -35,13 +35,13 @@ import datapokemon from './data/pokemon/pokemon.js';
 // }
 // console.log(example, data);
 
-const btnName=document.getElementById('btnName');
-btnName.addEventListener('click', function (){
- const namePokemon= document.getElementById('namePokemon').value;
- const result=document.getElementById('result');
- const resultData= searchPokemon(namePokemon, datapokemon);
-  const pokemonList= resultData.map(function(pokemon){
-     return `<li class="container">
+const btnName = document.getElementById('btnName');
+btnName.addEventListener('click', function() {
+    const namePokemon = document.getElementById('namePokemon').value;
+    const result = document.getElementById('result');
+    const resultData = searchPokemon(namePokemon, datapokemon);
+    const pokemonList = resultData.map(function(pokemon) {
+        return `<li class="container">
               <p class="namePokemon">${pokemon.name} </p>
               <p class="numPokemon">${pokemon.num} </p>
               <img class= "imgPokemon" src="${pokemon.img}">
@@ -52,9 +52,9 @@ btnName.addEventListener('click', function (){
               <p> Defensa: ${pokemon.stats['base-defense']}</p></div>
               </li>`
     });
-result.innerHTML=`${pokemonList}`;
-  // document.getElementById('result').innerHTML=resultData[0].name;
-  // document.getElementById('result__1').innerHTML=resultData[0].about;
-  // document.getElementById('result__2').innerHTML=resultData[0].generation.num;
-  // document.getElementById('result__3').innerHTML=resultData[0].stats['base-attack'];
+    result.innerHTML = `${pokemonList}`;
+    // document.getElementById('result').innerHTML=resultData[0].name;
+    // document.getElementById('result__1').innerHTML=resultData[0].about;
+    // document.getElementById('result__2').innerHTML=resultData[0].generation.num;
+    // document.getElementById('result__3').innerHTML=resultData[0].stats['base-attack'];
 });

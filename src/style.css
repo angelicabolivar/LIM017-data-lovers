@@ -1,79 +1,94 @@
-*{
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
-header{
-  width: 100%;
-  text-align: center;
-  font-size: 2em ;
-  color: #FFFFFF;
-  padding-top: 3%;
-  background: #3366cc;
+
+header {
+    width: 100%;
+    text-align: center;
+    font-size: 2em;
+    color: #FFFFFF;
+    padding-top: 3%;
+    background: #3366cc;
 }
-.principalSection{
- margin: 0 auto;
- padding-top: 3%;
- padding-left: 14%;
- padding-bottom: 5%;
- width: 80%;
- height: 10%;
+
+.principalSection {
+    margin: 0 auto;
+    padding-top: 3%;
+    padding-left: 14%;
+    padding-bottom: 5%;
+    width: 80%;
+    height: 10%;
 }
-.inputSearch{
-  width: 33em ;
-  height: 3em;
-  text-transform: capitalize;
+
+.inputSearch {
+    width: 33em;
+    height: 3em;
+    text-transform: capitalize;
 }
-.buttonSearch{
-  width: 5em;
-  height: 3em;
-  font-size: 1em ;
-  color: #FFFFFF;
-  border-radius: 30% 10%;
-  background: #ff3300;
-  border: none;
+
+.buttonSearch {
+    width: 5em;
+    height: 3em;
+    font-size: 1em;
+    color: #FFFFFF;
+    border-radius: 30% 10%;
+    background: #ff3300;
+    border: none;
 }
-.divResult{
-  padding-left: 5%;
-  padding-right: 5%;
+
+.divResult {
+    padding-left: 5%;
+    padding-right: 5%;
 }
-li{
-  list-style: none;
+
+li {
+    list-style: none;
 }
-.container{
-  width: 50%;
-  display: block;
-  margin: auto;
-  display: grid;
-  /* grid-gap: 15%; */
-  grid-template-rows: repeat(3, auto);
-  grid-template-columns: repeat(2, auto);
-  background: #ffff66;
+
+.container {
+    width: 50%;
+    display: block;
+    margin: auto;
+    display: grid;
+    /* grid-gap: 15%; */
+    grid-template-rows: repeat(3, auto);
+    grid-template-columns: repeat(2, auto);
+    background: #ffff66;
 }
-.namePokemon{
-  text-transform: uppercase;
-  text-align: center;
- font-weight: bold;
+
+.namePokemon {
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
 }
-.numPokemon{
-  text-align: center;
+
+.numPokemon {
+    text-align: center;
 }
-.generationPokemon{
-  text-align: center;
-  background: #ffff66;
+
+.generationPokemon {
+    text-align: center;
+    background: #ffff66;
 }
-.imgPokemon{
-  display: block;
-  margin: auto;
-  text-align: center;
+
+.imgPokemon {
+    display: block;
+    margin: auto;
+    text-align: center;
 }
-.statsPokemon{
-  text-align: center;
-  background: #ffff66;
+
+.statsPokemon {
+    text-align: center;
+    background: #ffff66;
 }
-.aboutPokemon{
-  text-align: justify;
+
+.aboutPokemon {
+    text-align: justify;
 }
+
+
 /* @media  screen and (min-width: 360px) and (max-width: 700px) {
 
 } */
