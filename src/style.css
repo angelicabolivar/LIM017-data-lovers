@@ -3,76 +3,166 @@
   margin: 0;
   box-sizing: border-box;
 }
+
 header{
   width: 100%;
   text-align: center;
   font-size: 2em ;
   color: #FFFFFF;
-  padding-top: 3%;
-  background: #3366cc;
+  background:#FFD700;
+  padding: 1%;
 }
-.principalSection{
- margin: 0 auto;
- padding-top: 3%;
+
+.searchInput{
+ margin: 150px auto;
+ max-width: 450px;
+ /* padding-top: 3%;
  padding-left: 14%;
  padding-bottom: 5%;
  width: 80%;
  height: 10%;
+ background: #FFFFFF; */
 }
+
+.searchInput .searchInput__div{
+  background: #FFFFFF;
+  width: 100%;
+  border-radius: 5%;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
+}
+
 .inputSearch{
-  width: 33em ;
-  height: 3em;
+  height: 55px;
+  width: 100%;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  padding: 0 60px 0 20px;
+  font-size: 18px;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+  /* height: 3em;
   text-transform: capitalize;
+  background: #FFFFFF;
+  margin: auto;
+  width: 33em;
+  margin-left: 12%;
+  padding-left: 3%;
+  border: 1px solid #b3cccc ;
+  outline: none;
+  border-radius: 40px;
+  padding-right: 0; */
+}
+
+.autocom__box{
+  padding: 0;
+  max-height: 280px;
+  overflow-y: auto;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.searchInput__div.active .autocom__box{
+  padding: 10px 8px;
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.searchInput__div.active .autocom__box li{
+ display: block;
+}
+li{
+  list-style: none;
+  padding: 8px 12px;
+  width: 100%;
+  cursor: default;
+  border-radius: 3px;
+}
+li:hover{
+  background: #dcdcdc;
 }
 .buttonSearch{
-  width: 5em;
+  width: 3em;
   height: 3em;
-  font-size: 1em ;
-  color: #FFFFFF;
-  border-radius: 30% 10%;
-  background: #ff3300;
+  font-size: 80% ;
+  border-radius: 40px;
+  outline: none;
   border: none;
+  padding-left: 0;
+  cursor: pointer;
+  background: #FCD535;
+  position: absolute;
 }
 .divResult{
   padding-left: 5%;
   padding-right: 5%;
 }
-li{
-  list-style: none;
+.cardResult{
+  max-width: 80% ;
+  width: 100%;
+  height: 800px;
+  background-color: #448C74;
+  position: absolute;
+  padding: 3%;
+  justify-content: center;
 }
 .container{
-  width: 50%;
-  display: block;
+  max-width: 60%;
   margin: auto;
+  background: #66CDAA;
+  ;
   display: grid;
-  /* grid-gap: 15%; */
-  grid-template-rows: repeat(3, auto);
+  grid-template-rows: repeat(4, auto);
   grid-template-columns: repeat(2, auto);
-  background: #ffff66;
+  padding: 3%;
+  justify-content: center;
+  grid-template-areas:
+  "namePokemon numPokemon"
+  "imgPokemon imgPokemon"
+  "aboutPokemon aboutPokemon"
+  "generationPokemon statsPokemon"
+  ;
+}
+.namePokemon{
+  grid-area: namePokemon;
 }
 .namePokemon{
   text-transform: uppercase;
   text-align: center;
- font-weight: bold;
+  font-size: 2em;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: bold;
 }
 .numPokemon{
+  grid-area: numPokemon;
   text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  font-size: 1.7em;
 }
 .generationPokemon{
+  grid-area: generationPokemon;
   text-align: center;
-  background: #ffff66;
 }
 .imgPokemon{
-  display: block;
+  grid-area: imgPokemon;
   margin: auto;
   text-align: center;
+  height: 80%;
+  width: 80%;
+  object-fit: contain;
+  background: #e6f7ff;
 }
 .statsPokemon{
+  grid-area: statsPokemon;
   text-align: center;
-  background: #ffff66;
 }
 .aboutPokemon{
+  grid-area: aboutPokemon;
   text-align: justify;
+  /* font-family: 'Montserrat', sans-serif; */
+  font-family: 'Quicksand', sans-serif;
+  /* font-family: Verdana, 'Ubuntu', sans-serif; */
+  padding-bottom: 5%;
 }
 /* @media  screen and (min-width: 360px) and (max-width: 700px) {
 
