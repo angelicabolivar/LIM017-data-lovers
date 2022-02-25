@@ -1,7 +1,7 @@
-*{
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
 header{
@@ -92,10 +92,12 @@ li:hover{
   background: #FCD535;
   position: absolute;
 }
-.divResult{
-  padding-left: 5%;
-  padding-right: 5%;
+
+.divResult {
+    padding-left: 5%;
+    padding-right: 5%;
 }
+
 .cardResult{
   max-width: 80% ;
   width: 100%;
@@ -163,7 +165,10 @@ li:hover{
   font-family: 'Quicksand', sans-serif;
   /* font-family: Verdana, 'Ubuntu', sans-serif; */
   padding-bottom: 5%;
+
 }
+
+
 /* @media  screen and (min-width: 360px) and (max-width: 700px) {
 
 } */

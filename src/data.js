@@ -1,5 +1,5 @@
 export const example = () => {
-  return 'example';
+    return 'example';
 };
 
 export const anotherExample = () => {
@@ -15,3 +15,4 @@ export const searchPokemonType = (typePokemon, datapokemon ) => {
   const resultPokemontype = datapokemon.pokemon.filter(x => x.type === typePokemon );
 return resultPokemontype;
 };
+
