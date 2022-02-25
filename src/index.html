@@ -1,27 +1,43 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-    <meta charset="utf-8">
+  <head>
+    <meta charset="utf-8" />
     <title>Maestro Pokémon</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer">
-</head>
-
-<body>
+    <script src="https://kit.fontawesome.com/acccf8509c.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;800&family=Quicksand:wght@300;400;500&family=Ubuntu:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <header>
-        <h1>Maestro Pokémon</h1>
+      <img src="p1.png" />
     </header>
-    <section class="searchInput" class="sectionPrincipal">
-        <input type="search" id="namePokemon" class="inputSearch" placeholder="Buscar...">
-        <button type="button" id="btnName" class="buttonSearch">Buscar</button>
-        <!-- <div class="autocom__box">
-     <li>Pikachu</li>
-     <li></li>
-     </div> -->
-        <div class="icon"><i class="fa-solid fa-magnifying-glass"></i></div>
+    <section class="searchInput">
+      <div class="searchInput__div">
+        <input
+          type="search"
+          id="namePokemon"
+          class="inputSearch"
+          placeholder="Buscar..."
+        />
+        <button type="button" id="btnName" class="buttonSearch"><i class="fa-solid fa-magnifying-glass"></i></button>
+        <div class="autocom__box">
+          <li>Pikachu</li>
+          <li>Bulbasaur</li>
+        </div>
+      </div>
     </section>
-    <div id="result" class="divResult"> </div>
+  <section class="cardPokemon">
+     <div id="result" class="divResult"></div>
+  </section>
+  <section>
+    <div id="resultBackCard" class="divBackCard"></div>
+  </section>
+
     <script src="main.js" type="module"></script>
 </body>
 
