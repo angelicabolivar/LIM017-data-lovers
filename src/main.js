@@ -43,6 +43,7 @@ function showDataPokemon(list) {
 }
 // console.log(example, data);
 
+
 const btnName = document.getElementById("btnName");
 btnName.addEventListener("click", function () {
   const namePokemon = document.getElementById("namePokemon").value;
@@ -51,12 +52,14 @@ btnName.addEventListener("click", function () {
   const resultData = searchPokemon(lowerCaseName, datapokemon);
   const pokemonList = resultData.map(function (pokemon) {
     return `<li class="container">
+
               <p class="namePokemon">${pokemon.name} </p>
               <p class="numPokemon">${pokemon.num} </p>
               <img class= "imgPokemon" src="${pokemon.img}">
               <p class= "aboutPokemon"> ${pokemon.about}</p>
               <div class="generationPokemon"><p>${pokemon.generation.num}</p><br>
               <p> Región: ${pokemon.generation.name} </p></div>
+
               <div class="statsPokemon"><p> Ataque: ${pokemon.stats["base-attack"]}</p><br>
               <p> Defensa: ${pokemon.stats["base-defense"]}</p></div>
               </li>`;
