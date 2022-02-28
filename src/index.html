@@ -1,67 +1,58 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <meta charset="utf-8" />
     <title>Maestro Pokémon</title>
     <link rel="stylesheet" href="style.css" />
-    <script
-      src="https://kit.fontawesome.com/acccf8509c.js"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://kit.fontawesome.com/acccf8509c.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;800&family=Quicksand:wght@300;400;500&family=Ubuntu:wght@300;400&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;800&family=Quicksand:wght@300;400;500&family=Ubuntu:wght@300;400&display=swap" rel="stylesheet" />
+</head>
+
+<body>
     <header>
-      <div class="containerFlex">
-         <div><img src="./Image/img2.jpeg"></div>
-         <div><img src="./Image/img12.jpeg"></div>
-         <div><img src="./Image/img3.jpeg"></div>
-         <div><img src="./Image/img6.jpeg"></div>
-         <div><img src="./Image/img10.jpeg"></div>
-         <div><img src="./Image/img7.jpeg"></div>
-         <div><img src="./Image/img9.jpeg"></div>
-         <div><img src="./Image/img11.jpeg"></div>
-         <div><img src="./Image/img4.jpeg"></div>
-         <div><img src="./Image/img5.jpeg"></div>
-         <div><img src="./Image/img8.jpeg"></div>
-         <div><img src="./Image/img7.jpeg"></div>
-         <div><img src="./Image/img4.jpeg"></div>
-         <div><img src="./Image/img6.jpeg"></div>
-         <div><img src="./Image/img2.jpeg"></div>
-         <div><img src="./Image/img7.jpeg"></div>
-         <div><img src="./Image/img9.jpeg"></div>
-         <div><img src="./Image/img4.jpeg"></div>
-      </div>
-      <div class="titlePokemon"><img src="p1.png" /></div>
-  </header>
+        <div class="containerFlex">
+            <div><img src="./Image/img2.jpeg"></div>
+            <div><img src="./Image/img12.jpeg"></div>
+            <div><img src="./Image/img3.jpeg"></div>
+            <div><img src="./Image/img6.jpeg"></div>
+            <div><img src="./Image/img10.jpeg"></div>
+            <div><img src="./Image/img7.jpeg"></div>
+            <div><img src="./Image/img9.jpeg"></div>
+            <div><img src="./Image/img11.jpeg"></div>
+            <div><img src="./Image/img4.jpeg"></div>
+            <div><img src="./Image/img5.jpeg"></div>
+            <div><img src="./Image/img8.jpeg"></div>
+            <div><img src="./Image/img7.jpeg"></div>
+            <div><img src="./Image/img4.jpeg"></div>
+            <div><img src="./Image/img6.jpeg"></div>
+            <div><img src="./Image/img2.jpeg"></div>
+            <div><img src="./Image/img7.jpeg"></div>
+            <div><img src="./Image/img9.jpeg"></div>
+            <div><img src="./Image/img4.jpeg"></div>
+        </div>
+        <div class="titlePokemon"><img src="p1.png" /></div>
+    </header>
     <section class="searchInput">
-      <div class="searchInput__div">
-        <input
-          type="search"
-          id="namePokemon"
-          class="inputSearch"
-          placeholder="Buscar..."
-        />
-        <button type="button" id="btnName" class="buttonSearch">
+        <div class="searchInput__div">
+            <input type="search" id="namePokemon" class="inputSearch" placeholder="Buscar..." />
+            <button type="button" id="btnName" class="buttonSearch">
           <i class="fa-solid fa-magnifying-glass"></i>
         </button>
-        <div class="autocom__box">
-          <li>Pikachu</li>
-          <li>Bulbasaur</li>
+            <div class="autocom__box">
+                <li></li>
+                <li></li>
+            </div>
         </div>
-      </div>
     </section>
-  <section class="cardPokemon">
-     <div id="result" class="divResult"></div>
-  </section>
-  <section>
-    <div id="resultBackCard" class="divBackCard"></div>
-  </section>
+    <section class="cardPokemon">
+        <div id="result" class="divResult"></div>
+    </section>
+    <section>
+        <div id="resultBackCard" class="divBackCard"></div>
+    </section>
 
     <script src="main.js" type="module"></script>
 </body>
