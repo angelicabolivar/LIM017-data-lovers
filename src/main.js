@@ -89,23 +89,4 @@ btnName.addEventListener("click", function () {
   // document.getElementById('result__3').innerHTML=resultData[0].stats['base-attack'];
 });
 
-const btnBack = document.getElementById("btnBack");
-btnBack.addEventListener("click", function () {
-  // const namePokemon = datapokemon;
-  const resultBackCard = document.getElementById("resultBackCard");
-  const resultDataPokemon = searchPokemonType(typePokemon, datapokemon );
-  const pokemonListBack = resultDataPokemon.map(function (pokemon) {
-    return `<li class="backContainer">
-              <p class="namePokemon">${pokemon.name} </p>
-              <p class="numPokemon">${pokemon.num} </p>
-              <img class= "rarityPokemon" src="${pokemon.pokemon-rarity}">
-              <p class= "typePokemon"> ${pokemon.type}</p>
-              <div class="resistantPokemon"><p>${pokemon.resistant[0, 1, 2, 3, 4]}</p><br>
-              <p> Región: ${pokemon.generation.name} </p></div>
-              <div class="statsPokemon"><p> Ataque: ${pokemon.stats["base-attack"]}</p><br>
-              <p> Defensa: ${pokemon.stats["base-defense"]}</p></div>
-              </li>`;
-  });
-  resultBackCard.innerHTML = `${pokemonListBack}`;
-});
 
