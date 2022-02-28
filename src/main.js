@@ -44,8 +44,6 @@ function showDataPokemon(list) {
     }
 }
 
-
-
 const btnName = document.getElementById("btnName");
 btnName.addEventListener("click", function() {
     const namePokemon = document.getElementById("namePokemon").value;
@@ -54,6 +52,17 @@ btnName.addEventListener("click", function() {
     const resultData = searchPokemon(lowerCaseName, datapokemon);
     const pokemonList = resultData.map(pokemonComponent);
     result.innerHTML = `${pokemonList}`;
+});
+
+btnName.addEventListener("click", function(){
+  document.querySelector('.autocom__box').style.display ='none';
+  document.querySelector('.cardPokemon').style.display ='block';
+  document.querySelector('.btnBlackCard').style.display ='block';
+});
+
+const btnBlackCard = document.querySelector('.btnBlackCard');
+btnBlackCard.addEventListener('click', function(){
+  document.querySelector('.cardPokemonBack').style.display ='block';
 });
 
 btnName.addEventListener("click", function() {
