@@ -13,3 +13,17 @@ export const searchPokemon = (namePokemon, datapokemon) => {
     const resultPokemon = datapokemon.pokemon.filter(x => x.name === namePokemon);
     return resultPokemon;
 };
+
+export const topPokemon = (datapokemon) => {
+    return datapokemon.pokemon.sort((a, b) => {
+        if (a['spawn-chance'] < b['spawn-chance']) {
+            return 1
+        }
+        if (a['spawn-chance'] > b['spawn-chance']) {
+            return -1;
+        }
+        // // a must be equal to b
+        return 0;
+
+    }).slice(0, 10)
+};

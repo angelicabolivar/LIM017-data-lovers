@@ -1,6 +1,8 @@
-import { searchPokemon } from "./data.js";
+import { searchPokemon, topPokemon } from "./data.js";
 import datapokemon from "./data/pokemon/pokemon.js";
-import { pokemonComponent, pokemonBackComponent } from "./pokemonComponent.js";
+import { pokemonComponent, pokemonBackComponent, pokemonList } from "./pokemonComponent.js";
+
+// console.log(topPokemon(datapokemon));
 
 const searchWrapper = document.querySelector(".searchInput");
 const inputBox = searchWrapper.querySelector(".inputSearch");
@@ -54,15 +56,20 @@ btnName.addEventListener("click", function() {
     result.innerHTML = `${pokemonList}`;
 });
 
-btnName.addEventListener("click", function(){
-  document.querySelector('.autocom__box').style.display ='none';
-  document.querySelector('.cardPokemon').style.display ='block';
-  document.querySelector('.btnBlackCard').style.display ='block';
+btnName.addEventListener("click", function() {
+    document.querySelector('.autocom__box').style.display = 'none';
+    document.querySelector('.cardPokemon').style.display = 'block';
+    document.querySelector('.btnBlackCard').style.display = 'block';
+    document.querySelector('.topTenSection').style.display = 'none';
+});
+const autoComBox = document.querySelector('.autocom__box');
+autoComBox.addEventListener('click', function() {
+    document.querySelector('.autocom__box').style.display = 'none';
 });
 
 const btnBlackCard = document.querySelector('.btnBlackCard');
-btnBlackCard.addEventListener('click', function(){
-  document.querySelector('.cardPokemonBack').style.display ='block';
+btnBlackCard.addEventListener('click', function() {
+    document.querySelector('.cardPokemonBack').style.display = 'block';
 });
 
 btnName.addEventListener("click", function() {
@@ -72,5 +79,19 @@ btnName.addEventListener("click", function() {
     const resultDataBack = searchPokemon(lowerCaseName, datapokemon);
     const pokemonListBack = resultDataBack.map(pokemonBackComponent);
     resultBackCard.innerHTML = `${pokemonListBack}`;
+
+});
+
+const btnLeftCard = document.querySelector(".btnLeftCard");
+
+btnLeftCard.addEventListener("click", function() {
+
+});
+
+document.addEventListener("DOMContentLoaded", function() {
+    const cardContainer = document.getElementById("cardContainer");
+    const topTenPokemon = topPokemon(datapokemon);
+    const topTenList = topTenPokemon.map(pokemonList);
+    cardContainer.innerHTML = `${topTenList}`;
 
 });
