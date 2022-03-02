@@ -6,7 +6,7 @@ export function pokemonComponent(pokemon) {
           <p class= "aboutPokemon"> ${pokemon.about}</p>
           <div class="generationPokemon"><p>Generación: ${pokemon.generation.num}</p><br>
           <p> Región: ${pokemon.generation.name} </p></div>
-          <div class="statsPokemon"><p> Ataque: ${pokemon.stats["base-attack"]}</p>
+          <div class="statsPokemon"><p> Ataque: ${pokemon.stats["base-attack"]}</p><br>
           <p> Defensa: ${pokemon.stats["base-defense"]}</p></div>
           </li>`;
 }
@@ -14,13 +14,13 @@ export function pokemonComponent(pokemon) {
 
 export function pokemonBackComponent(pokemon) {
     return `<li class="backContainer">
-        <p class="namePokemon">${pokemon.name}</p>
-        <p class="namePokemon">${pokemon.num}</p>
-        <p class="typePokemon"> type ${pokemon.type} </p>
-        <p class= "sizePokemon"> height,weight ${pokemon.size.height}  ${pokemon.size.weight}</p>
-        <div class="resistantPokemon"><p> resistant ${pokemon.resistant.join(' , ')}</p>
-        <div class="weaknessesPokemon"><p> weaknesses ${pokemon.weaknesses.join(',')}</p>
-        <div class="rarityPokemon"><p> pokemon-rarity ${pokemon['pokemon-rarity']}</p><div>
+        <p class="namePokemonBack">${pokemon.name}</p>
+        <p class="numPokemonBack">${pokemon.num}</p>
+        <p class="typePokemonBack"> Tipo: ${pokemon.type} </p>
+        <p class= "sizePokemonBack"> Altura: ${pokemon.size.height}, Peso: ${pokemon.size.weight}</p>
+        <div class="resistantPokemon"><p> Resistencia: ${pokemon.resistant.join(' , ')}</p></div>
+        <div class="weaknessesPokemon"><p> Debilidades: ${pokemon.weaknesses.join(',')}</p></div>
+        <div class="rarityPokemon"><p> Rareza: ${pokemon['pokemon-rarity']}</p><div>
         </li>`;
 }
 
