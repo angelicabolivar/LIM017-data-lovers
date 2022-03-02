@@ -1,7 +1,11 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maestro Pokémon</title>
     <link rel="apple-touch-icon" sizes="57x57" href="./favicons/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="./favicons/apple-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="./favicons/apple-icon-72x72.png">
@@ -18,99 +22,89 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
-    <title>Maestro Pokémon</title>
     <link rel="stylesheet" href="style.css" />
-    <script
-      src="https://kit.fontawesome.com/acccf8509c.js"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://kit.fontawesome.com/acccf8509c.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;800&family=Quicksand:wght@300;400;500&family=Ubuntu:wght@300;400&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;800&family=Quicksand:wght@300;400;500&family=Ubuntu:wght@300;400&display=swap" rel="stylesheet" />
+</head>
+
+<body>
     <header class="flex__body headerContainer">
-      <div class="containerFlex">
-        <div class="titlePokemon"><img src="p1.png" /></div>
-        <div><img src="./Image/img2.jpeg" /></div>
-        <div><img src="./Image/img12.jpeg" /></div>
-        <div><img src="./Image/img3.jpeg" /></div>
-        <div><img src="./Image/img6.jpeg" /></div>
-        <div><img src="./Image/img10.jpeg" /></div>
-        <div><img src="./Image/img7.jpeg" /></div>
-        <div><img src="./Image/img9.jpeg" /></div>
-        <div><img src="./Image/img11.jpeg" /></div>
-        <div><img src="./Image/img4.jpeg" /></div>
-        <div><img src="./Image/img5.jpeg" /></div>
-        <div><img src="./Image/img8.jpeg" /></div>
-        <div><img src="./Image/img7.jpeg" /></div>
-        <div><img src="./Image/img4.jpeg" /></div>
-        <div><img src="./Image/img6.jpeg" /></div>
-        <div><img src="./Image/img2.jpeg" /></div>
-        <div><img src="./Image/img7.jpeg" /></div>
-        <div><img src="./Image/img9.jpeg" /></div>
-        <div><img src="./Image/img15.jpeg" /></div>
-      </div>
+        <div class="containerFlex">
+            <div class="titlePokemon"><img src="p1.png" /></div>
+            <div class="header-bg"><img src="./Image/img2.jpeg" /></div>
+            <div class="header-bg"><img src="./Image/img12.jpeg" /></div>
+            <div class="header-bg"><img src="./Image/img3.jpeg" /></div>
+            <div class="header-bg"><img src="./Image/img6.jpeg" /></div>
+            <div class="header-bg"><img src="./Image/img10.jpeg" /></div>
+            <div class="header-bg"><img src="./Image/img7.jpeg" /></div>
+            <div class="header-bg"><img src="./Image/img9.jpeg" /></div>
+            <div class="header-bg"><img src="./Image/img11.jpeg" /></div>
+            <div class="header-bg"><img src="./Image/img4.jpeg" /></div>
+            <div class="header-bg"><img src="./Image/img5.jpeg" /></div>
+            <div class="header-bg"><img src="./Image/img8.jpeg" /></div>
+            <div class="header-bg"><img src="./Image/img7.jpeg" /></div>
+            <div class="header-bg"><img src="./Image/img4.jpeg" /></div>
+            <div class="header-bg"><img src="./Image/img6.jpeg" /></div>
+            <div class="header-bg"><img src="./Image/img2.jpeg" /></div>
+            <div class="header-bg"><img src="./Image/img7.jpeg" /></div>
+            <div class="header-bg"><img src="./Image/img9.jpeg" /></div>
+            <div class="header-bg"><img src="./Image/img15.jpeg" /></div>
+        </div>
     </header>
     <div class="flex__body mainContainer">
-    <section class="searchInput">
-      <div class="searchInput__div">
-        <input
-          type="search"
-          id="namePokemon"
-          class="inputSearch"
-          placeholder="Buscar..."
-        />
-        <button type="button" id="btnName" class="buttonSearch">
-          <i class="fa-solid fa-magnifying-glass"></i>
-        </button>
-            <div class="autocom__box">
-            </div>
-        </div><br>
-    </section>
-    <div class="containerPrincipal">
-        <section class="cardPokemon">
-            <div id="result" class="divResult"></div>
-            <br />
+        <section class="searchInput">
+            <div class="searchInput__div">
+                <input type="search" id="namePokemon" class="inputSearch" placeholder="Buscar..." />
+                <button type="button" id="btnName" class="buttonSearch">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+                <div class="autocom__box"></div>
+            </div><br>
         </section>
-        <section>
-            <button type="button" class="btnBlackCard">+Información</button>
-        </section>
-        <br /><br /><br />
-        <section class="cardPokemonBack">
-            <div id="resultBackCard" class="divBackCard"></div>
-        </section>
-        <section class="topTenSection">
-            <p class="topTen_title">Top 10 Frecuencia de aparición</p>
-            <div class="cardContainer" id="cardContainer">
-                <div class="">
-                    <i class="fa-solid fa-angle-left btnLeftCard"></i>
-                </div>
-                <div>
-                    <i class="fa-solid fa-chevron-right btnRightCard"></i>
-                </div>
-            </div>
-        </section>
-        <!-- <footer>
-      <div class="containerFooter">
-          <a href="https://es-la.facebook.com/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
-          <a href="https://twitter.com/?lang=es" target="_blank"><i class="fa-brands fa-twitter"></i></a>
-          <a href="https://www.instagram.com/?hl=es-la" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-          <a href="https://www.youtube.com/" target="_blank"><i class="fa-brands fa-youtube"></i></a>
-      </div>
-      <div class="imgFooter">
-        <img src="Pokemon.svg" />
-      </div>
-      <div class="infFooter">
-        <p class="titleFooter">Sigue las páginas oficiales:</p>
-        <a href="https://pokemongolive.com/es/" target="_blank" class="linksFooter" >PokémonGO</a><br>
-        <a href="https://www.pokemon.com/el/" target="_blank" class="linksFooter" >Pokémon Oficial</a>
-      </div>
+        <div class="containerPrincipal">
+            <section class="cardPokemon">
+                <div id="result" class="divResult"></div>
+                <br />
+            </section>
+            <section>
+                <button type="button" class="btnBlackCard">+Información</button>
+            </section>
+            <br /><br /><br />
+            <section class="cardPokemonBack">
+                <div id="resultBackCard" class="divBackCard"></div>
+            </section>
+        </div>
     </div>
-    </footer> -->
-     <script src="main.js" type="module"></script>
-  </body>
+    <section class="topTenSection">
+        <p class="topTen_title">Top 10 Frecuencia de aparición</p>
+        <div class="cardContainer" id="cardContainer">
+            <div class="">
+                <i class="fa-solid fa-angle-left btnLeftCard"></i>
+            </div>
+            <div>
+                <i class="fa-solid fa-chevron-right btnRightCard"></i>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="containerFooter">
+            <a href="https://es-la.facebook.com/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://twitter.com/?lang=es" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://www.instagram.com/?hl=es-la" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.youtube.com/" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+        <div class="imgFooter">
+            <img src="Pokemon.svg" />
+        </div>
+        <div class="infFooter">
+            <p class="titleFooter">Sigue las páginas oficiales:</p>
+            <a href="https://pokemongolive.com/es/" target="_blank" class="linksFooter">PokémonGO</a><br>
+            <a href="https://www.pokemon.com/el/" target="_blank" class="linksFooter">Pokémon Oficial</a>
+        </div>
+    </footer>
+    <script src="main.js" type="module"></script>
+</body>
+
 </html>
