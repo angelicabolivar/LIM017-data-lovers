@@ -3,6 +3,26 @@
   margin: 0;
   box-sizing: border-box;
 }
+/* body{
+  display: flex;
+  flex-direction: column; 
+  align-content: space-between;
+}
+body .flex__body{
+ width: 100vw;
+}
+
+.headerContainer{
+  height: 10vh;
+}
+
+.mainContainer{
+  height: 70vh;
+}
+
+.footerContainer{
+  height: 20vh;
+} */
 
 .containerFlex {
   display: flex;
@@ -10,21 +30,16 @@
 
 .containerFlex div {
   max-width: 100%;
-  max-height: 100%;
-  height: 80%;
 }
 
-img {
+.containerFlex img {
   max-width: 100%;
-  max-height: 100%;
-  margin: auto;
-  display: block;
-  margin: 0;
-  padding: 0;
 }
 
 .titlePokemon {
   position: absolute;
+  width: 20%;
+  max-width: 20%;
   left: 1%;
   top: 0;
 }
@@ -57,7 +72,6 @@ img {
   font-size: 18px;
   box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
   text-transform: capitalize;
-  /* border-radius: 40px; */
   height: 3em;
 }
 
@@ -68,7 +82,7 @@ img {
   color: #000000;
 }
 
-#autocomBox{
+#autocomBox {
   display: block;
 }
 
@@ -82,7 +96,7 @@ img {
   display: block;
 }
 
-li {
+.autocom__box li {
   list-style: none;
   padding: 8px 12px;
   width: 100%;
@@ -101,7 +115,6 @@ li {
   border-radius: 40px;
   outline: none;
   border: none;
-  /* padding-left: 0; */
   cursor: pointer;
   background: #fcd535;
   position: absolute;
@@ -119,24 +132,24 @@ li {
   max-width: 50%;
   max-height: 100%;
   background-color: #448c74;
-  padding: 1%;
   padding-top: 2%;
   justify-content: center;
-  z-index: 5;
   left: 20%;
   margin: auto;
   display: block;
 }
 
-.cardPokemon{
+.cardPokemon {
   display: none;
-} 
-
-.cardPokemonBack{
-  display: none;
+  padding: 2% 1% 2% 1%;
 }
 
-.btnBlackCard{
+.cardPokemonBack {
+  display: none;
+  padding: 2% 2% 2% 2%;
+}
+
+.btnBlackCard {
   display: none;
 }
 
@@ -158,7 +171,6 @@ li {
   max-width: 98%;
   max-height: 100%;
   margin: auto;
-  z-index: 10;
   background: #66cdaa;
   display: grid;
   grid-template-rows: repeat(4, auto);
@@ -200,7 +212,7 @@ li {
   height: 80%;
   width: 80%;
   object-fit: contain;
-  background: url("ImgPokemon.jpg");
+  background: url("PokemonFondo.png");
   background-repeat: no-repeat;
 }
 
@@ -217,39 +229,96 @@ li {
   padding-bottom: 5%;
 }
 
-.divBackCard {
+.backContainer {
   max-width: 98%;
   max-height: 100%;
   margin: auto;
-  z-index: 10;
   background: #66cdaa;
   display: grid;
-  grid-template-rows: repeat(4, auto);
+  grid-template-rows: repeat(6, auto);
   grid-template-columns: repeat(2, auto);
-  padding: 3%;
+  /* padding: 3%; */
   justify-content: center;
+  grid-template-areas:
+    "namePokemonBack numPokemonBack"
+    "resistantPokemon resistantPokemon"
+    "weaknessesPokemon weaknessesPokemon"
+    "rarityPokemon rarityPokemon"
+    "sizePokemonBack sizePokemonBack"
+    "typePokemonBack typePokemonBack";
+} 
+.namePokemonBack{
+  grid-area: namePokemonBack;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 2em;
+  font-family: "Quicksand", sans-serif;
+  font-weight: bold;
+ padding-bottom: 1%;
 }
 
+.numPokemonBack{
+  grid-area: numPokemonBack;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 1.7em;
+  padding-bottom: 1%;
+}
+.typePokemonBack{
+  grid-area: typePokemon;
+  font-size: 1em;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-bottom: 1%;
+}
+
+.sizePokemonBack{
+  grid-area: sizePokemon;
+  font-size: 1em;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 1%;
+} 
+
+.resistantPokemon{
+  grid-area: resistantPokemon;
+  font-size: 1em;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 1%;
+}
+
+.weaknessesPokemon{
+  grid-area: weaknessesPokemon;
+  font-size: 1em;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 1%;
+}
+
+.rarityPokemon{
+  grid-area: rarityPokemon;
+  font-size: 1em;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 1%;
+}
 footer{
-  background:  #336699;
-  display: flex;
-  width: 100%;
-  padding: 3%;
-  height: 20%;
-  bottom: 0;
   position: absolute;
 }
+.flexFooter {
+  background: #336699;
+  display: flex;
+  width: 100%;
+}
 
-.containerFooter{
+.containerFooter {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   width: 9%;
+  padding-left: 8%;
 }
 
-.containerFooter a{
+ a {
   font-size: 1.5em;
-  background:  #336699;
+  background: #336699;
   border: none;
   outline: none;
   cursor: pointer;
@@ -257,52 +326,105 @@ footer{
   padding-left: 15%;
 }
 
-.containerFooter button:hover{
+.containerFooter a:hover {
   color: #4ddbff;
 }
 
-.imgFooter{
+.imgFooter {
   width: 65%;
+  padding-left: 10%;
   object-fit: cover;
   object-position: right;
 }
 
-.infFooter{
+.infFooter {
   width: 40%;
   margin-left: 6%;
 }
 
-a{
-  text-decoration: none; 
+a {
+  text-decoration: none;
 }
 
-.titleFooter{
-  font-family: Georgia, 'Times New Roman', Times, serif;
+.titleFooter {
+  font-family: Georgia, "Times New Roman", Times, serif;
   color: #000000;
   font-size: 1.3em;
   font-weight: bold;
   margin-bottom: 2%;
 }
 
-.linksFooter{
-  font-family:"Quicksand", sans-serif;
+.linksFooter {
+  font-family: "Quicksand", sans-serif;
   font-size: 1em;
   font-weight: bold;
-  color:#b3d9ff;
+  color: #b3d9ff;
 }
 
-.containerPrincipal{
+.containerPrincipal {
   min-height: calc(100vh - 80% - 20%);
-  margin-bottom: 5%;
 }
 
-@media screen and (max-width: 700px) {
-   .containerPrincipal {
-     max-width: 50%;
-     width: 40%;
-     max-height: 100%;
-    }
+img{
+  max-width: 100%;
+}
+::marker {
+  font-size: 0;
+}
+
+@media (min-width: 530px) and (max-width: 930px){
   .titlePokemon {
-     max-width: 30%;
-    }  
+    max-width: 20%;
+  }
+  .searchInput {
+    max-width: 470px;
+  }
+  .cardPokemonBack,
+  .cardPokemon {
+  max-width: 45%;
+  position: absolute;
+   }
+  .cardPokemonBack{
+    margin-bottom: 5%;
+  }
+  .btnBlackCard{
+    right: 27.3%;
+  }
+  footer{
+  position: absolute;
+  }
+}
+@media screen and (min-width: 930px) {
+  .titlePokemon {
+    max-width: 10%;
+  }
+  .searchInput {
+    max-width: 500px;
+  }
+  .cardPokemonBack,
+  .cardPokemon {
+  max-width: 40%;
+   }
+
+  .btnBlackCard{
+    right: 30%;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .titlePokemon {
+    max-width: 30%;
+  }
+  .cardPokemonBack,
+  .cardPokemon {
+  max-width: 30%;
+  }
+  .btnBlackCard {
+    right: 35%;
+  }
+  .searchInput {
+    max-width: 600px;
+  }
+  footer{
+    width: 100%;
+  }
 }
