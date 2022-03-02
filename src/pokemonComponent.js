@@ -4,7 +4,7 @@ export function pokemonComponent(pokemon) {
           <p class="numPokemon">${pokemon.num} </p>
           <img class= "imgPokemon" src="${pokemon.img}">
           <p class= "aboutPokemon"> ${pokemon.about}</p>
-          <div class="generationPokemon"><p>${pokemon.generation.num}</p>
+          <div class="generationPokemon"><p>Generación: ${pokemon.generation.num}</p><br>
           <p> Región: ${pokemon.generation.name} </p></div>
           <div class="statsPokemon"><p> Ataque: ${pokemon.stats["base-attack"]}</p>
           <p> Defensa: ${pokemon.stats["base-defense"]}</p></div>
