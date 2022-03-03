@@ -4,10 +4,10 @@ export function pokemonComponent(pokemon) {
           <p class="numPokemon">${pokemon.num} </p>
           <img class= "imgPokemon" src="${pokemon.img}">
           <p class= "aboutPokemon"> ${pokemon.about}</p>
-          <div class="generationPokemon"><p>Generación: ${pokemon.generation.num}</p><br>
-          <p> Región: ${pokemon.generation.name} </p></div>
-          <div class="statsPokemon"><p> Ataque: ${pokemon.stats["base-attack"]}</p><br>
-          <p> Defensa: ${pokemon.stats["base-defense"]}</p></div>
+          <div class="generationPokemon"><p>Generation: ${pokemon.generation.num}</p>
+          <p> Region: ${pokemon.generation.name} </p></div>
+          <div class="statsPokemon"><p> Base-attack: ${pokemon.stats["base-attack"]}</p>
+          <p> Base-Defense: ${pokemon.stats["base-defense"]}</p></div>
           </li>`;
 }
 
@@ -16,11 +16,12 @@ export function pokemonBackComponent(pokemon) {
     return `<li class="backContainer">
         <p class="namePokemonBack">${pokemon.name}</p>
         <p class="numPokemonBack">${pokemon.num}</p>
-        <p class="typePokemonBack"> Tipo: ${pokemon.type} </p>
-        <p class= "sizePokemonBack"> Altura: ${pokemon.size.height}, Peso: ${pokemon.size.weight}</p>
-        <div class="resistantPokemon"><p> Resistencia: ${pokemon.resistant.join(' , ')}</p></div>
-        <div class="weaknessesPokemon"><p> Debilidades: ${pokemon.weaknesses.join(',')}</p></div>
-        <div class="rarityPokemon"><p> Rareza: ${pokemon['pokemon-rarity']}</p><div>
+        <p class="typePokemonBack"> Type: ${pokemon.type} </p>
+        <p class= "sizePokemonBack"> Height: ${pokemon.size.height}</p>
+        <p class= "weightPokemon" > Weight: ${pokemon.size.weight}</p>
+        <div class="resistantPokemon"><p> Resistant: ${pokemon.resistant.join(' , ')}</p></div>
+        <div class="weaknessesPokemon"><p> Weaknesses: ${pokemon.weaknesses.join(',')}</p></div>
+        <div class="rarityPokemon"><p> Pokemon-Rarity: ${pokemon['pokemon-rarity']}</p><div>
         </li>`;
 }
 
