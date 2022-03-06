@@ -1,6 +1,38 @@
 import { it } from 'eslint/lib/rule-tester/rule-tester';
-import { searchPokemon } from '../src/data.js';
+import { searchPokemon, topPokemon } from '../src/data.js';
 import datapokemon from "../src/data/pokemon/pokemon.js";
+const data = {
+    "pokemon": [{
+        "num": "001",
+        "name": "bulbasaur",
+        "spawn-chance": "0.69",
+    }, {
+        "num": "002",
+        "name": "ivysaur",
+        "spawn-chance": "0.69",
+    }, {
+        "num": "013",
+        "name": "weedle",
+        "spawn-chance": "7.12",
+    }]
+};
+const topData = [{
+        "num": "013",
+        "name": "weedle",
+        "spawn-chance": "7.12",
+    },
+    {
+        "num": "001",
+        "name": "bulbasaur",
+        "spawn-chance": "0.69",
+
+    }, {
+        "num": "002",
+        "name": "ivysaur",
+        "spawn-chance": "0.69",
+    }
+];
+
 
 
 describe('searchPokemon', () => {
@@ -114,7 +146,28 @@ describe('searchPokemon', () => {
         expect(() => searchPokemon(null, {})).toThrow(TypeError);
         expect(() => searchPokemon(0, 0)).toThrow(TypeError);
     })
-})
+});
+
+describe('topPokemon', () => {
+    it('is a function', () => {
+        expect(typeof topPokemon).toBe('function');
+    })
+
+    it('should returns `topData` from datapokemon', () => {
+        const sortedData = topPokemon(data);
+        expect(sortedData).toEqual(topData);
+
+
+    })
+
+    it('should throw TypeError when invoked with wrong argument types', () => {
+        expect(() => topPokemon()).toThrow(TypeError);
+        expect(() => topPokemon({})).toThrow(TypeError);
+        expect(() => topPokemon(0)).toThrow(TypeError);
+    })
+});
+
+
 
 // //describe('anotherExample', () => {
 //   it('is a function', () => {

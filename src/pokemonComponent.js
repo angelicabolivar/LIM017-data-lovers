@@ -35,6 +35,54 @@ export function pokemonList(pokemon) {
         </div>
         <p class="tPokemon">Type: ${pokemon.type}</p>
         <p class="spawn-chance">Spawn-chance: ${pokemon['spawn-chance']}</p>
+        <progress id="file" max="7.12" value="${pokemon['spawn-chance']}"></progress>
         </div
         </li>`;
+}
+export function cpResultPokemon1(pokemon) {
+    return `<li class="container">
+    <p class="namePokemonCp">${pokemon.name} </p>
+    <p class="numPokemonCp">${pokemon.num} </p>
+    <img class= "imgPokemonCp" src="${pokemon.img}">
+    <p class="base-attack">Base-attack: ${pokemon.stats['base-attack']}</p>
+    <p class="base-defense">Base-defense: ${pokemon.stats['base-defense']}</p>
+    <p class="base-stamina">Base-stamina: ${pokemon.stats['base-stamina']}</p>
+    <p class="max-cp">Max-cp: ${pokemon.stats['max-cp']}</p>
+    <p class="max-hp">Max-hp: ${pokemon.stats['max-hp']}</p>
+    </li>`
+}
+export function cpResultPokemon2(pokemon) {
+    return `<li class="container">
+    <p class="namePokemonCp">${pokemon.name} </p>
+    <p class="numPokemonCp">${pokemon.num} </p>
+    <img class= "imgPokemonCp" src="${pokemon.img}">
+    <p class="base-attack">Base-attack: ${pokemon.stats['base-attack']}</p>
+    <p class="base-defense">Base-defense: ${pokemon.stats['base-defense']}</p>
+    <p class="base-stamina">Base-stamina: ${pokemon.stats['base-stamina']}</p>
+    <p class="max-cp">Max-cp: ${pokemon.stats['max-cp']}</p>
+    <p class="max-hp">Max-hp: ${pokemon.stats['max-hp']}</p>
+    </li>`
+}
+
+export function cpResultListName(pokemon) {
+    return `<li>
+    <p class='mayorPokemonCp'>The highest CP is: ${pokemon.stats['max-cp']}</p>
+    </li>`
+}
+
+export function generationiFilteri(pokemon) {
+    return `<li>
+    <img class= 'imgPokemonGeneration' src="${pokemon.img}">
+    <p class='namePokemonGeneration'>Name: ${pokemon.name}</p>
+    <p>Region: ${pokemon.generation.name}</p>
+    <p>Type: ${pokemon.type}</p>
+    </li>`
+}
+export function generationiiFilterii(pokemon) {
+    return `<div>
+    <img class= 'imgPokemonGeneration' src="${pokemon.img}">
+    <p class='namePokemonGeneration'>Name: ${pokemon.name}</p>
+    <p>Region: ${pokemon.generation.name}</p>
+    <p>Type: ${pokemon.type}</p>
+    </div>`
 }
