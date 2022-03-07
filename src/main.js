@@ -1,8 +1,7 @@
-import { searchPokemon, topPokemon } from "./data.js";
+import { searchPokemon, topPokemon, cpPokemon, filterGeneration, percentage, filterType } from "./data.js";
 import datapokemon from "./data/pokemon/pokemon.js";
-import { pokemonComponent, pokemonBackComponent, pokemonList } from "./pokemonComponent.js";
+import { pokemonComponent, pokemonBackComponent, pokemonList, cpResultListName, cpResultPokemon1, cpResultPokemon2, generationiFilteri, generationiiFilterii } from "./pokemonComponent.js";
 
-// console.log(topPokemon(datapokemon));
 
 const searchWrapper = document.querySelector(".searchInput");
 const inputBox = searchWrapper.querySelector(".inputSearch");
@@ -82,11 +81,6 @@ btnName.addEventListener("click", function() {
 
 });
 
-const btnLeftCard = document.querySelector(".btnLeftCard");
-
-btnLeftCard.addEventListener("click", function() {
-
-});
 
 document.addEventListener("DOMContentLoaded", function() {
     const cardContainer = document.getElementById("cardContainer");
@@ -95,3 +89,63 @@ document.addEventListener("DOMContentLoaded", function() {
     cardContainer.innerHTML = `${topTenList}`;
 
 });
+
+const compareBtn = document.getElementById("compareBtn");
+compareBtn.addEventListener("click", function() {
+    const pokemon1Result = document.getElementById('pokemon1Result');
+    const pokemon2Result = document.getElementById('pokemon2Result');
+    const pokemon1 = document.getElementById("pokemon1").value;
+    const lowerCaseName1 = pokemon1.toLowerCase();
+    const resultPokemon1 = searchPokemon(lowerCaseName1, datapokemon);
+    const listPokemon1 = resultPokemon1.map(cpResultPokemon1);
+    pokemon1Result.innerHTML = `${listPokemon1}`
+
+    const pokemon2 = document.getElementById("pokemon2").value;
+    const lowerCaseName2 = pokemon2.toLowerCase();
+    const resultPokemon2 = searchPokemon(lowerCaseName2, datapokemon);
+    const resultMayorCp = document.getElementById('resultMayorCp');
+
+    const listPokemon2 = resultPokemon2.map(cpResultPokemon2);
+    pokemon2Result.innerHTML = `${listPokemon2}`
+
+
+
+
+    const cpResult = cpPokemon(resultPokemon1[0], resultPokemon2[0]);
+    console.log(cpResult);
+    const cpResultList = cpResultListName(cpResult);
+    resultMayorCp.innerHTML = `${cpResultList}`;
+
+
+});
+
+
+const generationi = 'generation i';
+const generationiResult = document.getElementById('generationiResult');
+const filterGenerationi = filterGeneration(datapokemon, generationi);
+const filterListGenerationi = filterGenerationi.map(generationiFilteri);
+generationiResult.innerHTML = `${filterListGenerationi}`;
+
+
+const generationii = 'generation ii';
+const generationiiResult = document.getElementById('generationiiResult');
+const filterGenerationii = filterGeneration(datapokemon, generationii);
+const filterListGenerationii = filterGenerationii.map(generationiiFilterii);
+generationiiResult.innerHTML = `${filterListGenerationii}`;
+
+
+const type = 'grass';
+const inputData = filterGeneration(datapokemon, generationi);
+const filterTypeG = filterType(inputData, type);
+console.log(filterTypeG);
+
+const percentGrassi = percentage(filterTypeG.length, inputData.length);
+console.log(percentGrassi);
+
+const type2 = 'grass';
+const inputData2 = filterGeneration(datapokemon, generationii);
+const filterTypeG2 = filterType(inputData2, type2);
+console.log(filterTypeG2);
+
+const percentGrassii = percentage(filterTypeG2.length, inputData2.length);
+console.log(percentGrassii);

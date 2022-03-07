@@ -1,7 +1,7 @@
 * {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
 html,
@@ -11,7 +11,7 @@ body {
 }
 
 .containerFlex {
-  display: flex;
+    display: flex;
 }
 
 .containerFlex .header-bg {
@@ -21,95 +21,102 @@ body {
 }
 
 .containerFlex img {
-  max-width: 100%;
-  max-height: 100%;
-  margin: auto;
-  display: block;
-  margin: 0;
-  padding: 0;
+    max-width: 100%;
+    max-height: 100%;
+    margin: auto;
+    display: block;
+    margin: 0;
+    padding: 0;
 }
 
 .titlePokemon {
-  position: absolute;
-  left: 1%;
-  top: 0;
-  max-width: 30%;
+    position: absolute;
+    left: 1%;
+    top: 0;
+    max-width: 30%;
 }
 
 .mainContainer {
+<<<<<<< HEAD
   margin-top: 3em;
   width: 100%;
   padding: 0%;
+=======
+    margin-top: 3em;
+    width: 100%;
+    padding: 0%;
+>>>>>>> upstream/main
 }
 
 .searchInput {
-  width: 17em;
-  margin-bottom: 1em;
-  margin: auto;
+    width: 17em;
+    margin-bottom: 1em;
+    margin: auto;
 }
 
 .searchInput .searchInput__div {
-  background: #ffffff;
-  width: 100%;
-  border-radius: 5%;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
+    background: #ffffff;
+    width: 100%;
+    border-radius: 5%;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
 }
 
 .inputSearch {
-  width: 100%;
-  height: 2.5em;
-  border: none;
-  outline: none;
-  border-radius: 5px;
-  padding: 0 20px;
-  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
-  text-transform: capitalize;
+    width: 100%;
+    height: 2.5em;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    padding: 0 20px;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+    text-transform: capitalize;
 }
 
 .autocom__box {
-  padding: 0;
-  max-height: 280px;
-  overflow-y: auto;
-  color: #000000;
+    padding: 0;
+    max-height: 280px;
+    overflow-y: auto;
+    color: #000000;
 }
 
 .searchInput__div.active .autocom__box {
-  padding: 10px 8px;
-  opacity: 1;
-  pointer-events: auto;
+    padding: 10px 8px;
+    opacity: 1;
+    pointer-events: auto;
 }
 
 .searchInput__div.active .autocom__box li {
-  display: block;
+    display: block;
 }
 
 .autocom__box li {
-  list-style: none;
-  padding: 8px 12px;
-  width: 100%;
-  cursor: default;
-  border-radius: 3px;
+    list-style: none;
+    padding: 8px 12px;
+    width: 100%;
+    cursor: default;
+    border-radius: 3px;
 }
 
 .autocom__box li:hover {
-  background: #dcdcdc;
+    background: #dcdcdc;
 }
 
 .buttonSearch {
-  width: 2.5em;
-  height: 2.5em;
-  font-size: 80%;
-  border-radius: 40px;
-  outline: none;
-  border: none;
-  cursor: pointer;
-  background: #fcd535;
-  position: absolute;
-  margin-top: 0.2%;
-  margin-left: 0.5%;
+    width: 2.5em;
+    height: 2.5em;
+    font-size: 80%;
+    border-radius: 40px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    background: #fcd535;
+    position: absolute;
+    margin-top: 0.2%;
+    margin-left: 0.5%;
 }
 
 .containerPrincipal {
+<<<<<<< HEAD
   margin-bottom: 5%;
   max-width: 70%;
   margin: auto;
@@ -117,46 +124,58 @@ body {
 .divResult {
   padding: 0 5%;
 }
+=======
+    margin-bottom: 5%;
+    max-width: 70%;
+    margin: auto;
+}
+
+.divResult {
+    padding: 0 5%;
+}
+
+>>>>>>> upstream/main
 .cardPokemonBack,
 .cardPokemon {
-  max-width: 100%;
-  max-height: 100%;
-  background: #448c74;
-  left: 20%;
-  margin: auto;
+    max-width: 100%;
+    max-height: 100%;
+    background: #448c74;
+    left: 20%;
+    margin: auto;
 }
 
 .cardPokemon {
-  display: none;
-  padding: 6% 1.5% 1% 1.5%;
+    display: none;
+    padding: 6% 1.5% 1% 1.5%;
 }
 
 .cardPokemonBack {
-  display: none;
-  padding: 6% 4% 4% 4%;
-  margin-bottom: 5%;
+    display: none;
+    padding: 6% 4% 4% 4%;
+    margin-bottom: 5%;
 }
 
 .btnBlackCard {
-  display: none;
+    display: none;
 }
 
 .btnBlackCard {
-  width: 9em;
-  height: 3em;
-  font-size: 80%;
-  text-align: center;
-  outline: none;
-  border: none;
-  padding-left: 0;
-  cursor: pointer;
-  background: #fcd535;
-  position: absolute;
-  right: 15.1%;
-  font-weight: bold;
+    width: 9em;
+    height: 3em;
+    font-size: 80%;
+    text-align: center;
+    outline: none;
+    border: none;
+    padding-left: 0;
+    cursor: pointer;
+    background: #fcd535;
+    position: absolute;
+    right: 15.1%;
+    font-weight: bold;
 }
 
 .container {
+<<<<<<< HEAD
   max-width: 98%;
   max-height: 100%;
   margin: auto;
@@ -171,61 +190,83 @@ body {
     "aboutPokemon aboutPokemon"
     "generationPokemon generationPokemon"
     "statsPokemon statsPokemon";
+=======
+    max-width: 98%;
+    max-height: 100%;
+    margin: auto;
+    background: #66cdaa;
+    display: grid;
+    grid-template-rows: repeat(6, auto);
+    grid-template-columns: repeat(2, auto);
+    padding: 3%;
+    grid-template-areas: "namePokemon numPokemon" "imgPokemon imgPokemon" "aboutPokemon aboutPokemon" "generationPokemon generationPokemon" "statsPokemon statsPokemon";
+>>>>>>> upstream/main
 }
 
 .namePokemon {
-  grid-area: namePokemon;
-  text-transform: uppercase;
-  text-align: center;
-  font-size: 1.5em;
-  font-family: "Quicksand", sans-serif;
-  font-weight: bold;
+    grid-area: namePokemon;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 1.5em;
+    font-family: "Quicksand", sans-serif;
+    font-weight: bold;
 }
 
 .numPokemon {
-  grid-area: numPokemon;
-  text-align: center;
-  font-family: "Montserrat", sans-serif;
-  font-weight: bold;
-  font-size: 1.3em;
-  align-self: center;
+    grid-area: numPokemon;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    font-size: 1.3em;
+    align-self: center;
 }
+
 .statsPokemon,
+<<<<<<< HEAD
 .generationPokemon {
   text-align: center;
   font-size: 16px;
   font-family: "Quicksand", sans-serif;
 }
+=======
+>>>>>>> upstream/main
 .generationPokemon {
-  grid-area: generationPokemon;
+    text-align: center;
+    font-size: 16px;
+    font-family: "Quicksand", sans-serif;
+}
+
+.generationPokemon {
+    grid-area: generationPokemon;
 }
 
 .imgPokemon {
-  grid-area: imgPokemon;
-  margin: auto;
-  text-align: center;
-  height: 80%;
-  width: 80%;
-  object-fit: contain;
-  background: url("PokemonFondo.png");
-  background-repeat: no-repeat;
-  border-radius: 10px;
-  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
+    grid-area: imgPokemon;
+    margin: auto;
+    text-align: center;
+    height: 80%;
+    width: 80%;
+    object-fit: contain;
+    background: url("PokemonFondo.png");
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
 }
 
 .statsPokemon {
-  grid-area: statsPokemon;
+    grid-area: statsPokemon;
 }
 
 .aboutPokemon {
-  grid-area: aboutPokemon;
-  text-align: justify;
-  font-size: 16px;
-  font-family: "Quicksand", sans-serif;
-  padding-bottom: 5%;
+    grid-area: aboutPokemon;
+    text-align: justify;
+    font-size: 16px;
+    font-family: "Quicksand", sans-serif;
+    padding-bottom: 5%;
 }
 
 .backContainer {
+<<<<<<< HEAD
   max-width: 98%;
   max-height: 100%;
   margin: auto;
@@ -260,8 +301,41 @@ body {
   font-weight: bold;
   font-size: 1.3em;
   align-self: center;
+=======
+    max-width: 98%;
+    max-height: 100%;
+    margin: auto;
+    background: #66cdaa;
+    padding: 3%;
+    display: grid;
+    grid-template-rows: repeat(6, auto);
+    grid-template-columns: repeat(2, auto);
+    justify-content: center;
+    grid-template-areas: "namePokemonBack numPokemonBack" "typePokemonBack typePokemonBack" "sizePokemonBack sizePokemonBack" "weightPokemon weightPokemon" "resistantPokemon resistantPokemon" "weaknessesPokemon weaknessesPokemon" "rarityPokemon rarityPokemon";
 }
+
+.namePokemonBack {
+    grid-area: namePokemonBack;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 1.5em;
+    font-family: "Quicksand", sans-serif;
+    font-weight: bold;
+    padding-bottom: 4%;
+}
+
+.numPokemonBack {
+    grid-area: numPokemonBack;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    font-size: 1.3em;
+    align-self: center;
+>>>>>>> upstream/main
+}
+
 .typePokemonBack {
+<<<<<<< HEAD
   grid-area: typePokemonBack;
 }
 .sizePokemonBack {
@@ -278,13 +352,38 @@ body {
 }
 .rarityPokemon {
   grid-area: rarityPokemon;
+=======
+    grid-area: typePokemonBack;
 }
+
+.sizePokemonBack {
+    grid-area: sizePokemonBack;
+}
+
+.weightPokemon {
+    grid-area: weightPokemon;
+}
+
+.resistantPokemon {
+    grid-area: resistantPokemon;
+}
+
+.weaknessesPokemon {
+    grid-area: weaknessesPokemon;
+}
+
+.rarityPokemon {
+    grid-area: rarityPokemon;
+>>>>>>> upstream/main
+}
+
 .weightPokemon,
 .typePokemonBack,
 .sizePokemonBack,
 .resistantPokemon,
 .weaknessesPokemon,
 .rarityPokemon {
+<<<<<<< HEAD
   text-align: justify;
   font-size: 16px;
   font-family: "Quicksand", sans-serif;
@@ -297,77 +396,100 @@ body {
   max-width: 100%;
   margin: auto;
   margin-bottom: 5%;
+=======
+    text-align: justify;
+    font-size: 16px;
+    font-family: "Quicksand", sans-serif;
+    padding-bottom: 1%;
 }
+
+::marker {
+    font-size: 0;
+}
+
+.topTenSection {
+    max-width: 100%;
+    margin: auto;
+    margin-bottom: 5%;
+>>>>>>> upstream/main
+}
+
 .topTen_title {
-  font-family: "Montserrat", sans-serif;
-  font-weight: bold;
-  font-size: 1.2em;
-  text-align: center;
-  margin-bottom: 4%;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    font-size: 1.2em;
+    text-align: center;
+    margin-bottom: 4%;
 }
 
 .cardContainer {
-  max-width: 100%;
-  margin: 0 auto;
-  height: auto;
+    max-width: 100%;
+    margin: 0 auto;
+    height: auto;
 }
 
 .ListContainer {
-  display: flex;
-  justify-content: space-evenly;
-  background: #a3b0ff;
-  border: 10px solid #6077ff;
-  max-width: 90%;
-  padding: 4%;
-  margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    background: #a3b0ff;
+    border: 10px solid #6077ff;
+    max-width: 90%;
+    padding: 4%;
+    margin: auto;
 }
 
 .imagePokemon {
-  max-width: 60%;
-  object-fit: contain;
-  background: url("PokemonFondo.png");
-  background-repeat: no-repeat;
-  border-radius: 10px;
-  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
+    max-width: 60%;
+    object-fit: contain;
+    background: url("PokemonFondo.png");
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
 }
 
 .cardRigth {
-  margin-left: 10%;
+    margin-left: 10%;
 }
 
 .titleCard {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 5%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5%;
 }
 
 .nameNPokemon {
-  text-transform: uppercase;
-  text-align: center;
-  font-size: 1em;
-  font-family: "Quicksand", sans-serif;
-  font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 1em;
+    font-family: "Quicksand", sans-serif;
+    font-weight: bold;
 }
 
 .numberPokemon {
-  font-family: "Montserrat", sans-serif;
-  font-weight: bold;
-  font-size: 0.8em;
-  align-self: center;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    font-size: 0.8em;
+    align-self: center;
 }
 
 .tPokemon,
 .spawn-chance {
-  font-size: 1em;
-  font-family: "Quicksand", sans-serif;
-  margin-bottom: 3%;
+    font-size: 1em;
+    font-family: "Quicksand", sans-serif;
+    margin-bottom: 3%;
+}
+
+.generationResult {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .flexFooter {
-  background: #336699;
-  display: flex;
-  width: 100%;
+    background: #336699;
+    display: flex;
+    width: 100%;
 }
+
 .footer {
   background: #336699;
   display: flex;
@@ -380,22 +502,29 @@ body {
 }
 
 .containerFooter {
+<<<<<<< HEAD
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
+=======
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+>>>>>>> upstream/main
 }
 
 .containerFooter a {
-  font-size: 1.5em;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  color: #fcd535;
+    font-size: 1.5em;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: #fcd535;
 }
 
 .containerFooter button:hover {
-  color: #4ddbff;
+    color: #4ddbff;
 }
 
 .infFooter {
@@ -406,18 +535,19 @@ body {
 }
 
 a {
-  text-decoration: none;
+    text-decoration: none;
 }
 
 .titleFooter {
-  font-family: Georgia, "Times New Roman", Times, serif;
-  color: #000000;
-  font-size: 0.8em;
-  font-weight: bold;
-  padding-bottom: 2%;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    color: #000000;
+    font-size: 0.8em;
+    font-weight: bold;
+    padding-bottom: 2%;
 }
 
 .linksFooter {
+<<<<<<< HEAD
   font-family: "Quicksand", sans-serif;
   font-size: 0.7em;
   font-weight: bold;
@@ -572,3 +702,135 @@ a {
     font-size: 1.5em;
   }
 }
+=======
+    font-family: "Quicksand", sans-serif;
+    font-size: 0.7em;
+    font-weight: bold;
+    color: #b3d9ff;
+}
+
+@media screen and (min-width: 700px) and (max-width: 1000px) {
+    .searchInput {
+        width: 40%;
+        max-width: 45%;
+    }
+    .inputSearch {
+        height: 3.1em;
+    }
+    .buttonSearch {
+        width: 3em;
+        height: 3em;
+    }
+    .topTen_title {
+        font-size: 2em;
+    }
+    .cardContainer {
+        max-width: 90%;
+    }
+    .ListContainer {
+        max-width: 70%;
+    }
+    .nameNPokemon {
+        font-size: 1.5em;
+        padding-right: 10%;
+    }
+    .numberPokemon {
+        font-size: 1.3em;
+    }
+    .tPokemon,
+    .spawn-chance {
+        font-size: 1.2em;
+    }
+    .containerPrincipal {
+        max-width: 60%;
+    }
+    .cardPokemonBack,
+    .cardPokemon {
+        max-width: 90%;
+    }
+    .btnBlackCard {
+        width: 9em;
+        height: 3em;
+        font-size: 80%;
+        right: 23%;
+    }
+    .footer {
+        height: 15em;
+    }
+    .containerFooter {
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .containerFooter a {
+        font-size: 2em;
+    }
+    .titleFooter {
+        font-size: 1.5em;
+    }
+    .linksFooter {
+        font-size: 1em;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .searchInput {
+        width: 30%;
+        max-width: 35%;
+    }
+    .inputSearch {
+        height: 4em;
+    }
+    .buttonSearch {
+        width: 2.5em;
+        height: 2.5em;
+        font-size: 1.2em;
+        margin-top: 0.01%;
+    }
+    .topTen_title {
+        font-size: 3em;
+    }
+    .cardContainer {
+        max-width: 80%;
+    }
+    .ListContainer {
+        max-width: 70%;
+        height: 10%;
+    }
+    .imagePokemon {
+        max-width: 80%;
+        transform: scale(1.3);
+    }
+    .nameNPokemon {
+        font-size: 2em;
+        padding-right: 2em;
+    }
+    .numberPokemon {
+        font-size: 1.7em;
+    }
+    .containerPrincipal {
+        max-width: 50%;
+    }
+    .cardPokemonBack,
+    .cardPokemon {
+        max-width: 60%;
+    }
+    .btnBlackCard {
+        width: 9em;
+        height: 3em;
+        font-size: 80%;
+        right: 35%;
+    }
+    .footer {
+        height: 20em;
+    }
+    .containerFooter a {
+        font-size: 3em;
+    }
+    .titleFooter {
+        font-size: 2em;
+    }
+    .linksFooter {
+        font-size: 1.5em;
+    }
+}
+>>>>>>> upstream/main
