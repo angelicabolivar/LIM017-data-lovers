@@ -22,11 +22,14 @@ export const topPokemon = (datapokemon) => {
 };
 
 export const cpPokemon = (pokemon1, pokemon2) => {
+    if (!pokemon1) throw new TypeError('No estas ingresando ningun valor');
+    if (!pokemon2) throw new TypeError('No estas ingresando ningun valor');
+    if (typeof pokemon1 !== "object") throw new TypeError("El valor ingresado no es una data valida");
+    if (typeof pokemon2 !== "object") throw new TypeError("El valor ingresado no es una data valida");
 
     if (parseInt(pokemon1.stats['max-cp']) > parseInt(pokemon2.stats['max-cp'])) {
         return pokemon1;
-    }
-    if (parseInt(pokemon1.stats['max-cp']) < parseInt(pokemon2.stats['max-cp'])) {
+    } else if (parseInt(pokemon1.stats['max-cp']) < parseInt(pokemon2.stats['max-cp'])) {
 
         return pokemon2;
     }
@@ -35,6 +38,9 @@ export const cpPokemon = (pokemon1, pokemon2) => {
 }
 
 export const filterGeneration = (datapokemon, generation) => {
+    if (!datapokemon) throw new TypeError('No estas ingresando ningun valor');
+    if (typeof datapokemon !== 'object') throw new TypeError("El valor ingresado no es una data valida");
+    if (typeof generation !== 'string') throw new TypeError("El valor ingresado no es de tipo texto");
 
     const resultFilterPokemon = datapokemon.pokemon.filter(x => x.generation.num === generation);
 
@@ -43,7 +49,8 @@ export const filterGeneration = (datapokemon, generation) => {
 
 
 export const filterType = (inputData, inputType) => {
-
+    if (typeof inputType !== 'string') throw new TypeError("El valor ingresado no es de tipo texto");
+    if (typeof inputData !== 'object') throw new TypeError("El valor ingresado no una data valida");
 
     const resultFilter = inputData.filter(x => x.type.includes(inputType));
 
@@ -52,5 +59,8 @@ export const filterType = (inputData, inputType) => {
 
 
 export const percentage = (amount, total) => {
+    if (typeof amount !== 'number') throw new TypeError("El valor ingresado no es de tipo numero");
+    if (typeof total !== 'number') throw new TypeError("El valor ingresado no es de tipo numero");
+
     return Math.round((amount * 100) / total);
 }

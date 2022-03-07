@@ -1,5 +1,5 @@
 import { it } from 'eslint/lib/rule-tester/rule-tester';
-import { searchPokemon, topPokemon } from '../src/data.js';
+import { searchPokemon, topPokemon, cpPokemon, filterGeneration, filterType, percentage } from '../src/data.js';
 import datapokemon from "../src/data/pokemon/pokemon.js";
 const data = {
     "pokemon": [{
@@ -32,6 +32,154 @@ const topData = [{
         "spawn-chance": "0.69",
     }
 ];
+const dataCp1 = {
+    "pokemon": [{
+        "num": "001",
+        "name": "bulbasaur",
+        "stats": {
+            "max-cp": "1115",
+        },
+    }, ]
+
+};
+const dataCp2 = {
+    "pokemon": [{
+        "num": "002",
+        "name": "ivysaur",
+        "stats": {
+            "max-cp": "1699",
+        },
+    }, ]
+
+};
+
+const maxCp = {
+    "num": "002",
+    "name": "ivysaur",
+    "stats": {
+        "max-cp": "1699",
+    },
+};
+
+const dataGeneration = {
+    "pokemon": [{
+        "num": "001",
+        "name": "bulbasaur",
+        "generation": {
+            "num": "generation i",
+            "name": "kanto"
+        },
+        "type": [
+            "grass",
+            "poison"
+        ],
+    }, {
+        "num": "002",
+        "name": "ivysaur",
+        "generation": {
+            "num": "generation i",
+            "name": "kanto"
+        },
+        "type": [
+            "grass",
+            "poison"
+        ],
+    }, {
+        "num": "198",
+        "name": "murkrow",
+        "generation": {
+            "num": "generation ii",
+            "name": "johto"
+        },
+        "type": [
+            "dark",
+            "flying"
+        ]
+    }, {
+        "num": "199",
+        "name": "slowking",
+        "generation": {
+            "num": "generation ii",
+            "name": "johto"
+        },
+        "type": [
+            "water",
+            "psychic"
+        ]
+    }]
+};
+const generation = 'generation ii';
+const generation2 = [
+
+    {
+        "num": "198",
+        "name": "murkrow",
+        "generation": {
+            "num": "generation ii",
+            "name": "johto"
+        },
+        "type": [
+            "dark",
+            "flying"
+        ]
+    },
+    {
+        "num": "199",
+        "name": "slowking",
+        "generation": {
+            "num": "generation ii",
+            "name": "johto"
+        },
+        "type": [
+            "water",
+            "psychic"
+        ]
+    }
+];
+
+const inputDataGeneration = [
+
+    {
+        "num": "198",
+        "name": "murkrow",
+        "generation": {
+            "num": "generation ii",
+            "name": "johto"
+        },
+        "type": [
+            "dark",
+            "flying"
+        ]
+    },
+    {
+        "num": "199",
+        "name": "slowking",
+        "generation": {
+            "num": "generation ii",
+            "name": "johto"
+        },
+        "type": [
+            "water",
+            "psychic"
+        ]
+    }
+];
+const type = 'water';
+const typePokemon = [{
+
+    "num": "199",
+    "name": "slowking",
+    "generation": {
+        "num": "generation ii",
+        "name": "johto"
+    },
+    "type": [
+        "water",
+        "psychic"
+    ],
+}];
+const grassGenerationi = 14;
+const totalgenerationi = 151;
 
 
 
@@ -168,13 +316,76 @@ describe('topPokemon', () => {
 });
 
 
+describe('cpPokemon', () => {
+    it('is a function', () => {
+        expect(typeof cpPokemon).toBe('function');
+    })
 
-// //describe('anotherExample', () => {
-//   it('is a function', () => {
-//     expect(typeof anotherExample).toBe('function');
-//   });
+    it('should returns `cpPokemon` from pokemon1 and pokemon2', () => {
+        const maxCpData = cpPokemon(dataCp1, dataCp2);
+        expect(maxCpData).toEqual(maxCp);
 
-//   it('returns `anotherExample`', () => {
-//     expect(anotherExample()).toBe('OMG');
-//   });
-// });
+
+    })
+
+    it('should throw TypeError when invoked with wrong argument types', () => {
+        expect(() => cpPokemon()).toThrow(TypeError);
+        expect(() => cpPokemon({})).toThrow(TypeError);
+        expect(() => cpPokemon(0)).toThrow(TypeError);
+    })
+});
+
+describe('filterGeneration', () => {
+    it('is a function', () => {
+        expect(typeof filterGeneration).toBe('function');
+    })
+
+    it('should returns `generation` from datapokemon', () => {
+        const dataGenerationii = filterGeneration(dataGeneration, generation);
+        expect(dataGenerationii).toEqual(generation2);
+
+
+    })
+
+    it('should throw TypeError when invoked with wrong argument types', () => {
+        expect(() => filterGeneration()).toThrow(TypeError);
+        expect(() => filterGeneration({})).toThrow(TypeError);
+        expect(() => filterGeneration(0, 0)).toThrow(TypeError);
+    })
+});
+
+describe('filterType', () => {
+    it('is a function', () => {
+        expect(typeof filterType).toBe('function');
+    })
+
+    it('should returns `type` from inputData', () => {
+        const inputDataii = filterType(inputDataGeneration, type);
+        expect(inputDataii).toEqual(typePokemon);
+
+
+    })
+
+    it('should throw TypeError when invoked with wrong argument types', () => {
+        expect(() => filterType()).toThrow(TypeError);
+        expect(() => filterType({})).toThrow(TypeError);
+        expect(() => filterType(0, 0)).toThrow(TypeError);
+    })
+});
+describe('percentage', () => {
+    it('is a function', () => {
+        expect(typeof percentage).toBe('function');
+    })
+
+    it('should returns `type` from inputData', () => {
+        const porcent = percentage(grassGenerationi, totalgenerationi);
+        expect(porcent).toEqual(9);
+
+
+    })
+
+    it('should throw TypeError when invoked with wrong argument types', () => {
+        expect(() => percentage()).toThrow(TypeError);
+        expect(() => percentage(0)).toThrow(TypeError);
+    })
+});
