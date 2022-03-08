@@ -27,15 +27,15 @@ export const cpPokemon = (pokemon1, pokemon2) => {
     if (typeof pokemon1 !== "object") throw new TypeError("El valor ingresado no es una data valida");
     if (typeof pokemon2 !== "object") throw new TypeError("El valor ingresado no es una data valida");
 
-    if (parseInt(pokemon1.stats['max-cp']) > parseInt(pokemon2.stats['max-cp'])) {
+    if (parseInt(pokemon1.stats['max-cp']) >= parseInt(pokemon2.stats['max-cp'])) {
         return pokemon1;
-    } else if (parseInt(pokemon1.stats['max-cp']) < parseInt(pokemon2.stats['max-cp'])) {
+    } else {
 
         return pokemon2;
     }
-    return pokemon1
 
-}
+
+};
 
 export const filterGeneration = (datapokemon, generation) => {
     if (!datapokemon) throw new TypeError('No estas ingresando ningun valor');
