@@ -60,6 +60,13 @@ const maxCp = {
         "max-cp": "1699",
     },
 };
+const maxCpEqual = {
+    "num": "001",
+    "name": "bulbasaur",
+    "stats": {
+        "max-cp": "1115",
+    },
+};
 
 const dataGeneration = {
     "pokemon": [{
@@ -322,9 +329,14 @@ describe('cpPokemon', () => {
     })
 
     it('should returns `cpPokemon` from pokemon1 and pokemon2', () => {
-        const maxCpData = cpPokemon(dataCp1, dataCp2);
+        const maxCpData = cpPokemon(dataCp1.pokemon[0], dataCp2.pokemon[0]);
         expect(maxCpData).toEqual(maxCp);
 
+
+    })
+    it('should returns `cpPokemon` from pokemon1 or pokemon2', () => {
+        const maxCpData = cpPokemon(dataCp1.pokemon[0], dataCp1.pokemon[0]);
+        expect(maxCpData).toEqual(maxCpEqual);
 
     })
 
