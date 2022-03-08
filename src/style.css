@@ -4,20 +4,24 @@
     box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
     width: 100%;
     height: 100%;
-  }
+}
 
-.navMovil, .navDesktop{
+.navMovil,
+.navDesktop {
     background: #004080;
     color: #ffffff;
     font-weight: bold;
 }
-.searchInput{
+
+.searchInput {
     background: #0066cc;
     width: 100%;
 }
+
 
 /* 
 .containerFlex {
@@ -306,6 +310,45 @@ html, body {
     font-size: 0;
 }
 
+.generationResult {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.generation {
+    padding: 1em;
+}
+
+.generation-title {
+    font-family: "Quicksand", sans-serif;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1em;
+}
+
+.generation-card {
+    width: 18em;
+    height: 6em;
+    margin: 0 auto;
+    margin-bottom: 3em;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.card-img {
+    width: 30%;
+    height: 100%;
+    background-color: #b3d9ff;
+}
+
+.card-btn {
+    width: 8em;
+    height: 2.5em;
+    border: none;
+    background-color: #FFD700;
+}
+
 .topTenSection {
     max-width: 100%;
     margin: auto;
@@ -377,11 +420,6 @@ html, body {
     margin-bottom: 3%;
 }
 
-.generationResult {
-    display: flex;
-    flex-wrap: wrap;
-}
-
 .flexFooter {
     background: #336699;
     display: flex;
@@ -389,14 +427,14 @@ html, body {
 }
 
 .footer {
-  background: #336699;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  width: 100%;
-  padding: 2em;
-  height: 10em;
-  bottom: 0;
+    background: #336699;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    padding: 2em;
+    height: 10em;
+    bottom: 0;
 }
 
 .containerFooter {
@@ -419,10 +457,10 @@ html, body {
 }
 
 .infFooter {
-  text-align: left;
-  padding-left: 4%;
-  padding-top: 8%;
-  text-align: center;
+    text-align: left;
+    padding-left: 4%;
+    padding-top: 8%;
+    text-align: center;
 }
 
 a {
