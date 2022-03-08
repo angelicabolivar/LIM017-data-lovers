@@ -34,8 +34,7 @@ export const cpPokemon = (pokemon1, pokemon2) => {
         return pokemon2;
     }
 
-
-};
+}
 
 export const filterGeneration = (datapokemon, generation) => {
     if (!datapokemon) throw new TypeError('No estas ingresando ningun valor');
