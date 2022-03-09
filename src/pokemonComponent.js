@@ -71,18 +71,18 @@ export function cpResultListName(pokemon) {
 }
 
 export function generationiFilteri(pokemon) {
-    return `<li>
+    return `<div class="generationitable">
     <img class= 'imgPokemonGeneration' src="${pokemon.img}">
     <p class='namePokemonGeneration'>Name: ${pokemon.name}</p>
-    <p>Region: ${pokemon.generation.name}</p>
-    <p>Type: ${pokemon.type}</p>
-    </li>`
+    <p  class='regionPokemonGeneration'>Region: ${pokemon.generation.name}</p>
+    <p class='TypePokemonGeneration'>Type: ${pokemon.type}</p>
+    </div>`
 }
 export function generationiiFilterii(pokemon) {
     return `<div>
     <img class= 'imgPokemonGeneration' src="${pokemon.img}">
     <p class='namePokemonGeneration'>Name: ${pokemon.name}</p>
-    <p>Region: ${pokemon.generation.name}</p>
-    <p>Type: ${pokemon.type}</p>
+    <p class='regionPokemonGeneration'>Region: ${pokemon.generation.name}</p>
+    <p class='TypePokemonGeneration'>Type: ${pokemon.type}</p>
     </div>`
 }

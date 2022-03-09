@@ -115,19 +115,40 @@ compareBtn.addEventListener("click", function() {
     const listPokemon2 = resultPokemon2.map(cpResultPokemon2);
     pokemon2Result.innerHTML = `${listPokemon2}`
 
+
+
+
     const cpResult = cpPokemon(resultPokemon1[0], resultPokemon2[0]);
     console.log(cpResult);
     const cpResultList = cpResultListName(cpResult);
     resultMayorCp.innerHTML = `${cpResultList}`;
 
+
 });
 
-const generationi = 'generation i';
-const generationiResult = document.getElementById('generationiResult');
-const filterGenerationi = filterGeneration(datapokemon, generationi);
-const filterListGenerationi = filterGenerationi.map(generationiFilteri);
-generationiResult.innerHTML = `${filterListGenerationi}`;
+//Codigo del boton generacion i
+const cardBtni = document.getElementById('cardBtni');
+cardBtni.addEventListener('click', function() {
+    const generationi = 'generation i';
+    const generationTitle = document.getElementById('generationTitle');
+    const generationiResult = document.getElementById('generationResult');
+    const filterGenerationi = filterGeneration(datapokemon, generationi);
+    const filterListGenerationi = filterGenerationi.map(generationiFilteri);
+    generationTitle.innerHTML = 'Generation i'
+    generationiResult.innerHTML = `${filterListGenerationi.join('')}`
+});
 
+//Codigo del boton generacion ii
+const cardBtnii = document.getElementById('cardBtnii');
+cardBtnii.addEventListener('click', function() {
+    const generationii = 'generation ii';
+    const generationTitle = document.getElementById('generationTitle');
+    const generationiiResult = document.getElementById('generationResult');
+    const filterGenerationii = filterGeneration(datapokemon, generationii);
+    const filterListGenerationii = filterGenerationii.map(generationiiFilterii);
+    generationTitle.innerHTML = 'Generation ii'
+    generationiiResult.innerHTML = `${filterListGenerationii.join('')}`
+});
 
 const generationii = 'generation ii';
 const generationiiResult = document.getElementById('generationiiResult');
@@ -151,8 +172,3 @@ console.log(filterTypeG2);
 
 const percentGrassii = percentage(filterTypeG2.length, inputData2.length);
 console.log(percentGrassii);
-
-compareBtn.addEventListener("click", function() {
-    document.getElementById("compareBtn").style.display = "none";
-    document.getElementById("silhouetteImgNone").style.display = "none";
-});
