@@ -2,6 +2,12 @@ import { searchPokemon, topPokemon, cpPokemon, filterGeneration, percentage, fil
 import datapokemon from "./data/pokemon/pokemon.js";
 import { pokemonComponent, pokemonBackComponent, pokemonList, cpResultListName, cpResultPokemon1, cpResultPokemon2, generationiFilteri, generationiiFilterii } from "./pokemonComponent.js";
 
+const btnBars= document.querySelector('.btnBars');
+const navMenu=document.querySelector('.navMenu');
+btnBars.addEventListener('click', ()=>{
+    navMenu.classList.toggle('navMenuHide');
+});
+
 
 const searchWrapper = document.querySelector(".searchInput");
 const inputBox = searchWrapper.querySelector(".inputSearch");
@@ -90,34 +96,34 @@ document.addEventListener("DOMContentLoaded", function() {
 
 });
 
-// const compareBtn = document.getElementById("compareBtn");
-// compareBtn.addEventListener("click", function() {
-//     const pokemon1Result = document.getElementById('pokemon1Result');
-//     const pokemon2Result = document.getElementById('pokemon2Result');
-//     const pokemon1 = document.getElementById("pokemon1").value;
-//     const lowerCaseName1 = pokemon1.toLowerCase();
-//     const resultPokemon1 = searchPokemon(lowerCaseName1, datapokemon);
-//     const listPokemon1 = resultPokemon1.map(cpResultPokemon1);
-//     pokemon1Result.innerHTML = `${listPokemon1}`
+const compareBtn = document.getElementById("compareBtn");
+compareBtn.addEventListener("click", function() {
+    const pokemon1Result = document.getElementById('pokemon1Result');
+    const pokemon2Result = document.getElementById('pokemon2Result');
+    const pokemon1 = document.getElementById("pokemon1").value;
+    const lowerCaseName1 = pokemon1.toLowerCase();
+    const resultPokemon1 = searchPokemon(lowerCaseName1, datapokemon);
+    const listPokemon1 = resultPokemon1.map(cpResultPokemon1);
+    pokemon1Result.innerHTML = `${listPokemon1}`
 
-//     const pokemon2 = document.getElementById("pokemon2").value;
-//     const lowerCaseName2 = pokemon2.toLowerCase();
-//     const resultPokemon2 = searchPokemon(lowerCaseName2, datapokemon);
-//     const resultMayorCp = document.getElementById('resultMayorCp');
+    const pokemon2 = document.getElementById("pokemon2").value;
+    const lowerCaseName2 = pokemon2.toLowerCase();
+    const resultPokemon2 = searchPokemon(lowerCaseName2, datapokemon);
+    const resultMayorCp = document.getElementById('resultMayorCp');
 
-//     const listPokemon2 = resultPokemon2.map(cpResultPokemon2);
-//     pokemon2Result.innerHTML = `${listPokemon2}`
-
-
+    const listPokemon2 = resultPokemon2.map(cpResultPokemon2);
+    pokemon2Result.innerHTML = `${listPokemon2}`
 
 
-//     const cpResult = cpPokemon(resultPokemon1[0], resultPokemon2[0]);
-//     console.log(cpResult);
-//     const cpResultList = cpResultListName(cpResult);
-//     resultMayorCp.innerHTML = `${cpResultList}`;
 
 
-// });
+    const cpResult = cpPokemon(resultPokemon1[0], resultPokemon2[0]);
+    console.log(cpResult);
+    const cpResultList = cpResultListName(cpResult);
+    resultMayorCp.innerHTML = `${cpResultList}`;
+
+
+});
 
 //Codigo del boton generacion i
 const cardBtni = document.getElementById('cardBtni');

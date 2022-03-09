@@ -1,126 +1,178 @@
 <!DOCTYPE html>
 <html>
-
-<head>
+  <head>
     <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Maestro Pokémon</title>
-    <link rel="apple-touch-icon" sizes="57x57" href="./favicons/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="./favicons/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="./favicons/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="./favicons/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="./favicons/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="./favicons/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="./favicons/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="./favicons/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="./favicons/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="./favicons/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="./favicons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="./favicons/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="./favicons/favicon-16x16.png">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
-    <meta name="theme-color" content="#ffffff">
+    <link
+      rel="apple-touch-icon"
+      sizes="57x57"
+      href="./favicons/apple-icon-57x57.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="60x60"
+      href="./favicons/apple-icon-60x60.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="./favicons/apple-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="./favicons/apple-icon-76x76.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="./favicons/apple-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="./favicons/apple-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="./favicons/apple-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="./favicons/apple-icon-152x152.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./favicons/apple-icon-180x180.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="./favicons/android-icon-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./favicons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="./favicons/favicon-96x96.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./favicons/favicon-16x16.png"
+    />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
+    <meta name="theme-color" content="#ffffff" />
     <link rel="stylesheet" href="style.css" />
-    <script src="https://kit.fontawesome.com/acccf8509c.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/acccf8509c.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;800&family=Quicksand:wght@300;400;500&family=Ubuntu:wght@300;400&display=swap" rel="stylesheet" />
-</head>
-
-<body>
-    <header>
-        <img class="titlePokemon" src="p1.png" />
-    </header>
-
-    <nav class="navMovil">
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Combat Stats</a></li>
-            <li><a href="#">Generation</a></li>
-            <li><a href="#">Spawn-Chance</a></li>
-        </ul>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;800&family=Quicksand:wght@300;400;500&family=Ubuntu:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+    <nav class="navResponsive">
+        <button class="btnBars"><i class="fa-solid fa-bars"></i></button>
+      <ul class="navMenu navMenuHide">
+        <li class="navMenuItem"><a class="nav-link navMenuLink navMenuLinkActive "  href="#sectionPrincipal">Home</a></li>
+        <li class="navMenuItem"><a class="nav-link navMenuLink"  href="#sectionCombatStats">Combat Stats</a></li>
+        <li class="navMenuItem"><a class="nav-link navMenuLink"  href="#generation">Generation</a></li>
+        <li class="navMenuItem"><a class="nav-link navMenuLink"  href="#topTenSection">Spawn-Chance</a></li>
+      </ul>
     </nav>
+     
+    <nav class="navDekstop">
+    <ul class="navMenuDekstop">
+      <li class="navMenuItemDekstop"><a class="nav-linkDekstop navMenuLinkDekstop"  href="#sectionPrincipal">Home</a></li>
+      <li class="navMenuItemDekstop"><a class="nav-linkDekstop navMenuLinkDekstop"  href="#sectionCombatStats">Combat Stats</a></li>
+      <li class="navMenuItemDekstop"><a class="nav-linkDekstop navMenuLinkDekstop"  href="#generation">Generation</a></li>
+      <li class="navMenuItemDekstop"><a class="nav-linkDekstop navMenuLinkDekstop"  href="#topTenSection">Spawn-Chance</a></li>
+    </ul>
+  </nav>
 
-    <nav class="navDesktop">
-        <ul>
-            <li><a href="#">Home </a></li>
-            <li><a href="#">Combat Stats</a></li>
-            <li><a href="#">Generation</a></li>
-            <li><a href="#">Spawn-Chance</a></li>
-        </ul>
-    </nav>
-
+   </header> 
+    <section class="imgPrincipal" id="sectionPrincipal">
+      <img class="imgPrincipalImg" src="PokemonVector.png" />
+    </section>
     <section class="searchInput">
-        <div class="searchInput__div">
-            <input type="search" id="namePokemon" class="inputSearch" placeholder="Search..." />
-            <button type="button" id="btnName" class="buttonSearch">
-                <i class="fa-solid fa-magnifying-glass"></i>
-            </button>
-            <div class="autocom__box"></div>
-        </div><br>
+      <div>
+        <input
+          type="search"
+          id="namePokemon"
+          class="inputSearch"
+          placeholder="Search..."
+        />
+        <button type="button" id="btnName" class="buttonSearch">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+        <div class="autocom__box"></div>
+      </div>
     </section>
 
     <section class="cardPokemon">
-        <div id="result" class="divResult"></div>
-    </section>
-    <section>
-        <button type="button" class="btnBlackCard">+Information</button>
-    </section>
-    <section class="cardPokemonBack">
-        <div id="resultBackCard" class="divBackCard"></div>
-    </section>
-    <!-- 
-    <header>
-        <img class="titlePokemon" src="p1.png" />
-        <div class="containerFlex">
-            <div class="header-bg"><img src="./Image/image1.png" /></div>
-            <div class="header-bg"><img src="./Image/image2.png" /></div>
-            <div class="header-bg"><img src="./Image/image3.png" /></div>
-            <div class="header-bg"><img src="./Image/image4.png" /></div>
-        </div>
-    </header> -->
-    <!-- <div class="mainContainer">
-        <section class="searchInput">
-            <div class="searchInput__div">
-                <input type="search" id="namePokemon" class="inputSearch" placeholder="Search..." />
-                <button type="button" id="btnName" class="buttonSearch">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                </button>
-                <div class="autocom__box"></div>
-            </div><br>
-        </section>
+      <div class="containerPrincipal">
+      <div id="result" class="divResult"></div>
+      </div>
+      <button type="button" class="btnBlackCard">+Information</button>
+      <div class="cardPokemonBack">
         <div class="containerPrincipal">
-            <section class="cardPokemon">
-                <div id="result" class="divResult"></div>
-                <br />
-            </section>
-            <section>
-                <button type="button" class="btnBlackCard">+Information</button>
-            </section>
-            <br /><br /><br />
-            <section class="cardPokemonBack">
-                <div id="resultBackCard" class="divBackCard"></div>
-            </section>
+        <div id="resultBackCard" class="divBackCard"></div>
         </div>
-    </div>-->
-    <!-- <section class="comparativeTable">
+      </div>
+    </section>
+
+    <section class="comparativeTable" id="sectionCombatStats">
+      <p class="textCompare">Compare Pokemon Stats</p>
+      <div class="comparePokemon">
+        <div class="silhouetteVS" id="silhouetteImgNone">
+            <img class="silhouetteImg" src="siluetaVS.png" />
+        </div>
         <div class="inputName1">
-            <label for="pokemon1">Name Pokemon 1</label>
-            <input type="text" id="pokemon1">
-            <div id="pokemon1Result" class="cpResult"></div>
+          <input
+            type="text"
+            placeholder="Name Pokemon 1"
+            id="pokemon1"
+            class="inputStyle"
+          />
+          <div id="pokemon1Result" class="cpResult"></div>
         </div>
         <div class="inputName2">
-            <label for="pokemon2">Name Pokemon 2</label>
-            <input type="text" id="pokemon2">
-            <button id="compareBtn">Compare</button>
-            <div id="pokemon2Result"></div>
+          <input
+            type="text"
+            placeholder="Name Pokemon 2"
+            id="pokemon2"
+            class="inputStyle"
+          />
+            <div id="pokemon2Result" class="cpResult"></div>
         </div>
-        <div id="resultMayorCp"></div>
-    </section> -->
+        <div id="resultMayorCp"  class="resultMayorCp"></div>
+        <div class="divCompareBtn">
+          <button class="compareBtn" id="compareBtn">Compare</button>
+        </div>
+      </div>
+    </section>
 
-    <section class="generation">
+    <section class="generation" id="generation">
         <h2 class="generation-title">Generation</h2>
         <div class="generation-card">
             <img class="card-img" src="./Image/generacion11.png">
@@ -139,8 +191,13 @@
             <div id="statsResult"></div>
         </div>
     </section>
+<<<<<<< HEAD
+    <section class="topTenSection" id="topTenSection">
+        <p class="topTen_title">Top 10 Spawn-Chance</p>
+=======
     <section class="topTenSection">
         <h2 class="topTen_title">Top 10 Spawn-Chance</h2>
+>>>>>>> upstream/main
         <div class="cardContainer" id="cardContainer">
             <div class="">
                 <i class="fa-solid fa-angle-left btnLeftCard"></i>
@@ -152,18 +209,22 @@
     </section>
     <footer class="footer">
         <div class="containerFooter">
-            <a href="https://es-la.facebook.com/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
-            <a href="https://twitter.com/?lang=es" target="_blank"><i class="fa-brands fa-twitter"></i></a>
-            <a href="https://www.instagram.com/?hl=es-la" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-            <a href="https://www.youtube.com/" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+            <a href="https://es-la.facebook.com/" target="_blank" class="social"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://twitter.com/?lang=es" target="_blank"class="social"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://www.instagram.com/?hl=es-la" target="_blank"class="social"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.youtube.com/" target="_blank"class="social"><i class="fa-brands fa-youtube"></i></a>
         </div>
         <div class="infFooter">
-            <p class="titleFooter">Sigue las páginas oficiales:</p>
+           <div class="comunity">
             <a href="https://pokemongolive.com/es/" target="_blank" class="linksFooter">PokémonGO</a><br>
             <a href="https://www.pokemon.com/el/" target="_blank" class="linksFooter">Pokémon Oficial</a>
+            </div>
+            <div class="plusPokemon">
+              <p class="titleFooter">Comunity:</p>
+              <a href="https://comunidadflyoficial.com/" target="_blank" class="linksFooter">Comunidad Fly Oficial</a><br>
+            </div>
         </div>
     </footer>
     <script src="main.js" type="module"></script>
-</body>
-
+  </body>
 </html>

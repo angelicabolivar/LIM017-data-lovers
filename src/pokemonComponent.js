@@ -44,9 +44,9 @@ export function cpResultPokemon1(pokemon) {
     <p class="namePokemonCp">${pokemon.name} </p>
     <p class="numPokemonCp">${pokemon.num} </p>
     <img class= "imgPokemonCp" src="${pokemon.img}">
-    <p class="base-attack">Base-attack: ${pokemon.stats['base-attack']}</p>
-    <p class="base-defense">Base-defense: ${pokemon.stats['base-defense']}</p>
-    <p class="base-stamina">Base-stamina: ${pokemon.stats['base-stamina']}</p>
+    <p class="base-attackCp">Attack: ${pokemon.stats['base-attack']}</p>
+    <p class="base-defenseCp">Defense: ${pokemon.stats['base-defense']}</p>
+    <p class="base-staminaCp">Stamina: ${pokemon.stats['base-stamina']}</p>
     <p class="max-cp">Max-cp: ${pokemon.stats['max-cp']}</p>
     <p class="max-hp">Max-hp: ${pokemon.stats['max-hp']}</p>
     </li>`
@@ -56,9 +56,9 @@ export function cpResultPokemon2(pokemon) {
     <p class="namePokemonCp">${pokemon.name} </p>
     <p class="numPokemonCp">${pokemon.num} </p>
     <img class= "imgPokemonCp" src="${pokemon.img}">
-    <p class="base-attack">Base-attack: ${pokemon.stats['base-attack']}</p>
-    <p class="base-defense">Base-defense: ${pokemon.stats['base-defense']}</p>
-    <p class="base-stamina">Base-stamina: ${pokemon.stats['base-stamina']}</p>
+    <p class="base-attackCp">Attack: ${pokemon.stats['base-attack']}</p>
+    <p class="base-defenseCp">Defense: ${pokemon.stats['base-defense']}</p>
+    <p class="base-staminaCp">Stamina: ${pokemon.stats['base-stamina']}</p>
     <p class="max-cp">Max-cp: ${pokemon.stats['max-cp']}</p>
     <p class="max-hp">Max-hp: ${pokemon.stats['max-hp']}</p>
     </li>`
