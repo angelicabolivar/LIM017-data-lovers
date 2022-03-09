@@ -66,7 +66,6 @@ btnName.addEventListener("click", function() {
     document.querySelector('.cardPokemon').style.display = 'block';
     document.querySelector('.btnBlackCard').style.display = 'block';
     document.querySelector('.topTenSection').style.display = 'none';
-    document.getElementById('sectionCombatStats').style.display = 'none';
 });
 const autoComBox = document.querySelector('.autocom__box');
 autoComBox.addEventListener('click', function() {
