@@ -27,7 +27,7 @@ export function pokemonBackComponent(pokemon) {
 
 export function pokemonList(pokemon) {
     return `<li class="ListContainer">
-        <img src="${pokemon.img}" class="imagePokemon"/>
+        <img class="imagePokemon" src="${pokemon.img}" >
         <div class="cardRigth">
         <div class="titleCard">
         <p class="nameNPokemon">${pokemon.name}</p>
@@ -79,7 +79,7 @@ export function generationiFilteri(pokemon) {
     </div>`
 }
 export function generationiiFilterii(pokemon) {
-    return `<div>
+    return `<div class="generationitable">
     <img class= 'imgPokemonGeneration' src="${pokemon.img}">
     <p class='namePokemonGeneration'>Name: ${pokemon.name}</p>
     <p class='regionPokemonGeneration'>Region: ${pokemon.generation.name}</p>

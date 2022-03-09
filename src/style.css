@@ -547,7 +547,9 @@ li{
 }
 
 .generation {
+    margin-top: 2em;
     padding: 1em;
+    background-color: #0066cc;
 }
 
 .generation-title {
@@ -558,20 +560,25 @@ li{
 }
 
 .generation-card {
-    width: 18em;
-    height: 6em;
+    width: 80%;
+    max-width: 20em;
+    height: 10em;
     margin: 0 auto;
     margin-bottom: 2em;
+    padding: 0em 1em;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    /* box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3); */
 }
 
 .card-img {
-    width: 30%;
-    height: 80%;
-    background-color: #b3d9ff;
+    width: 50%;
+    max-width: 10em;
+    height: 70%;
+    padding: 0.4em;
+    border: 2px solid #FFD700;
+    object-fit: contain;
+    background: url("PokemonFondo.png");
 }
 
 .card-btn {
@@ -580,6 +587,7 @@ li{
     border: none;
     background-color: #FFD700;
     font-family: "Quicksand", sans-serif;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.7);
 }
 
 .generatioi,
@@ -588,12 +596,15 @@ li{
     height: auto;
 }
 
-.generationTitle {
+.generationTitleR {
     font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    color: #ffffff;
     font-size: 1em;
+    margin-bottom: 1em;
 }
 
-.generation {
+.generationR {
     width: 100%;
 }
 
@@ -601,15 +612,17 @@ li{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    /* box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2); */
 }
 
 .generationitable {
     text-align: center;
     margin-bottom: 1em;
-    margin: 0, 0.5em;
-    padding: 0.8em;
-    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+    margin-right: 0.3em;
+    padding-bottom: 0.4em;
+    padding-left: 0.2em;
+    padding-right: 0.2em;
+    background-color: #ffffff;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.7);
 }
 
 .imgPokemonGeneration {
@@ -631,22 +644,30 @@ li{
     font-size: 0.6em;
 }
 
+#statsResult {
+    font-size: 1em;
+    font-family: "Quicksand", sans-serif;
+    font-weight: 500;
+    color: #ffffff;
+}
+
 .topTenSection {
     max-width: 100%;
     margin: auto;
-    margin-bottom: 5%;
+    margin-top: 2em;
+    margin-bottom: 2em;
 }
 
 .topTen_title {
     font-family: "Montserrat", sans-serif;
     font-weight: bold;
-    font-size: 1.2em;
     text-align: center;
     margin-bottom: 4%;
 }
 
 .cardContainer {
-    max-width: 100%;
+    width: 100%;
+    max-width: 24em;
     margin: 0 auto;
     height: auto;
 }
@@ -654,23 +675,19 @@ li{
 .ListContainer {
     display: flex;
     justify-content: space-evenly;
-    background: #a3b0ff;
-    border: 10px solid #6077ff;
-    max-width: 90%;
-    padding: 4%;
+    border: 1px solid #98B4AA;
+    width: 90%;
+    padding: 0.6em;
     margin: auto;
 }
 
 .imagePokemon {
-    max-width: 60%;
-    object-fit: contain;
-    background: url("PokemonFondo.png");
-    background-repeat: no-repeat;
-    border-radius: 10px;
-    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
+    width: 4em;
+    max-width: 16em;
 }
 
 .cardRigth {
+    width: 60%;
     margin-left: 10%;
 }
 
@@ -683,7 +700,7 @@ li{
 .nameNPokemon {
     text-transform: uppercase;
     text-align: center;
-    font-size: 1em;
+    font-size: 0.6em;
     font-family: "Quicksand", sans-serif;
     font-weight: bold;
 }
@@ -691,15 +708,15 @@ li{
 .numberPokemon {
     font-family: "Montserrat", sans-serif;
     font-weight: bold;
-    font-size: 0.8em;
+    font-size: 0.5em;
     align-self: center;
 }
 
 .tPokemon,
 .spawn-chance {
-    font-size: 1em;
+    font-size: 0.5em;
     font-family: "Quicksand", sans-serif;
-    margin-bottom: 3%;
+    margin-bottom: 0.5em;
 }
 
 
