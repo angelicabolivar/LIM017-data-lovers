@@ -2,6 +2,12 @@ import { searchPokemon, topPokemon, cpPokemon, filterGeneration, percentage, fil
 import datapokemon from "./data/pokemon/pokemon.js";
 import { pokemonComponent, pokemonBackComponent, pokemonList, cpResultListName, cpResultPokemon1, cpResultPokemon2, generationiFilteri, generationiiFilterii } from "./pokemonComponent.js";
 
+const btnBars= document.querySelector('.btnBars');
+const navMenu=document.querySelector('.navMenu');
+btnBars.addEventListener('click', ()=>{
+    navMenu.classList.toggle('navMenuHide');
+});
+
 
 const searchWrapper = document.querySelector(".searchInput");
 const inputBox = searchWrapper.querySelector(".inputSearch");
@@ -60,6 +66,7 @@ btnName.addEventListener("click", function() {
     document.querySelector('.cardPokemon').style.display = 'block';
     document.querySelector('.btnBlackCard').style.display = 'block';
     document.querySelector('.topTenSection').style.display = 'none';
+    document.getElementById('sectionCombatStats').style.display = 'none';
 });
 const autoComBox = document.querySelector('.autocom__box');
 autoComBox.addEventListener('click', function() {
@@ -108,17 +115,12 @@ compareBtn.addEventListener("click", function() {
     const listPokemon2 = resultPokemon2.map(cpResultPokemon2);
     pokemon2Result.innerHTML = `${listPokemon2}`
 
-
-
-
     const cpResult = cpPokemon(resultPokemon1[0], resultPokemon2[0]);
     console.log(cpResult);
     const cpResultList = cpResultListName(cpResult);
     resultMayorCp.innerHTML = `${cpResultList}`;
 
-
 });
-
 
 const generationi = 'generation i';
 const generationiResult = document.getElementById('generationiResult');
@@ -149,3 +151,8 @@ console.log(filterTypeG2);
 
 const percentGrassii = percentage(filterTypeG2.length, inputData2.length);
 console.log(percentGrassii);
+
+compareBtn.addEventListener("click", function() {
+    document.getElementById("compareBtn").style.display = "none";
+    document.getElementById("silhouetteImgNone").style.display = "none";
+});
