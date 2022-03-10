@@ -76,20 +76,21 @@ body {
     padding: 8px 12px;
    
 }
-/* .navMenuLink:hover{
-    color: #99ccff;
-}  */
+
 .navResponsive a:visited{
     color: #ffffff;
 }
+
 img {
     width:100%;
 }
+
 .imgPrincipalImg{
-    width: 70%;
+    width: 80%;
     display: block; 
     margin: auto; 
-    padding-top: 5%;
+    padding-top: 10%;
+    object-fit: contain;
 }
 .silhouetteImg{
     width: 70%;
@@ -154,20 +155,18 @@ img {
 }
 
 .comparativeTable{
-    max-width: 90%;
+    max-width: 100%;
     margin: auto;
     display: flex;
     flex-direction: column;
 }
 
-.inputName1{
-    position: relative;
-    margin: auto;
-}
+.inputName1,
 .inputName2{
     position: relative;
     margin: auto;
 }
+
 .divCompareBtn{
     width: 80%;
     justify-content: center;
@@ -178,7 +177,7 @@ img {
     border: none;
     cursor: pointer;
     background: #fcd535;
-    width: 60%; 
+    width: 40%; 
     height: 2em;
     margin-bottom: 0.5em;
     font-size: 1em;
@@ -234,54 +233,6 @@ li{
     width: 1em;
 }
 
-
-/* 
-.containerFlex {
-    display: flex;
-}
-
-.containerFlex .header-bg {
-  max-width: 100%;
-  max-height: 100%;
-  height: 80%;
-}
-
-.containerFlex img {
-    max-width: 100%;
-    max-height: 100%;
-    margin: auto;
-    display: block;
-    margin: 0;
-    padding: 0;
-} */
-
-/* .titlePokemon {
-    position: absolute;
-    left: 1%;
-    top: 0;
-    max-width: 30%;
-} */
-/* 
-.mainContainer {
-    margin-top: 3em;
-    width: 100%;
-    padding: 0%;
-} */
-
-/* .searchInput {
-    width: 17em;
-    margin-bottom: 1em;
-    margin: auto;
-} */
-
-/* .searchInput .searchInput__div {
-    background: #ffffff;
-    width: 100%;
-    border-radius: 5%;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
-} */
-
-
  .autocom__box {
     padding: 0;
     max-height: 280px;
@@ -327,16 +278,6 @@ li{
     padding: 0 5%;
 }
 
-/* .cardPokemonBack,
-.cardPokemon {
-    max-width: 80%;
-    max-height: 80%;
-    background: #448c74;
-    left: 20%;
-    margin: auto;
-} */
-
-
 .cardPokemon {
     display: none;
     padding: 6% 1.5% 1% 1.5%;
@@ -371,6 +312,15 @@ li{
     right: 19.6%;
     font-weight: bold;
     margin-bottom: 2%;
+}
+
+.containerCp{
+    outline: 9px solid #6077ff;
+    margin: auto;
+    background: #A2b0ff;
+    padding: 6%;
+    max-width: 100%;
+    max-height: 100%;
 }
 
 .container {
@@ -530,6 +480,23 @@ li{
     padding-bottom: 1%;  
     font-weight: bold;
 }
+.divImgPokemonCp{
+    max-width: 50%;
+    height: auto;
+}
+
+.imgPokemonCp{
+    margin: auto;
+    text-align: center;
+    height: 90%;
+    width: 90%;
+    object-fit: contain;
+    background: url("PokemonFondo.png");
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
+}
+
 .weightPokemon,
 .typePokemonBack,
 .sizePokemonBack,
@@ -663,6 +630,7 @@ li{
     font-weight: bold;
     text-align: center;
     margin-bottom: 4%;
+    font-size: 1.5em;
 }
 
 .cardContainer {
@@ -721,160 +689,9 @@ li{
 
 
 /* @media screen and (min-width: 700px) and (max-width: 1000px) {
-    .searchInput {
-        width: 40%;
-        max-width: 45%;
-    }
-    .inputSearch {
-        height: 3.1em;
-    }
-    .buttonSearch {
-        width: 3em;
-        height: 3em;
-    }
-    .topTen_title {
-        font-size: 2em;
-    }
-    .cardContainer {
-        max-width: 90%;
-    }
-    .ListContainer {
-        max-width: 70%;
-    }
-    .nameNPokemon {
-        font-size: 1.5em;
-        padding-right: 10%;
-    }
-    .numberPokemon {
-        font-size: 1.3em;
-    }
-    .tPokemon,
-    .spawn-chance {
-        font-size: 1.2em;
-    }
-    .containerPrincipal {
-        max-width: 60%;
-    }
-    .cardPokemonBack,
-    .cardPokemon {
-        max-width: 90%;
-    }
-    .btnBlackCard {
-        width: 9em;
-        height: 3em;
-        font-size: 80%;
-        right: 23%;
-    }
-    .footer {
-        height: 15em;
-    }
-    .containerFooter {
-        justify-content: space-evenly;
-        align-items: center;
-    }
-    .containerFooter a {
-        font-size: 2em;
-    }
-    .titleFooter {
-        font-size: 1.5em;
-    }
-    .linksFooter {
-        font-size: 1em;
-    }
+  
 }
-
-@media screen and (min-width: 1000px) {
-    .searchInput {
-        width: 30%;
-        max-width: 35%;
-    }
-    .inputSearch {
-        height: 4em;
-    }
-    .buttonSearch {
-        width: 2.5em;
-        height: 2.5em;
-        font-size: 1.2em;
-        margin-top: 0.01%;
-    }
-    .topTen_title {
-        font-size: 3em;
-    }
-    .cardContainer {
-        max-width: 80%;
-    }
-    .ListContainer {
-        max-width: 70%;
-        height: 10%;
-    }
-    .imagePokemon {
-        max-width: 80%;
-        transform: scale(1.3);
-    }
-    .nameNPokemon {
-        font-size: 2em;
-        padding-right: 2em;
-    }
-    .numberPokemon {
-        font-size: 1.7em;
-    }
-    .containerPrincipal {
-        max-width: 50%;
-    }
-    .cardPokemonBack,
-    .cardPokemon {
-        max-width: 60%;
-    }
-    .btnBlackCard {
-        width: 9em;
-        height: 3em;
-        font-size: 80%;
-        right: 35%;
-    }
-    .footer {
-        height: 20em;
-    }
-    .containerFooter a {
-        font-size: 3em;
-    }
-    .titleFooter {
-        font-size: 2em;
-    }
-    .linksFooter {
-        font-size: 1.5em;
-    }
-} */
-/* @media screen and (min-width: 700px) and (max-width: 1000px){
-    .header{
-        height: 60px;
-    }
-
-    .navResponsive{
-      display: none;
-    }
-    .btnBars{
-     display:none;
-    }
-    .navDekstop{
-        display: block;
-    }
-    .navMenuDekstop{
-        display: flex;
-        flex-direction: row;
-       justify-content: space-around;
-    }
-    .navMenuItemDekstop{
-        font-size: 20px;
-        text-transform: uppercase;
-        width: max-content;
-        height: 60px;
-        color: #ffffff;
-    }
-    .nav-linkDekstop{
-        color: #ffffff;
-        text-decoration: none;
-    }
-} */
+*/
 
 .containerFooter {
     display: flex;

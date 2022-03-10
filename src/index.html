@@ -175,29 +175,75 @@
     <section class="generation" id="generation">
         <h2 class="generation-title">Generation</h2>
         <div class="generation-card">
-            <img class="card-img" src="./Image/generacion11.png">
+            <img class="card-img" src="generation11.png">
             <button class="card-btn" id="cardBtni">Generation i</button>
         </div>
         <div class="generation-card">
             <button class="card-btn" id="cardBtnii">Generation ii</button>
-            <img class="card-img" src="./Image/generacion22.png">
+            <img class="card-img" src="generation22.png">
         </div>
         <div class="generation">
-            <p class="generationTitleR" id="generationTitle"></p>
+            <p class="generationTitle" id="generationTitle"></p>
             <div id="generationResult" class="generationResult"></div>
         </div>
         <div class="computeStats">
-            <p class="pokemonStatsTitle" id="pokemonStatsTitle"></p>
-            <div id="statsResult"></div>
-        </div>
+          <p class="pokemonStatsTitle" id="pokemonStatsTitle"></p>
+          
+          <div>
+            <form>
+              <p> Generation i - Type</p>
+              <select id="inputType" class="inputType1">
+                <option disabled selected="">Select</option>
+                <option value="grass">Grass</option>
+                <option value="poison">Poison</option>
+                <option value="bug">Bug</option>
+                <option value="flying">Flying</option>
+                <option value="water">Water</option>
+                <option value="normal">Normal</option>
+                <option value="psychic">Psychic</option>
+                <option value="rock">Rock</option>
+                <option value="ground">Ground</option>
+                <option value="fighting">Fighting</option>
+                <option value="fire">Fire</option>
+                <option value="ghost">Ghost</option>
+                <option value="electric">Electric</option>
+                <option value="ice">Ice</option>
+                <option value="dragon">Dragon</option>
+              </select>
+            </form>
+
+            <form>
+              <p> Generation ii - Type</p>
+              <select id="inputTypeG2" class="inputTypeG2">
+                <option disabled selected="">Select</option>
+                <option value="grass">Grass</option>
+                <option value="poison">Poison</option>
+                <option value="bug">Bug</option>
+                <option value="flying">Flying</option>
+                <option value="water">Water</option>
+                <option value="normal">Normal</option>
+                <option value="psychic">Psychic</option>
+                <option value="rock">Rock</option>
+                <option value="ground">Ground</option>
+                <option value="fighting">Fighting</option>
+                <option value="fire">Fire</option>
+                <option value="ghost">Ghost</option>
+                <option value="electric">Electric</option>
+                <option value="ice">Ice</option>
+                <option value="dragon">Dragon</option>
+                <option value="fairy">Fairy</option>
+                <option value="dark">Dark</option>
+                <option value="steel">Steel</option>
+              </select>
+            </form>
+          </div>
+
+          <div id="statsResult"></div>
+      </div>
+
     </section>
-<<<<<<< HEAD
     <section class="topTenSection" id="topTenSection">
         <p class="topTen_title">Top 10 Spawn-Chance</p>
-=======
-    <section class="topTenSection">
-        <h2 class="topTen_title">Top 10 Spawn-Chance</h2>
->>>>>>> upstream/main
         <div class="cardContainer" id="cardContainer">
             <div class="">
                 <i class="fa-solid fa-angle-left btnLeftCard"></i>
@@ -216,6 +262,7 @@
         </div>
         <div class="infFooter">
            <div class="comunity">
+             
             <a href="https://pokemongolive.com/es/" target="_blank" class="linksFooter">PokémonGO</a><br>
             <a href="https://www.pokemon.com/el/" target="_blank" class="linksFooter">Pokémon Oficial</a>
             </div>
