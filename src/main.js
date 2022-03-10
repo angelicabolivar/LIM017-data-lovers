@@ -17,7 +17,9 @@ const navMenu = document.querySelector('.navMenu');
 btnBars.addEventListener('click', () => {
     navMenu.classList.toggle('navMenuHide');
 });
-
+navMenu.addEventListener('click', () => {
+    navMenu.classList.toggle('navMenuHide');
+});
 
 const searchWrapper = document.querySelector(".searchInput");
 const inputBox = searchWrapper.querySelector(".inputSearch");
@@ -60,6 +62,7 @@ function showDataPokemon(list) {
 
     }
 }
+
 
 const btnName = document.getElementById("btnName");
 btnName.addEventListener("click", function() {
@@ -168,53 +171,29 @@ cardBtnii.addEventListener('click', function() {
         generationiiResult.innerHTML = `${filterListGenerationii.join('')}`
     })
 
-    // `
-    //      ${filterListGenerationii.slice(0, 12).join('')}
-    //      <button class="viewMoreBtn" id="viewMoreBtn">See more</button>
-    // `
 });
 
-// cardBtni.addEventListener('click', function() {
-//     const type = 'grass';
-//     const generationi = 'generationi'
-//     const inputData = filterGeneration(datapokemon, generationi);
-//     const filterTypeG = filterType(inputData, type);
-//     const percentGrassi = percentage(filterTypeG.length, inputData.length);
-//     console.log(percentGrassi); 
-// });
-// cardBtnii.addEventListener('click', function() {
-//     const type2 = 'grass';
-//     const generationii = 'generationi'
-//     const inputData2 = filterGeneration(datapokemon, generationii);
-//     const filterTypeG = filterType(inputData2, type2);
-//     const percentGrassii = percentage(filterTypeG.length, inputData2.length);
-//     console.log(percentGrassii);
-// });
 
-
-
-
-
-cardBtni.addEventListener('click', function() {
+const options = document.getElementById('inputType');
+options.addEventListener('click', () => {
+    const type = document.getElementById('inputType').value;
     const statsResult = document.getElementById('statsResult');
-    const type = 'grass';
     const generationi = 'generation i'
     const inputData = filterGeneration(datapokemon, generationi);
     const filterTypeG = filterType(inputData, type);
     statsResult.innerHTML = filterTypeG;
-
     const percentGrassi = percentage(filterTypeG.length, inputData.length);
-    statsResult.innerHTML = 'El porcentaje de el tipos grass es : ' + percentGrassi + '%';
+    statsResult.innerHTML = 'El porcentaje de el tipos ' + type + ' es : ' + percentGrassi + '%';
 });
-cardBtnii.addEventListener('click', function() {
+
+const optionsG2 = document.getElementById('inputTypeG2');
+optionsG2.addEventListener('click', () => {
+    const type = document.getElementById('inputTypeG2').value;
     const statsResult = document.getElementById('statsResult');
-    const type2 = 'grass';
     const generationii = 'generation ii'
-    const inputData2 = filterGeneration(datapokemon, generationii);
-    const filterTypeG2 = filterType(inputData2, type2);
-
-
-    const percentGrassii = percentage(filterTypeG2.length, inputData2.length);
-    statsResult.innerHTML = 'El porcentaje de el tipo grass es : ' + percentGrassii + '%';
-
+    const inputData = filterGeneration(datapokemon, generationii);
+    const filterTypeG = filterType(inputData, type);
+    statsResult.innerHTML = filterTypeG;
+    const percentGrassi = percentage(filterTypeG.length, inputData.length);
+    statsResult.innerHTML = 'El porcentaje de el tipos ' + type + ' es : ' + percentGrassi + '%';
 });
