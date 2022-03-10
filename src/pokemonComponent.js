@@ -40,10 +40,10 @@ export function pokemonList(pokemon) {
         </li>`;
 }
 export function cpResultPokemon1(pokemon) {
-    return `<li class="container">
+    return `<li class="containerCp">
     <p class="namePokemonCp">${pokemon.name} </p>
     <p class="numPokemonCp">${pokemon.num} </p>
-    <img class= "imgPokemonCp" src="${pokemon.img}">
+    <div class="divImgPokemonCp"><img class= "imgPokemonCp" src="${pokemon.img}"></div>
     <p class="base-attackCp">Attack: ${pokemon.stats['base-attack']}</p>
     <p class="base-defenseCp">Defense: ${pokemon.stats['base-defense']}</p>
     <p class="base-staminaCp">Stamina: ${pokemon.stats['base-stamina']}</p>
@@ -52,10 +52,10 @@ export function cpResultPokemon1(pokemon) {
     </li>`
 }
 export function cpResultPokemon2(pokemon) {
-    return `<li class="container">
+    return `<li class="containerCp">
     <p class="namePokemonCp">${pokemon.name} </p>
     <p class="numPokemonCp">${pokemon.num} </p>
-    <img class= "imgPokemonCp" src="${pokemon.img}">
+    <div class="divImgPokemonCp"><img class= "imgPokemonCp" src="${pokemon.img}"></div>
     <p class="base-attackCp">Attack: ${pokemon.stats['base-attack']}</p>
     <p class="base-defenseCp">Defense: ${pokemon.stats['base-defense']}</p>
     <p class="base-staminaCp">Stamina: ${pokemon.stats['base-stamina']}</p>
