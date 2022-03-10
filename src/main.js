@@ -1,10 +1,20 @@
 import { searchPokemon, topPokemon, cpPokemon, filterGeneration, percentage, filterType } from "./data.js";
 import datapokemon from "./data/pokemon/pokemon.js";
-import { pokemonComponent, pokemonBackComponent, pokemonList, cpResultListName, cpResultPokemon1, cpResultPokemon2, generationiFilteri, generationiiFilterii } from "./pokemonComponent.js";
+import {
+    pokemonComponent,
+    pokemonBackComponent,
+    pokemonList,
+    cpResultListName,
+    cpResultPokemon1,
+    cpResultPokemon2,
+    generationiFilteri,
+    generationiiFilterii,
+    seeMoreGeneration
+} from "./pokemonComponent.js";
 
-const btnBars= document.querySelector('.btnBars');
-const navMenu=document.querySelector('.navMenu');
-btnBars.addEventListener('click', ()=>{
+const btnBars = document.querySelector('.btnBars');
+const navMenu = document.querySelector('.navMenu');
+btnBars.addEventListener('click', () => {
     navMenu.classList.toggle('navMenuHide');
 });
 
@@ -134,7 +144,13 @@ cardBtni.addEventListener('click', function() {
     const filterGenerationi = filterGeneration(datapokemon, generationi);
     const filterListGenerationi = filterGenerationi.map(generationiFilteri);
     generationTitle.innerHTML = 'Generation i'
-    generationiResult.innerHTML = `${filterListGenerationi.join('')}`
+    generationiResult.innerHTML = seeMoreGeneration(filterListGenerationi);
+    const viewMoreBtn = document.getElementById('viewMoreBtn');
+    viewMoreBtn.addEventListener('click', function() {
+        generationiResult.innerHTML = `${filterListGenerationi.join('')}`
+    })
+
+
 });
 
 //Codigo del boton generacion ii
@@ -146,7 +162,16 @@ cardBtnii.addEventListener('click', function() {
     const filterGenerationii = filterGeneration(datapokemon, generationii);
     const filterListGenerationii = filterGenerationii.map(generationiiFilterii);
     generationTitle.innerHTML = 'Generation ii'
-    generationiiResult.innerHTML = `${filterListGenerationii.join('')}`
+    generationiiResult.innerHTML = seeMoreGeneration(filterListGenerationii);
+    const viewMoreBtn = document.getElementById('viewMoreBtn');
+    viewMoreBtn.addEventListener('click', function() {
+        generationiiResult.innerHTML = `${filterListGenerationii.join('')}`
+    })
+
+    // `
+    //      ${filterListGenerationii.slice(0, 12).join('')}
+    //      <button class="viewMoreBtn" id="viewMoreBtn">See more</button>
+    // `
 });
 
 // cardBtni.addEventListener('click', function() {

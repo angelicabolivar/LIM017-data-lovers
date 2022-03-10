@@ -76,7 +76,8 @@ export function generationiFilteri(pokemon) {
     <p class='namePokemonGeneration'>Name: ${pokemon.name}</p>
     <p  class='regionPokemonGeneration'>Region: ${pokemon.generation.name}</p>
     <p class='TypePokemonGeneration'>Type: ${pokemon.type}</p>
-    </div>`
+    </div>
+   `
 }
 export function generationiiFilterii(pokemon) {
     return `<div class="generationitable">
@@ -85,4 +86,10 @@ export function generationiiFilterii(pokemon) {
     <p class='regionPokemonGeneration'>Region: ${pokemon.generation.name}</p>
     <p class='TypePokemonGeneration'>Type: ${pokemon.type}</p>
     </div>`
+}
+export function seeMoreGeneration(filterListGenerationi) {
+    return `
+        ${filterListGenerationi.slice(0, 10).join('')}
+        <button class="viewMoreBtn" id="viewMoreBtn">See more</button>
+    `;
 }
