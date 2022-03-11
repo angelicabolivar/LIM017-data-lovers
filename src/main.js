@@ -150,6 +150,12 @@ cardBtni.addEventListener('click', function() {
     const viewMoreBtn = document.getElementById('viewMoreBtn');
     viewMoreBtn.addEventListener('click', function() {
         generationiResult.innerHTML = `${filterListGenerationi.join('')}`
+        document.querySelector('.imgPrincipal').style.display = 'none';
+        document.querySelector('.searchInput').style.display = 'none';
+        document.querySelector('.cardPokemon').style.display = 'none';
+        document.querySelector('.comparativeTable').style.display = 'none';
+        document.querySelector('.topTenSection').style.display = 'none';
+
     })
 
 
@@ -171,6 +177,8 @@ cardBtnii.addEventListener('click', function() {
     })
 
 });
+
+
 
 
 const options = document.getElementById('inputType');

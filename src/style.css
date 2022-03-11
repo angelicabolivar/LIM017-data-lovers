@@ -8,9 +8,9 @@ html,
 body {
     width: 100%;
     height: 100%;
-  }
+}
 
-.header{
+.header {
     background: #004080;
     width: 100%;
     height: 40px;
@@ -151,9 +151,9 @@ img {
     justify-content: center;
 }
 
-.cpResult{ 
-   width: 100% ;
-   margin-bottom: 2em;
+.cpResult {
+    width: 100%;
+    margin-bottom: 2em;
 }
 
 .comparativeTable {
@@ -163,21 +163,23 @@ img {
     flex-direction: column;
 }
 
-.inputName1{
+.inputName1 {
     position: relative;
     margin: auto;
     width: 50%;
 }
-.inputName2{
+
+.inputName2 {
     position: relative;
     margin: auto;
     width: 60%;
 }
 
-.pokemon1Result{
+.pokemon1Result {
     margin-bottom: 5%;
 }
-.divCompareBtn{
+
+.divCompareBtn {
     width: 100%;
     justify-content: center;
     margin: auto;
@@ -188,7 +190,7 @@ img {
     border: none;
     cursor: pointer;
     background: #fcd535;
-    width: 50%; 
+    width: 50%;
     height: 2em;
     margin-bottom: 0.5em;
     font-size: 1em;
@@ -230,11 +232,11 @@ li {
     text-align: center;
 }
 
-.silhouetteImg{
+.silhouetteImg {
     padding: 1em;
 }
 
- .autocom__box {
+.autocom__box {
     background: #ffffff;
     padding: 0;
     max-height: 80px;
@@ -278,16 +280,17 @@ li {
     display: none;
     padding: 6% 1.5% 1% 1.5%;
     margin-bottom: 1%;
-    background:  #f0f5f5;
+    background: #f0f5f5;
 }
-.btnCardContainer{
-    background:  #f0f5f5; 
+
+.btnCardContainer {
+    background: #f0f5f5;
     height: 2.3em;
 }
 
 .cardPokemonBack {
     display: none;
-    margin-bottom: 10%; 
+    margin-bottom: 10%;
     z-index: 2;
 }
 
@@ -314,7 +317,8 @@ li {
 
 .containerCp {
     outline: 9px solid #6077ff;
-    border: 6px solid #6077ff; ;
+    border: 6px solid #6077ff;
+    ;
     margin: auto;
     background: #A2b0ff;
     padding: 6%;
@@ -775,9 +779,11 @@ li {
     width: 7em;
     height: 2.5em;
     border: none;
+    font-weight: bold;
     background-color: #FFD700;
     font-family: "Quicksand", sans-serif;
     box-shadow: 0 1px 5px rgba(0, 0, 0, 0.7);
+    cursor: pointer;
 }
 
 .generatioi,
@@ -899,8 +905,7 @@ li {
 }
 
 .topTen_title {
-    font-display: flex;
-    justify-content: center;
+    text-align: center;
     font-family: "Montserrat", sans-serif;
     margin-bottom: 1em;
 }
@@ -1021,3 +1026,7 @@ li {
     color: #FFD700;
     text-decoration: none;
 }
+
+@media screen and (min-width: 700px) {}
+
+;
