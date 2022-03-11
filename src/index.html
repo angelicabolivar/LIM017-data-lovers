@@ -26,7 +26,7 @@
     <script src="https://kit.fontawesome.com/acccf8509c.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;800&family=Quicksand:wght@300;400;500&family=Ubuntu:wght@300;400&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;800&family=Quicksand:wght@300;400;500&family=Ubuntu:wght@300;400&display=swap" rel="stylesheet" />
 </head>
 
 <body>
@@ -110,18 +110,19 @@
             <img class="card-img" src="./Image/generation2.2.jpg">
         </div>
 
-        <div class="generation">
-            <p class="generationTitle" id="generationTitle"></p>
+        <div class="generationR">
+            <p class="generationTitleR" id="generationTitle"></p>
             <div id="generationResult" class="generationResult"></div>
 
         </div>
 
         <div class="computeStats">
-          <p class="pokemonStatsTitle" id="pokemonStatsTitle"></p>
-          
-            <form>
-              <p> Generation i - Type</p>
-              <select id="inputType" class="inputType1" size="1">
+            <p class="pokemonStatsTitle" id="pokemonStatsTitle">Type of pokemon per generation</p>
+
+
+            <form class="select">
+                <p class="selectTitle"> Generation i - Type</p>
+                <select id="inputType" class="inputType1" size="1">
                 <option value="grass" selected >Grass</option>
                 <option value="poison">Poison</option>
                 <option value="bug">Bug</option>
@@ -140,10 +141,9 @@
               </select>
             </form>
 
-            <form>
-              <p> Generation ii - Type</p>
-              <select id="inputTypeG2" class="inputTypeG2 inputType1" size="1">
-                <option disabled selected="">Select</option>
+            <form class="select">
+                <p class="selectTitle"> Generation ii - Type</p>
+                <select id="inputTypeG2" class="inputTypeG2 inputType1" size="1">
                 <option value="grass">Grass</option>
                 <option value="poison">Poison</option>
                 <option value="bug">Bug</option>
@@ -164,14 +164,13 @@
                 <option value="steel">Steel</option>
               </select>
             </form>
-    
 
-          <div id="statsResult"></div>
-      </div>
+            <div id="statsResult" class="statsResult"></div>
+        </div>
 
     </section>
     <section class="topTenSection" id="topTenSection">
-        <p class="topTen_title">Top 10 Spawn-Chance</p>
+        <h2 class="topTen_title">Top 10 Spawn-Chance</h2>
         <div class="cardContainer" id="cardContainer">
             <div class="">
                 <i class="fa-solid fa-angle-left btnLeftCard"></i>

@@ -3,6 +3,7 @@
     margin: 0;
     box-sizing: border-box;
 }
+
 html,
 body {
     width: 100%;
@@ -14,90 +15,92 @@ body {
     width: 100%;
     height: 40px;
     padding-top: 10px;
-    top:0%;
-    left:0;   
+    top: 0%;
+    left: 0;
     position: fixed;
     z-index: 100;
 }
-.navDekstop{
+
+.navDekstop {
     display: none;
 }
 
-.navResponsive{
+.navResponsive {
     background: #004080;
     color: #ffffff;
     font-weight: bold;
     height: 40px;
     width: 100%;
 }
-.btnBars{
- color: #ffffff;
- background: none;
- border: none;
- padding-left: 2%;
- font-size: 2em ; 
- left: 90%;
- position: relative;
+
+.btnBars {
+    color: #ffffff;
+    background: none;
+    border: none;
+    padding-left: 2%;
+    font-size: 2em;
+    left: 90%;
+    position: relative;
 }
 
-.navMenu{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  list-style: none;
-  background: #004080;
-  top: 40px;
-  width: 100%;
-  padding: 1.5% 0;
+.navMenu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+    background: #004080;
+    top: 40px;
+    width: 100%;
+    padding: 1.5% 0;
 }
 
-.navMenuHide{
+.navMenuHide {
     top: 0;
     transform: translateX(-100vw);
-    transition: left 0.3s; 
-
+    transition: left 0.3s;
 }
 
-.navMenuItem{
+.navMenuItem {
     font-size: 20px;
     margin-bottom: 1%;
     text-transform: uppercase;
     width: max-content;
     height: 40px;
     background: #004080;
-
 }
 
-.nav-link{
+.nav-link {
     color: #ffffff;
     text-decoration: none;
     background: #004080;
 }
-.navMenuLink{
+
+.navMenuLink {
     padding: 8px 12px;
-   
 }
 
-.navResponsive a:visited{
+.navResponsive a:visited {
     color: #ffffff;
 }
 
 img {
-    width:100%;
+    width: 100%;
 }
 
-.imgPrincipalImg{
+.imgPrincipalImg {
     width: 80%;
-    display: block; 
-    margin: auto; 
+    display: block;
+    margin: auto;
     padding-top: 10%;
     object-fit: contain;
 }
-.silhouetteImg{
+
+.silhouetteImg {
     width: 70%;
-    display: block; 
-    margin: auto; 
+    display: block;
+    margin: auto;
 }
+
 .imgPrincipal {
     padding-top: 5%;
     background: #0066cc;
@@ -111,7 +114,7 @@ img {
     justify-content: center;
 }
 
-.inputSearch{
+.inputSearch {
     width: 100%;
     height: 2.5em;
     border: none;
@@ -122,7 +125,7 @@ img {
     text-transform: capitalize;
 }
 
- .buttonSearch {
+.buttonSearch {
     width: 2.5em;
     height: 2.5em;
     font-size: 80%;
@@ -135,12 +138,13 @@ img {
     margin-top: 0.2%;
     margin-left: 0.5%;
     z-index: 3;
-} 
+}
 
 .btnBlackCard {
     display: none;
 }
-.comparePokemon{
+
+.comparePokemon {
     padding-top: 5%;
     display: flex;
     flex-direction: column;
@@ -152,7 +156,7 @@ img {
    margin-bottom: 2em;
 }
 
-.comparativeTable{
+.comparativeTable {
     max-width: 100%;
     margin: auto;
     display: flex;
@@ -178,7 +182,8 @@ img {
     justify-content: center;
     margin: auto;
 }
-.compareBtn{
+
+.compareBtn {
     outline: none;
     border: none;
     cursor: pointer;
@@ -192,11 +197,11 @@ img {
     display: block;
 }
 
-li{
+li {
     list-style: none;
 }
 
-.resultMayorCp{
+.resultMayorCp {
     font-weight: bold;
     text-align: center;
     padding: 0 1em;
@@ -204,7 +209,7 @@ li{
     margin-bottom: 3%;
 }
 
-.textCompare{
+.textCompare {
     text-align: center;
     margin-top: 5%;
     font-weight: bold;
@@ -227,7 +232,6 @@ li{
 
 .silhouetteImg{
     padding: 1em;
-  
 }
 
  .autocom__box {
@@ -236,7 +240,7 @@ li{
     max-height: 80px;
     overflow-y: auto;
     color: #000000;
-    z-index: 7 ;
+    z-index: 7;
 }
 
 .searchInput__div.active .autocom__box {
@@ -256,7 +260,7 @@ li{
     height: 10%;
     cursor: default;
     border-radius: 3px;
-    text-transform: capitalize; 
+    text-transform: capitalize;
     background-color: #ffffff;
 }
 
@@ -299,7 +303,7 @@ li{
     outline: none;
     border: none;
     padding-left: 0;
-    padding: 1% 0 ;
+    padding: 1% 0;
     cursor: pointer;
     background: #fcd535;
     position: absolute;
@@ -308,7 +312,7 @@ li{
     font-weight: bold;
 }
 
-.containerCp{
+.containerCp {
     outline: 9px solid #6077ff;
     border: 6px solid #6077ff; ;
     margin: auto;
@@ -398,13 +402,15 @@ li{
     justify-content: center;
     grid-template-areas: "namePokemonBack numPokemonBack" "typePokemonBack typePokemonBack" "sizePokemonBack sizePokemonBack" "weightPokemon weightPokemon" "resistantPokemon resistantPokemon" "weaknessesPokemon weaknessesPokemon" "rarityPokemon rarityPokemon";
 }
-.namePokemonCp{
+
+.namePokemonCp {
     text-transform: uppercase;
     text-align: center;
     font-size: 1.5em;
     font-family: "Quicksand", sans-serif;
     font-weight: bold;
 }
+
 .namePokemonBack {
     grid-area: namePokemonBack;
     text-transform: uppercase;
@@ -414,21 +420,24 @@ li{
     font-weight: bold;
     padding-bottom: 4%;
 }
+
 .max-cp,
-.max-hp{
+.max-hp {
     text-align: center;
     font-family: "Montserrat", sans-serif;
     font-weight: bold;
     font-size: 1em;
     align-self: center;
 }
-.numPokemonCp{
+
+.numPokemonCp {
     text-align: center;
     font-family: "Montserrat", sans-serif;
     font-weight: bold;
     font-size: 1.3em;
     align-self: center;
 }
+
 .numPokemonBack {
     grid-area: numPokemonBack;
     text-align: center;
@@ -461,26 +470,29 @@ li{
 .rarityPokemon {
     grid-area: rarityPokemon;
 }
-.mayorPokemonCp{
+
+.mayorPokemonCp {
     color: #e60000;
-    font-family:  "Quicksand", sans-serif;
+    font-family: "Quicksand", sans-serif;
     font-size: 0.6em;
 }
+
 .base-attackCp,
 .base-defenseCp,
-.base-staminaCp{
+.base-staminaCp {
     text-align: justify;
     font-size: 12px;
     font-family: "Quicksand", sans-serif;
-    padding-bottom: 1%;  
+    padding-bottom: 1%;
     font-weight: bold;
 }
-.divImgPokemonCp{
+
+.divImgPokemonCp {
     max-width: 50%;
     height: auto;
 }
 
-.imgPokemonCp{
+.imgPokemonCp {
     margin: auto;
     text-align: center;
     height: 90%;
@@ -508,25 +520,242 @@ li{
     font-size: 0;
 }
 
+*/ .cardPokemon {
+    display: none;
+    padding: 6% 1.5% 1% 1.5%;
+    margin-bottom: 2%;
+}
+
+.cardPokemonBack {
+    display: none;
+    padding: 6% 4% 4% 4%;
+    margin-bottom: 1%;
+    z-index: 2;
+    margin-top: 1%;
+}
+
+.btnBlackCard {
+    display: none;
+}
+
+.btnBlackCard {
+    width: 9em;
+    height: 3em;
+    font-size: 80%;
+    text-align: center;
+    outline: none;
+    border: none;
+    padding-left: 0;
+    padding: 1% 0;
+    cursor: pointer;
+    background: #fcd535;
+    position: absolute;
+    z-index: 1;
+    right: 19.6%;
+    font-weight: bold;
+    margin-bottom: 2%;
+}
+
+.container {
+    border: 18px solid #448c74;
+    max-width: 100%;
+    max-height: 100%;
+    margin: auto;
+    background: #66cdaa;
+    display: grid;
+    grid-template-rows: repeat(6, auto);
+    grid-template-columns: repeat(2, auto);
+    padding: 3%;
+    grid-template-areas: "namePokemon numPokemon" "imgPokemon imgPokemon" "aboutPokemon aboutPokemon" "generationPokemon generationPokemon" "statsPokemon statsPokemon";
+}
+
+.namePokemon {
+    grid-area: namePokemon;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 1.5em;
+    font-family: "Quicksand", sans-serif;
+    font-weight: bold;
+}
+
+.numPokemon {
+    grid-area: numPokemon;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    font-size: 1.3em;
+    align-self: center;
+}
+
+.statsPokemon,
+.generationPokemon {
+    text-align: center;
+    font-size: 16px;
+    font-family: "Quicksand", sans-serif;
+}
+
+.generationPokemon {
+    grid-area: generationPokemon;
+}
+
+.imgPokemon {
+    grid-area: imgPokemon;
+    margin: auto;
+    text-align: center;
+    height: 80%;
+    width: 80%;
+    object-fit: contain;
+    background: url("PokemonFondo.png");
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
+}
+
+.statsPokemon {
+    grid-area: statsPokemon;
+}
+
+.aboutPokemon {
+    grid-area: aboutPokemon;
+    text-align: justify;
+    font-size: 16px;
+    font-family: "Quicksand", sans-serif;
+    padding-bottom: 5%;
+}
+
+.backContainer {
+    max-width: 96%;
+    max-height: 100%;
+    border: 18px solid #448c74;
+    margin: auto;
+    background: #66cdaa;
+    padding: 3%;
+    display: grid;
+    grid-template-rows: repeat(6, auto);
+    grid-template-columns: repeat(2, auto);
+    justify-content: center;
+    grid-template-areas: "namePokemonBack numPokemonBack" "typePokemonBack typePokemonBack" "sizePokemonBack sizePokemonBack" "weightPokemon weightPokemon" "resistantPokemon resistantPokemon" "weaknessesPokemon weaknessesPokemon" "rarityPokemon rarityPokemon";
+}
+
+.namePokemonCp {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 1.5em;
+    font-family: "Quicksand", sans-serif;
+    font-weight: bold;
+}
+
+.namePokemonBack {
+    grid-area: namePokemonBack;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 1.5em;
+    font-family: "Quicksand", sans-serif;
+    font-weight: bold;
+    padding-bottom: 4%;
+}
+
+.max-cp,
+.max-hp {
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    font-size: 1em;
+    align-self: center;
+}
+
+.numPokemonCp {
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    font-size: 1.3em;
+    align-self: center;
+}
+
+.numPokemonBack {
+    grid-area: numPokemonBack;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    font-size: 1.3em;
+    align-self: center;
+}
+
+.typePokemonBack {
+    grid-area: typePokemonBack;
+}
+
+.sizePokemonBack {
+    grid-area: sizePokemonBack;
+}
+
+.weightPokemon {
+    grid-area: weightPokemon;
+}
+
+.resistantPokemon {
+    grid-area: resistantPokemon;
+}
+
+.weaknessesPokemon {
+    grid-area: weaknessesPokemon;
+}
+
+.rarityPokemon {
+    grid-area: rarityPokemon;
+}
+
+.mayorPokemonCp {
+    color: #e60000;
+    font-family: "Quicksand", sans-serif;
+    font-size: 0.6em;
+}
+
+.base-attackCp,
+.base-defenseCp,
+.base-staminaCp {
+    text-align: justify;
+    font-size: 12px;
+    font-family: "Quicksand", sans-serif;
+    padding-bottom: 1%;
+    font-weight: bold;
+}
+
+.weightPokemon,
+.typePokemonBack,
+.sizePokemonBack,
+.resistantPokemon,
+.weaknessesPokemon,
+.rarityPokemon {
+    text-align: justify;
+    font-size: 16px;
+    font-family: "Quicksand", sans-serif;
+    padding-bottom: 1%;
+}
+
+ ::marker {
+    font-size: 0;
+}
+
 .generation {
     margin-top: 2em;
     padding: 1em;
     background-color: #0066cc;
+    position: relative;
 }
 
 .generation-title {
     font-family: "Montserrat", sans-serif;
     display: flex;
     justify-content: center;
-    margin-bottom: 1em;
 }
 
 .generation-card {
-    width: 80%;
+    width: 100%;
     max-width: 20em;
     height: 10em;
     margin: 0 auto;
-    margin-bottom: 2em;
+    margin-bottom: 1em;
     padding: 0em 1em;
     display: flex;
     justify-content: space-between;
@@ -534,13 +763,12 @@ li{
 }
 
 .card-img {
-    width: 50%;
+    width: 100%;
     max-width: 10em;
-    height: 70%;
-    padding: 0.4em;
+    height: 80%;
+    padding: 0.2em;
     border: 2px solid #FFD700;
-    object-fit: contain;
-    background: url("./Image/PokemonFondo.png");
+    object-fit: inherit;
 }
 
 .card-btn {
@@ -558,16 +786,16 @@ li{
     height: auto;
 }
 
+.generationR {
+    width: 100%;
+}
+
 .generationTitleR {
     font-family: "Montserrat", sans-serif;
     font-weight: 400;
     color: #ffffff;
     font-size: 1em;
     margin-bottom: 1em;
-}
-
-.generationR {
-    width: 100%;
 }
 
 .generationResult {
@@ -606,26 +834,75 @@ li{
     font-size: 0.6em;
 }
 
-#statsResult {
-    font-size: 1em;
+.containerViewMoreBtn {
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+.viewMoreBtn {
+    width: 7em;
+    height: 2.5em;
+    border: none;
+    background-color: #FFD700;
     font-family: "Quicksand", sans-serif;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.7);
+}
+
+.computeStats {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: #A2b0ff;
+    padding: 1em;
+    margin-top: 3em;
+}
+
+.pokemonStatsTitle {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1em;
     font-weight: 500;
-    color: #ffffff;
+    color: #000000;
+}
+
+.select {
+    margin-top: 0.4em;
+}
+
+.selectTitle {
+    font-family: "Quicksand", sans-serif;
+    font-size: 1em;
+    color: #000000;
+    margin-bottom: 0.4em;
+}
+
+.inputType1 {
+    width: 100%;
+    font-size: 0.8em;
+    text-align: center;
+    border: none;
+}
+
+.statsResult {
+    font-size: 0.9em;
+    font-family: "Quicksand", sans-serif;
+    font-weight: 800;
+    color: #000000;
+    margin-top: 1em;
 }
 
 .topTenSection {
     max-width: 100%;
-    margin: auto;
-    margin-top: 2em;
+    padding: 1em;
     margin-bottom: 2em;
 }
 
 .topTen_title {
+    font-display: flex;
+    justify-content: center;
     font-family: "Montserrat", sans-serif;
-    font-weight: bold;
-    text-align: center;
-    margin-bottom: 4%;
-    font-size: 1.5em;
+    margin-bottom: 1em;
 }
 
 .cardContainer {
@@ -657,13 +934,13 @@ li{
 .titleCard {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 5%;
+    margin-bottom: 0.2em;
 }
 
 .nameNPokemon {
     text-transform: uppercase;
     text-align: center;
-    font-size: 0.6em;
+    font-size: 0.7em;
     font-family: "Quicksand", sans-serif;
     font-weight: bold;
 }
@@ -671,39 +948,15 @@ li{
 .numberPokemon {
     font-family: "Montserrat", sans-serif;
     font-weight: bold;
-    font-size: 0.5em;
+    font-size: 0.6em;
     align-self: center;
 }
 
 .tPokemon,
 .spawn-chance {
-    font-size: 0.5em;
+    font-size: 0.7em;
     font-family: "Quicksand", sans-serif;
-    margin-bottom: 0.5em;
-}
-
-
-.containerFooter {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-.social{
-    margin: 0 5%;
-}
-.linksFooter {
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: left ;
-    font-size: 0.6em;
-    color: #000000;
-} 
-
-.containerFooter a {
-    font-size: 1.5em;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    color: #fcd535;
+    margin-bottom: 0.3em;
 }
 
 .footer {
@@ -711,31 +964,60 @@ li{
     display: flex;
     flex-direction: column;
     width: 100%;
-    padding: 2em;
+    padding: 1em;
     height: 10em;
-    bottom: 0;
+}
+
+.containerFooter {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1.5em;
+}
+
+.social {
+    margin: 0 5%;
+}
+
+.containerFooter a {
+    font-size: 1.5em;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: #FFD700;
 }
 
 .infFooter {
+    width: 70%;
+    max-width: 20em;
     display: flex;
-    text-align: left;
-    justify-content: space-around;
-    padding-left: 4%;
-    padding-top: 8%;
-    text-align: left;
+    justify-content: center;
+    margin: 0 auto;
+    padding-left: 2em;
 }
 
-a {
-    text-decoration: none;
+.comunity {
+    width: 50%;
+}
+
+.plusPokemon {
+    width: 50%;
 }
 
 .titleFooter {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Montserrat", sans-serif;
     color: #000000;
-    text-align: left;
-    font-size: 0.6em;
-    padding-bottom: 2%;
+    font-size: 0.7em;
+    font-weight: 500;
+    margin-bottom: 2%;
+    color: #ffffff;
 }
 
-
-    
+.linksFooter {
+    font-family: "Quicksand", sans-serif;
+    text-align: left;
+    font-size: 0.7em;
+    color: #FFD700;
+    text-decoration: none;
+}

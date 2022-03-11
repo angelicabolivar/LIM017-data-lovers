@@ -3,7 +3,6 @@ export const searchPokemon = (namePokemon, datapokemon) => {
     if (typeof namePokemon !== "string") throw new TypeError("El valor ingresado no es texto");
     if (typeof datapokemon !== "object") throw new TypeError("El valor ingresado no es una data valida");
     const resultPokemon = datapokemon.pokemon.filter(x => x.name === namePokemon);
-    // if (!resultPokemon) throw new TypeError(`No se encontro pokemon ${namePokemon}`);
     return resultPokemon;
 };
 
@@ -15,7 +14,6 @@ export const topPokemon = (datapokemon) => {
         if (a['spawn-chance'] > b['spawn-chance']) {
             return -1;
         }
-        // // a must be equal to b
         return 0;
 
     }).slice(0, 10)

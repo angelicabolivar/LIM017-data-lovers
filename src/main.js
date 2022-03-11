@@ -17,10 +17,9 @@ const navMenu = document.querySelector('.navMenu');
 btnBars.addEventListener('click', () => {
     navMenu.classList.toggle('navMenuHide');
 });
-navMenu.addEventListener('click', ()=>{
+navMenu.addEventListener('click', () => {
     navMenu.classList.toggle('navMenuHide');
-}
-);
+});
 
 const searchWrapper = document.querySelector(".searchInput");
 const inputBox = searchWrapper.querySelector(".inputSearch");
@@ -171,60 +170,29 @@ cardBtnii.addEventListener('click', function() {
         generationiiResult.innerHTML = `${filterListGenerationii.join('')}`
     })
 
-    // `
-    //      ${filterListGenerationii.slice(0, 12).join('')}
-    //      <button class="viewMoreBtn" id="viewMoreBtn">See more</button>
-    // `
 });
 
-// cardBtni.addEventListener('click', function() {
-    // const statsResult = document.getElementById('statsResult');
-    // const inputType=document.getElementById('inputType').value;
-    // const generationi = 'generation i'
-    // const inputData = filterGeneration(datapokemon, generationi);
-    // const filterTypeG = filterType(inputData, inputType);
-    // console.log(filterTypeG);
-    // statsResult.innerHTML = filterTypeG;
 
-    // const percentGrassi = percentage(filterTypeG.length, inputData.length);
-    // statsResult.innerHTML = 'El porcentaje de el tipos grass es : ' + percentGrassi + '%';
-// });
-// cardBtnii.addEventListener('click', function() {
-//     const statsResult = document.getElementById('statsResult');
-//     const inputType=document.getElementById('inputType').value;
-//     const generationii = 'generation ii'
-//     const inputData2 = filterGeneration(datapokemon, generationii);
-//     const filterTypeG2 = filterType(inputData2, inputType);
-//     console.log(filterTypeG2);
-
-//     const percentGrassii = percentage(filterTypeG2.length, inputData2.length);
-//     statsResult.innerHTML = 'El porcentaje de el tipo grass es : ' + percentGrassii + '%';
-
-// });
-//  function getSelectValue() {
-//     		const type = document.getElementById('inputType').value;
-//     		console.log(type);
-//     	}
-const options=  document.getElementById('inputType');
-options.addEventListener('click', ()=>{
-const type = document.getElementById('inputType').value;
-const statsResult = document.getElementById('statsResult');
-const generationi = 'generation i'
-const inputData = filterGeneration(datapokemon, generationi);
-const filterTypeG = filterType(inputData, type);
-statsResult.innerHTML = filterTypeG;
-const percentGrassi = percentage(filterTypeG.length, inputData.length);
-statsResult.innerHTML = 'El porcentaje de el tipos ' + type +' es : ' + percentGrassi + '%';
+const options = document.getElementById('inputType');
+options.addEventListener('click', () => {
+    const type = document.getElementById('inputType').value;
+    const statsResult = document.getElementById('statsResult');
+    const generationi = 'generation i'
+    const inputData = filterGeneration(datapokemon, generationi);
+    const filterTypeG = filterType(inputData, type);
+    statsResult.innerHTML = filterTypeG;
+    const percentGrassi = percentage(filterTypeG.length, inputData.length);
+    statsResult.innerHTML = 'The percentage of the type ' + type + ' is : ' + percentGrassi + '%';
 });
 
-const optionsG2=  document.getElementById('inputTypeG2');
-optionsG2.addEventListener('click', ()=>{
-const type = document.getElementById('inputTypeG2').value;
-const statsResult = document.getElementById('statsResult');
-const generationii = 'generation ii'
-const inputData = filterGeneration(datapokemon, generationii);
-const filterTypeG = filterType(inputData, type);
-statsResult.innerHTML = filterTypeG;
-const percentGrassi = percentage(filterTypeG.length, inputData.length);
-statsResult.innerHTML = 'El porcentaje de el tipos ' + type +' es : ' + percentGrassi + '%';
+const optionsG2 = document.getElementById('inputTypeG2');
+optionsG2.addEventListener('click', () => {
+    const type = document.getElementById('inputTypeG2').value;
+    const statsResult = document.getElementById('statsResult');
+    const generationii = 'generation ii'
+    const inputData = filterGeneration(datapokemon, generationii);
+    const filterTypeG = filterType(inputData, type);
+    statsResult.innerHTML = filterTypeG;
+    const percentGrassi = percentage(filterTypeG.length, inputData.length);
+    statsResult.innerHTML = 'The percentage of the type ' + type + ' is : ' + percentGrassi + '%';
 });
