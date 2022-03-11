@@ -183,7 +183,7 @@ options.addEventListener('click', () => {
     const filterTypeG = filterType(inputData, type);
     statsResult.innerHTML = filterTypeG;
     const percentGrassi = percentage(filterTypeG.length, inputData.length);
-    statsResult.innerHTML = 'El porcentaje de el tipos ' + type + ' es : ' + percentGrassi + '%';
+    statsResult.innerHTML = 'The percentage of the type ' + type + ' is : ' + percentGrassi + '%';
 });
 
 const optionsG2 = document.getElementById('inputTypeG2');
@@ -195,5 +195,5 @@ optionsG2.addEventListener('click', () => {
     const filterTypeG = filterType(inputData, type);
     statsResult.innerHTML = filterTypeG;
     const percentGrassi = percentage(filterTypeG.length, inputData.length);
-    statsResult.innerHTML = 'El porcentaje de el tipos ' + type + ' es : ' + percentGrassi + '%';
+    statsResult.innerHTML = 'The percentage of the type ' + type + ' is : ' + percentGrassi + '%';
 });

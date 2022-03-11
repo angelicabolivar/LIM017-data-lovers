@@ -90,6 +90,6 @@ export function generationiiFilterii(pokemon) {
 export function seeMoreGeneration(filterListGenerationi) {
     return `
         ${filterListGenerationi.slice(0, 10).join('')}
-        <button class="viewMoreBtn" id="viewMoreBtn">See more</button>
+        <div class="containerViewMoreBtn"><button class="viewMoreBtn" id="viewMoreBtn">See more</button></div>
     `;
 }
