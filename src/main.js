@@ -79,7 +79,6 @@ btnName.addEventListener("click", function() {
     document.querySelector('.autocom__box').style.display = 'none';
     document.querySelector('.cardPokemon').style.display = 'block';
     document.querySelector('.btnBlackCard').style.display = 'block';
-    document.querySelector('.topTenSection').style.display = 'none';
 });
 const autoComBox = document.querySelector('.autocom__box');
 autoComBox.addEventListener('click', function() {
@@ -89,6 +88,7 @@ autoComBox.addEventListener('click', function() {
 const btnBlackCard = document.querySelector('.btnBlackCard');
 btnBlackCard.addEventListener('click', function() {
     document.querySelector('.cardPokemonBack').style.display = 'block';
+    document.querySelector('.btnBlackCard').style.display = 'none';
 });
 
 btnName.addEventListener("click", function() {
@@ -112,6 +112,10 @@ document.addEventListener("DOMContentLoaded", function() {
 
 const compareBtn = document.getElementById("compareBtn");
 compareBtn.addEventListener("click", function() {
+    document.getElementById("compareBtn").style.display = 'none';
+    document.getElementById("pokemon1").style.display = 'none';
+    document.getElementById("pokemon2").style.display = 'none';
+
     const pokemon1Result = document.getElementById('pokemon1Result');
     const pokemon2Result = document.getElementById('pokemon2Result');
     const pokemon1 = document.getElementById("pokemon1").value;
@@ -127,12 +131,7 @@ compareBtn.addEventListener("click", function() {
 
     const listPokemon2 = resultPokemon2.map(cpResultPokemon2);
     pokemon2Result.innerHTML = `${listPokemon2}`
-
-
-
-
     const cpResult = cpPokemon(resultPokemon1[0], resultPokemon2[0]);
-    console.log(cpResult);
     const cpResultList = cpResultListName(cpResult);
     resultMayorCp.innerHTML = `${cpResultList}`;
 

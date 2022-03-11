@@ -52,7 +52,7 @@
 
     </header>
     <section class="imgPrincipal" id="sectionPrincipal">
-        <img class="imgPrincipalImg" src="PokemonVector.png" />
+        <img class="imgPrincipalImg" src="./Image/PokemonVector.png" />
     </section>
     <section class="searchInput">
         <div>
@@ -68,7 +68,9 @@
         <div class="containerPrincipal">
             <div id="result" class="divResult"></div>
         </div>
+        <div class="btnCardContainer">
         <button type="button" class="btnBlackCard">+Information</button>
+        </div>
         <div class="cardPokemonBack">
             <div class="containerPrincipal">
                 <div id="resultBackCard" class="divBackCard"></div>
@@ -80,20 +82,20 @@
         <p class="textCompare">Compare Pokemon Stats</p>
         <div class="comparePokemon">
             <div class="silhouetteVS" id="silhouetteImgNone">
-                <img class="silhouetteImg" src="siluetaVS.png" />
+                <img class="silhouetteImg" src="./Image/siluetaVS.png" />
             </div>
             <div class="inputName1">
                 <input type="text" placeholder="Name Pokemon 1" id="pokemon1" class="inputStyle" />
-                <div id="pokemon1Result" class="cpResult"></div>
+                <input type="text" placeholder="Name Pokemon 2" id="pokemon2" class="inputStyle" />
+                <div class="divCompareBtn">
+                <button class="compareBtn" id="compareBtn">Compare</button>
+            </div>
             </div>
             <div class="inputName2">
-                <input type="text" placeholder="Name Pokemon 2" id="pokemon2" class="inputStyle" />
+                <div id="pokemon1Result" class="cpResult"></div>
                 <div id="pokemon2Result" class="cpResult"></div>
             </div>
             <div id="resultMayorCp" class="resultMayorCp"></div>
-            <div class="divCompareBtn">
-                <button class="compareBtn" id="compareBtn">Compare</button>
-            </div>
         </div>
     </section>
 
@@ -117,7 +119,6 @@
         <div class="computeStats">
           <p class="pokemonStatsTitle" id="pokemonStatsTitle"></p>
           
-          <div>
             <form>
               <p> Generation i - Type</p>
               <select id="inputType" class="inputType1" size="1">
@@ -163,7 +164,7 @@
                 <option value="steel">Steel</option>
               </select>
             </form>
-          </div>
+    
 
           <div id="statsResult"></div>
       </div>

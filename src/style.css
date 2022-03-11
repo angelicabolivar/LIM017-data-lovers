@@ -9,14 +9,6 @@ body {
     height: 100%;
   }
 
-.inputType1{
-    overflow-y:scroll;
-    width: 40%;
-    font-size: 1em;
-    text-align: center;
-    font-weight: bold;
-}
-
 .header{
     background: #004080;
     width: 100%;
@@ -147,9 +139,6 @@ img {
 
 .btnBlackCard {
     display: none;
-
-}.btnBlackCard {
-    display: none;
 }
 .comparePokemon{
     padding-top: 5%;
@@ -158,9 +147,9 @@ img {
     justify-content: center;
 }
 
-.cpResult{
-  width: 100% ;
-  margin-bottom: 8%;
+.cpResult{ 
+   width: 100% ;
+   margin-bottom: 2em;
 }
 
 .comparativeTable{
@@ -170,14 +159,22 @@ img {
     flex-direction: column;
 }
 
-.inputName1,
+.inputName1{
+    position: relative;
+    margin: auto;
+    width: 50%;
+}
 .inputName2{
     position: relative;
     margin: auto;
+    width: 60%;
 }
 
+.pokemon1Result{
+    margin-bottom: 5%;
+}
 .divCompareBtn{
-    width: 80%;
+    width: 100%;
     justify-content: center;
     margin: auto;
 }
@@ -186,7 +183,7 @@ img {
     border: none;
     cursor: pointer;
     background: #fcd535;
-    width: 40%; 
+    width: 50%; 
     height: 2em;
     margin-bottom: 0.5em;
     font-size: 1em;
@@ -228,23 +225,15 @@ li{
     text-align: center;
 }
 
-.inputName1, .inputName2{
-    max-width: 100%;
-    
-}
-
 .silhouetteImg{
     padding: 1em;
   
 }
 
-.imgVS{
-    width: 1em;
-}
-
  .autocom__box {
+    background: #ffffff;
     padding: 0;
-    max-height: 280px;
+    max-height: 80px;
     overflow-y: auto;
     color: #000000;
     z-index: 7 ;
@@ -275,30 +264,27 @@ li{
     background: #dcdcdc;
 }
 
-
-
 .containerPrincipal {
     margin-bottom: 5%;
     max-width: 70%;
     margin: auto;
 }
 
-.divResult {
-    padding: 0 5%;
-}
-
 .cardPokemon {
     display: none;
     padding: 6% 1.5% 1% 1.5%;
-    margin-bottom: 2%;
+    margin-bottom: 1%;
+    background:  #f0f5f5;
+}
+.btnCardContainer{
+    background:  #f0f5f5; 
+    height: 2.3em;
 }
 
 .cardPokemonBack {
     display: none;
-    padding: 6% 4% 4% 4%;
-    margin-bottom: 1%;
+    margin-bottom: 10%; 
     z-index: 2;
-    margin-top: 1%;
 }
 
 .btnBlackCard {
@@ -318,13 +304,13 @@ li{
     background: #fcd535;
     position: absolute;
     z-index: 1;
-    right: 19.6%;
+    right: 16%;
     font-weight: bold;
-    margin-bottom: 2%;
 }
 
 .containerCp{
     outline: 9px solid #6077ff;
+    border: 6px solid #6077ff; ;
     margin: auto;
     background: #A2b0ff;
     padding: 6%;
@@ -381,7 +367,7 @@ li{
     height: 80%;
     width: 80%;
     object-fit: contain;
-    background: url("PokemonFondo.png");
+    background: url("./Image/PokemonFondo.png");
     background-repeat: no-repeat;
     border-radius: 10px;
     box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
@@ -400,7 +386,7 @@ li{
 }
 
 .backContainer {
-    max-width: 96%;
+    max-width: 100%;
     max-height: 100%;
     border: 18px solid #448c74;
     margin: auto;
@@ -500,7 +486,7 @@ li{
     height: 90%;
     width: 90%;
     object-fit: contain;
-    background: url("PokemonFondo.png");
+    background: url("./Image/PokemonFondo.png");
     background-repeat: no-repeat;
     border-radius: 10px;
     box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
@@ -554,7 +540,7 @@ li{
     padding: 0.4em;
     border: 2px solid #FFD700;
     object-fit: contain;
-    background: url("PokemonFondo.png");
+    background: url("./Image/PokemonFondo.png");
 }
 
 .card-btn {
@@ -697,11 +683,6 @@ li{
 }
 
 
-/* @media screen and (min-width: 700px) and (max-width: 1000px) {
-  
-}
-*/
-
 .containerFooter {
     display: flex;
     flex-direction: row;
@@ -734,10 +715,6 @@ li{
     height: 10em;
     bottom: 0;
 }
-
-/* .containerFooter button:hover {
-    color: #4ddbff;
-} */
 
 .infFooter {
     display: flex;
