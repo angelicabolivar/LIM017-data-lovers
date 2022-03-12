@@ -28,9 +28,11 @@ body {
 .navResponsive {
     background: #004080;
     color: #ffffff;
-    font-weight: bold;
     height: 40px;
     width: 100%;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1em;
+    font-weight: 500;
 }
 
 .btnBars {
@@ -52,6 +54,7 @@ body {
     top: 40px;
     width: 100%;
     padding: 1.5% 0;
+    height: 100vh;
 }
 
 .navMenuHide {
@@ -81,6 +84,10 @@ body {
 
 .navResponsive a:visited {
     color: #ffffff;
+}
+
+.welcome{
+    display: none;
 }
 
 img {
@@ -553,13 +560,6 @@ li {
     cursor: pointer;
 }
 
-
-/* .generatioi,
-.generationii {
-    width: 100%;
-    height: auto;
-} */
-
 .generationR {
     width: 100%;
 }
@@ -675,10 +675,22 @@ li {
 
 .topTen_title {
     text-align: center;
+    margin-top: 5%;
+    font-weight: bold;
     font-family: "Montserrat", sans-serif;
-    margin-bottom: 1em;
+    font-size: 1.5em;
 }
-
+.txt-spawn-chance,
+.text-p{
+    text-align: justify;
+    padding: 2% 4%;
+    font-size: 1em;
+    font-family: "Montserrat", sans-serif;
+}
+.txt-spawn-chance{
+    font-weight: bold;
+    padding: 0;
+}
 .cardContainer {
     width: 100%;
     max-width: 24em;
@@ -822,6 +834,7 @@ li {
         flex-direction: row;
         align-items: center;
         justify-content: center;
+        padding-bottom: 3%;
     }
     .navMenuItemDekstop {
         font-size: 1em;
@@ -848,8 +861,22 @@ li {
         background: #0066cc;
     }
     .searchInput {
+        display: flex;
+        flex-direction: column-reverse;
         padding-top: 25%;
         width: 50%;
+    }
+    .welcomeTitle{
+        text-align: center;
+        margin-top: 5%;
+        font-weight: bold;
+        font-family: "Montserrat", sans-serif;
+        font-size: 1.5em;
+        color: #ebfafa;
+    }
+    .welcome-text-p{
+        padding-bottom: 9%;
+        color: #ebfafa;
     }
     .imgPrincipal,
     .searchInput {
@@ -866,6 +893,10 @@ li {
     .inputSearch {
         padding: 0 70px;
     }
+    .welcome{
+        display: block;
+    }
+
     .silhouetteImg {
         width: 45%;
     }
@@ -899,6 +930,9 @@ li {
     .btnBlackCard {
         height: 3em;
         right: 25.7%;
+    }
+    .text-p{
+        text-align: center;
     }
     .generation {
         padding: 2em;
