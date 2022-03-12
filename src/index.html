@@ -5,7 +5,8 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Maestro Pokémon</title>
+    <meta name="autor" content="Angelica Bolivar and Emilce Toledo" />
+    <title>Pokémon</title>
     <link rel="apple-touch-icon" sizes="57x57" href="./favicons/apple-icon-57x57.png" />
     <link rel="apple-touch-icon" sizes="60x60" href="./favicons/apple-icon-60x60.png" />
     <link rel="apple-touch-icon" sizes="72x72" href="./favicons/apple-icon-72x72.png" />
@@ -34,7 +35,7 @@
         <nav class="navResponsive">
             <button class="btnBars"><i class="fa-solid fa-bars"></i></button>
             <ul class="navMenu navMenuHide">
-                <li class="navMenuItem"><a class="nav-link navMenuLink navMenuLinkActive " href="#sectionPrincipal">Home</a></li>
+                <li class="navMenuItem"><a class="nav-link navMenuLink navMenuLinkActive " href="javascript:location.reload()">Home</a></li>
                 <li class="navMenuItem"><a class="nav-link navMenuLink" href="#sectionCombatStats">Combat Stats</a></li>
                 <li class="navMenuItem"><a class="nav-link navMenuLink" href="#generation">Generation</a></li>
                 <li class="navMenuItem"><a class="nav-link navMenuLink" href="#topTenSection">Spawn-Chance</a></li>
@@ -43,7 +44,7 @@
 
         <nav class="navDekstop">
             <ul class="navMenuDekstop">
-                <li class="navMenuItemDekstop"><a class="navMenuLinkDekstop" href="#sectionPrincipal">Home</a></li>
+                <li class="navMenuItemDekstop"><a class="navMenuLinkDekstop" href="javascript:location.reload()">Home</a></li>
                 <li class="navMenuItemDekstop"><a class="navMenuLinkDekstop" href="#sectionCombatStats">Combat Stats</a></li>
                 <li class="navMenuItemDekstop"><a class="navMenuLinkDekstop" href="#generation">Generation</a></li>
                 <li class="navMenuItemDekstop"><a class="navMenuLinkDekstop" href="#topTenSection">Spawn-Chance</a></li>
@@ -62,6 +63,10 @@
           <i class="fa-solid fa-magnifying-glass"></i>
         </button>
             <div class="autocom__box"></div>
+        </div>
+        <div class="welcome">
+            <p class="welcomeTitle">Welcome </p>
+            <p class="text-p welcome-text-p">We're glad you're here. Pokemon world contains the list of pokemon of the first and second generation. If you want to see it, look for them:</p>
         </div>
     </section>
     </div>
@@ -83,7 +88,8 @@
     </section>
 
     <section class="comparativeTable" id="sectionCombatStats">
-        <p class="textCompare">Compare Pokemon Stats</p>
+        <p class="textCompare">Are you a Pokemon Trainer? </p>
+        <p class="text-p">Compare the stats of two pokemons and find out who has higher combat power. </p>
         <div class="comparePokemon">
             <div class="silhouetteVS" id="silhouetteImgNone">
                 <img class="silhouetteImg" src="./Image/siluetaVS.png" />
@@ -176,7 +182,8 @@
 
     </section>
     <section class="topTenSection" id="topTenSection">
-        <h2 class="topTen_title">Top 10 Spawn-Chance</h2>
+        <p class="topTen_title">Are you traveling through the Kanto and Johto region?</p>
+        <p class="text-p">Do not forget to check the top ten of the Pokemon with the most <strong class="txt-spawn-chance">spawn-chance</strong></p>
         <div class="cardContainer" id="cardContainer">
             <div class="">
                 <i class="fa-solid fa-angle-left btnLeftCard"></i>
