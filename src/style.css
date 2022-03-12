@@ -796,7 +796,106 @@ li {
     text-decoration: none;
 }
 
-@media screen and (min-width: 700px) {
+@media (min-width: 700px) {
+    .header {
+        height: 6%;
+        max-height: 6em;
+    }
+    .btnBars {
+        display: none;
+        height: 0;
+    }
+    .navResponsive {
+        height: 0;
+    }
+    .navDekstop {
+        display: block;
+        width: 80%;
+        margin: auto;
+    }
+    .navMenuDekstop {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    .navMenuItemDekstop {
+        font-size: 1em;
+        font-weight: bold;
+        margin-right: 1em;
+        padding: 1%;
+        text-transform: uppercase;
+        width: max-content;
+    }
+    .navMenuItemDekstop:hover {
+        background: #0066cc;
+    }
+    .navMenuLinkDekstop:link,
+    .navMenuLinkDekstop:visited {
+        color: #ffffff;
+        text-decoration: none;
+    }
+    .divContainerSection {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        width: 100%;
+        max-width: 100%;
+        background: #0066cc;
+    }
+    .searchInput {
+        padding-top: 25%;
+        width: 50%;
+    }
+    .imgPrincipal,
+    .searchInput {
+        justify-content: center;
+        max-width: 40%;
+    }
+    .imgPrincipal {
+        padding: 6% 0;
+        width: 50%;
+    }
+    .searchInput {
+        padding-top: 10%
+    }
+    .inputSearch {
+        padding: 0 70px;
+    }
+    .silhouetteImg {
+        width: 45%;
+    }
+    .inputName1 {
+        display: flex;
+        flex-direction: row;
+    }
+    .inputStyle {
+        margin-left: 1em;
+        height: 2em;
+    }
+    .inputName2 {
+        display: flex;
+        flex-direction: row;
+        width: 60%;
+    }
+    .compareBtn {
+        margin-left: 5%;
+        width: 30%;
+        height: 2.5em;
+        bottom: 12%;
+        position: absolute;
+    }
+    .cpResult {
+        margin: 1em;
+        width: 100%;
+    }
+    .containerPrincipal {
+        max-width: 50%;
+    }
+    .btnBlackCard {
+        height: 3em;
+        right: 25.7%;
+    }
     .generation {
         padding: 2em;
     }
@@ -908,109 +1007,6 @@ li {
         font-size: 0.7em;
         color: #FFD700;
         text-decoration: none;
-    }
-}
-
-;
-@media (min-width: 700px) {
-    .header {
-        height: 6%;
-        max-height: 6em;
-    }
-    .btnBars {
-        display: none;
-        height: 0;
-    }
-    .navResponsive {
-        height: 0;
-    }
-    .navDekstop {
-        display: block;
-        width: 80%;
-        margin: auto;
-    }
-    .navMenuDekstop {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-    }
-    .navMenuItemDekstop {
-        font-size: 1em;
-        font-weight: bold;
-        margin-right: 1em;
-        padding: 1%;
-        text-transform: uppercase;
-        width: max-content;
-    }
-    .navMenuItemDekstop:hover {
-        background: #0066cc;
-    }
-    .navMenuLinkDekstop:link,
-    .navMenuLinkDekstop:visited {
-        color: #ffffff;
-        text-decoration: none;
-    }
-    .divContainerSection {
-        display: flex;
-        flex-direction: row-reverse;
-        justify-content: center;
-        width: 100%;
-        max-width: 100%;
-        background: #0066cc;
-    }
-    .searchInput {
-        padding-top: 25%;
-        width: 50%;
-    }
-    .imgPrincipal,
-    .searchInput {
-        justify-content: center;
-        max-width: 40%;
-    }
-    .imgPrincipal {
-        padding: 6% 0;
-        width: 50%;
-    }
-    .searchInput {
-        padding-top: 10%
-    }
-    .inputSearch {
-        padding: 0 70px;
-    }
-    .silhouetteImg {
-        width: 45%;
-    }
-    .inputName1 {
-        display: flex;
-        flex-direction: row;
-    }
-    .inputStyle {
-        margin-left: 1em;
-        height: 2em;
-    }
-    .inputName2 {
-        display: flex;
-        flex-direction: row;
-        width: 60%;
-    }
-    .compareBtn {
-        margin-left: 5%;
-        width: 30%;
-        height: 2.5em;
-        bottom: 12%;
-        position: absolute;
-    }
-    .cpResult {
-        margin: 1em;
-        width: 100%;
-    }
-    .containerPrincipal {
-        max-width: 50%;
-    }
-    .btnBlackCard {
-        height: 3em;
-        right: 25.7%;
     }
 }
 
