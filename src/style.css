@@ -32,7 +32,7 @@ body {
     width: 100%;
     font-family: "Montserrat", sans-serif;
     font-size: 1em;
-    font-weight: 500;
+    font-weight: bold;
 }
 
 .btnBars {
@@ -842,7 +842,7 @@ li {
         margin-right: 1em;
         padding: 1%;
         text-transform: uppercase;
-        width: max-content;
+        font-family: "Montserrat", sans-serif;
     }
     .navMenuItemDekstop:hover {
         background: #0066cc;
