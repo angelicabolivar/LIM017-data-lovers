@@ -796,6 +796,10 @@ li {
     text-decoration: none;
 }
 
+.madeLove {
+    display: none;
+}
+
 @media (min-width: 700px) {
     .header {
         height: 6%;
@@ -966,13 +970,14 @@ li {
     .mainContainer {
         display: flex;
         justify-content: center;
+        width: 100%;
     }
     .containerFooter {
         display: flex;
-        flex-direction: column;
-        justify-content: center;
+        /* flex-direction: column; */
+        justify-content: space-evenly;
         align-items: center;
-        width: 20%;
+        width: 15%;
         margin: 0;
     }
     .containerFooter a {
@@ -982,9 +987,13 @@ li {
         width: 40%;
         display: flex;
         justify-content: center;
+        align-items: center;
+        margin: 0;
+        padding: 0;
     }
     .comunity {
         width: 50%;
+        max-width: 7em;
     }
     .plusPokemon {
         width: 50%;
@@ -992,44 +1001,23 @@ li {
     .imgFooter {
         display: block;
         width: 8em;
+        object-fit: cover;
     }
     .titleFooter {
-        font-family: "Montserrat", sans-serif;
-        color: #000000;
-        font-size: 0.7em;
-        font-weight: 500;
+        font-size: 0.8em;
         margin-bottom: 2%;
-        color: #ffffff;
     }
     .linksFooter {
-        font-family: "Quicksand", sans-serif;
-        text-align: left;
-        font-size: 0.7em;
+        font-size: 0.8em;
+    }
+    .heart {
         color: #FFD700;
-        text-decoration: none;
+    }
+    .madeLove {
+        display: block;
+        font-family: "Quicksand", sans-serif;
+        color: #ffffff;
+        font-size: 0.7em;
+        text-align: center;
     }
 }
-
-
-/* @media (min-width: 1400px){ 
-    .navMenuItemDekstop{
-        font-size: 1.5em;
-    }
-    .imgPrincipalImg{
-        width: 70%;
-        padding-right: 10%;
-    }
-    .searchInput {
-        padding-top: 30%;
-    }
-    
-    .inputSearch{
-        padding: 0 100px;
-        height: 3em;
-    }
-
-    .buttonSearch {
-        font-size: 90%;
-    }
-     
-} */
