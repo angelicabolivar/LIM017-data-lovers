@@ -7,9 +7,9 @@ html,
 body {
     width: 100%;
     height: 100%;
-  }
+}
 
-.header{
+.header {
     background: #004080;
     width: 100%;
     height: 40px;
@@ -148,9 +148,9 @@ img {
     justify-content: center;
 }
 
-.cpResult{ 
-   width: 100% ;
-   margin-bottom: 2em;
+.cpResult {
+    width: 100%;
+    margin-bottom: 2em;
 }
 
 .comparativeTable{
@@ -160,21 +160,23 @@ img {
     flex-direction: column;
 }
 
-.inputName1{
+.inputName1 {
     position: relative;
     margin: auto;
     width: 50%;
 }
-.inputName2{
+
+.inputName2 {
     position: relative;
     margin: auto;
     width: 60%;
 }
 
-.pokemon1Result{
+.pokemon1Result {
     margin-bottom: 5%;
 }
-.divCompareBtn{
+
+.divCompareBtn {
     width: 100%;
     justify-content: center;
     margin: auto;
@@ -255,16 +257,17 @@ li{
     display: none;
     padding: 6% 1.5% 1% 1.5%;
     margin-bottom: 1%;
-    background:  #f0f5f5;
+    background: #f0f5f5;
 }
-.btnCardContainer{
-    background:  #f0f5f5; 
+
+.btnCardContainer {
+    background: #f0f5f5;
     height: 2.3em;
 }
 
 .cardPokemonBack {
     display: none;
-    margin-bottom: 10%; 
+    margin-bottom: 10%;
     z-index: 2;
 }
 
@@ -293,7 +296,8 @@ li{
 
 .containerCp{
     outline: 9px solid #6077ff;
-    border: 6px solid #6077ff; ;
+    border: 6px solid #6077ff;
+    ;
     margin: auto;
     background: #A2b0ff;
     padding: 6%;
@@ -655,8 +659,7 @@ li{
 }
 
 .topTen_title {
-    font-display: flex;
-    justify-content: center;
+    text-align: center;
     font-family: "Montserrat", sans-serif;
     margin-bottom: 1em;
 }
