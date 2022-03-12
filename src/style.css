@@ -99,6 +99,7 @@ img {
     width: 70%;
     display: block;
     margin: auto;
+    padding: 1em;
 }
 
 .imgPrincipal {
@@ -190,13 +191,13 @@ img {
     border: none;
     cursor: pointer;
     background: #fcd535;
-    width: 50%;
-    height: 2em;
-    margin-bottom: 0.5em;
-    font-size: 1em;
+    width: 60%;
     font-weight: bold;
     margin: auto;
     display: block;
+    height: 2.5em;
+    font-family: "Quicksand", sans-serif;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.7)
 }
 
 li {
@@ -232,38 +233,20 @@ li {
     text-align: center;
 }
 
-.silhouetteImg {
-    padding: 1em;
-}
-
 .autocom__box {
     background: #ffffff;
     padding: 0;
+    border-radius: 5px;
     max-height: 80px;
     overflow-y: auto;
     color: #000000;
     z-index: 7;
 }
 
-.searchInput__div.active .autocom__box {
-    padding: 10px 8px;
-    opacity: 1;
-    pointer-events: auto;
-}
-
-.searchInput__div.active .autocom__box li {
-    display: block;
-}
-
 .autocom__box li {
     list-style: none;
     padding: 8px 12px;
-    width: 100%;
-    height: 10%;
-    cursor: default;
-    border-radius: 3px;
     text-transform: capitalize;
-    background-color: #ffffff;
 }
 
 .autocom__box li:hover {
@@ -299,8 +282,8 @@ li {
 }
 
 .btnBlackCard {
-    width: 9em;
-    height: 3em;
+    width: 7em;
+    height: 2.5em;
     font-size: 80%;
     text-align: center;
     outline: none;
@@ -313,6 +296,8 @@ li {
     z-index: 1;
     right: 16%;
     font-weight: bold;
+    font-family: "Quicksand", sans-serif;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.7)
 }
 
 .containerCp {
@@ -521,223 +506,6 @@ li {
 }
 
 ::marker {
-    font-size: 0;
-}
-
-*/ .cardPokemon {
-    display: none;
-    padding: 6% 1.5% 1% 1.5%;
-    margin-bottom: 2%;
-}
-
-.cardPokemonBack {
-    display: none;
-    padding: 6% 4% 4% 4%;
-    margin-bottom: 1%;
-    z-index: 2;
-    margin-top: 1%;
-}
-
-.btnBlackCard {
-    display: none;
-}
-
-.btnBlackCard {
-    width: 9em;
-    height: 3em;
-    font-size: 80%;
-    text-align: center;
-    outline: none;
-    border: none;
-    padding-left: 0;
-    padding: 1% 0;
-    cursor: pointer;
-    background: #fcd535;
-    position: absolute;
-    z-index: 1;
-    right: 19.6%;
-    font-weight: bold;
-    margin-bottom: 2%;
-}
-
-.container {
-    border: 18px solid #448c74;
-    max-width: 100%;
-    max-height: 100%;
-    margin: auto;
-    background: #66cdaa;
-    display: grid;
-    grid-template-rows: repeat(6, auto);
-    grid-template-columns: repeat(2, auto);
-    padding: 3%;
-    grid-template-areas: "namePokemon numPokemon" "imgPokemon imgPokemon" "aboutPokemon aboutPokemon" "generationPokemon generationPokemon" "statsPokemon statsPokemon";
-}
-
-.namePokemon {
-    grid-area: namePokemon;
-    text-transform: uppercase;
-    text-align: center;
-    font-size: 1.5em;
-    font-family: "Quicksand", sans-serif;
-    font-weight: bold;
-}
-
-.numPokemon {
-    grid-area: numPokemon;
-    text-align: center;
-    font-family: "Montserrat", sans-serif;
-    font-weight: bold;
-    font-size: 1.3em;
-    align-self: center;
-}
-
-.statsPokemon,
-.generationPokemon {
-    text-align: center;
-    font-size: 16px;
-    font-family: "Quicksand", sans-serif;
-}
-
-.generationPokemon {
-    grid-area: generationPokemon;
-}
-
-.imgPokemon {
-    grid-area: imgPokemon;
-    margin: auto;
-    text-align: center;
-    height: 80%;
-    width: 80%;
-    object-fit: contain;
-    background: url("PokemonFondo.png");
-    background-repeat: no-repeat;
-    border-radius: 10px;
-    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
-}
-
-.statsPokemon {
-    grid-area: statsPokemon;
-}
-
-.aboutPokemon {
-    grid-area: aboutPokemon;
-    text-align: justify;
-    font-size: 16px;
-    font-family: "Quicksand", sans-serif;
-    padding-bottom: 5%;
-}
-
-.backContainer {
-    max-width: 96%;
-    max-height: 100%;
-    border: 18px solid #448c74;
-    margin: auto;
-    background: #66cdaa;
-    padding: 3%;
-    display: grid;
-    grid-template-rows: repeat(6, auto);
-    grid-template-columns: repeat(2, auto);
-    justify-content: center;
-    grid-template-areas: "namePokemonBack numPokemonBack" "typePokemonBack typePokemonBack" "sizePokemonBack sizePokemonBack" "weightPokemon weightPokemon" "resistantPokemon resistantPokemon" "weaknessesPokemon weaknessesPokemon" "rarityPokemon rarityPokemon";
-}
-
-.namePokemonCp {
-    text-transform: uppercase;
-    text-align: center;
-    font-size: 1.5em;
-    font-family: "Quicksand", sans-serif;
-    font-weight: bold;
-}
-
-.namePokemonBack {
-    grid-area: namePokemonBack;
-    text-transform: uppercase;
-    text-align: center;
-    font-size: 1.5em;
-    font-family: "Quicksand", sans-serif;
-    font-weight: bold;
-    padding-bottom: 4%;
-}
-
-.max-cp,
-.max-hp {
-    text-align: center;
-    font-family: "Montserrat", sans-serif;
-    font-weight: bold;
-    font-size: 1em;
-    align-self: center;
-}
-
-.numPokemonCp {
-    text-align: center;
-    font-family: "Montserrat", sans-serif;
-    font-weight: bold;
-    font-size: 1.3em;
-    align-self: center;
-}
-
-.numPokemonBack {
-    grid-area: numPokemonBack;
-    text-align: center;
-    font-family: "Montserrat", sans-serif;
-    font-weight: bold;
-    font-size: 1.3em;
-    align-self: center;
-}
-
-.typePokemonBack {
-    grid-area: typePokemonBack;
-}
-
-.sizePokemonBack {
-    grid-area: sizePokemonBack;
-}
-
-.weightPokemon {
-    grid-area: weightPokemon;
-}
-
-.resistantPokemon {
-    grid-area: resistantPokemon;
-}
-
-.weaknessesPokemon {
-    grid-area: weaknessesPokemon;
-}
-
-.rarityPokemon {
-    grid-area: rarityPokemon;
-}
-
-.mayorPokemonCp {
-    color: #e60000;
-    font-family: "Quicksand", sans-serif;
-    font-size: 0.6em;
-}
-
-.base-attackCp,
-.base-defenseCp,
-.base-staminaCp {
-    text-align: justify;
-    font-size: 12px;
-    font-family: "Quicksand", sans-serif;
-    padding-bottom: 1%;
-    font-weight: bold;
-}
-
-.weightPokemon,
-.typePokemonBack,
-.sizePokemonBack,
-.resistantPokemon,
-.weaknessesPokemon,
-.rarityPokemon {
-    text-align: justify;
-    font-size: 16px;
-    font-family: "Quicksand", sans-serif;
-    padding-bottom: 1%;
-}
-
- ::marker {
     font-size: 0;
 }
 
@@ -1144,3 +912,128 @@ li {
 }
 
 ;
+@media (min-width: 700px) {
+    .header {
+        height: 6%;
+        max-height: 6em;
+    }
+    .btnBars {
+        display: none;
+        height: 0;
+    }
+    .navResponsive {
+        height: 0;
+    }
+    .navDekstop {
+        display: block;
+        width: 80%;
+        margin: auto;
+    }
+    .navMenuDekstop {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    .navMenuItemDekstop {
+        font-size: 1em;
+        font-weight: bold;
+        margin-right: 1em;
+        padding: 1%;
+        text-transform: uppercase;
+        width: max-content;
+    }
+    .navMenuItemDekstop:hover {
+        background: #0066cc;
+    }
+    .navMenuLinkDekstop:link,
+    .navMenuLinkDekstop:visited {
+        color: #ffffff;
+        text-decoration: none;
+    }
+    .divContainerSection {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        width: 100%;
+        max-width: 100%;
+        background: #0066cc;
+    }
+    .searchInput {
+        padding-top: 25%;
+        width: 50%;
+    }
+    .imgPrincipal,
+    .searchInput {
+        justify-content: center;
+        max-width: 40%;
+    }
+    .imgPrincipal {
+        padding: 6% 0;
+        width: 50%;
+    }
+    .searchInput {
+        padding-top: 10%
+    }
+    .inputSearch {
+        padding: 0 70px;
+    }
+    .silhouetteImg {
+        width: 45%;
+    }
+    .inputName1 {
+        display: flex;
+        flex-direction: row;
+    }
+    .inputStyle {
+        margin-left: 1em;
+        height: 2em;
+    }
+    .inputName2 {
+        display: flex;
+        flex-direction: row;
+        width: 60%;
+    }
+    .compareBtn {
+        margin-left: 5%;
+        width: 30%;
+        height: 2.5em;
+        bottom: 12%;
+        position: absolute;
+    }
+    .cpResult {
+        margin: 1em;
+        width: 100%;
+    }
+    .containerPrincipal {
+        max-width: 50%;
+    }
+    .btnBlackCard {
+        height: 3em;
+        right: 25.7%;
+    }
+}
+
+
+/* @media (min-width: 1400px){ 
+    .navMenuItemDekstop{
+        font-size: 1.5em;
+    }
+    .imgPrincipalImg{
+        width: 70%;
+        padding-right: 10%;
+    }
+    .searchInput {
+        padding-top: 30%;
+    }
+    
+    .inputSearch{
+        padding: 0 100px;
+        height: 3em;
+    }
+
+    .buttonSearch {
+        font-size: 90%;
+    }
+     
+} */
