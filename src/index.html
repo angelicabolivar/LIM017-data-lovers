@@ -69,7 +69,7 @@
             <div id="result" class="divResult"></div>
         </div>
         <div class="btnCardContainer">
-        <button type="button" class="btnBlackCard">+Information</button>
+            <button type="button" class="btnBlackCard">+Information</button>
         </div>
         <div class="cardPokemonBack">
             <div class="containerPrincipal">
@@ -88,8 +88,8 @@
                 <input type="text" placeholder="Name Pokemon 1" id="pokemon1" class="inputStyle" />
                 <input type="text" placeholder="Name Pokemon 2" id="pokemon2" class="inputStyle" />
                 <div class="divCompareBtn">
-                <button class="compareBtn" id="compareBtn">Compare</button>
-            </div>
+                    <button class="compareBtn" id="compareBtn">Compare</button>
+                </div>
             </div>
             <div class="inputName2">
                 <div id="pokemon1Result" class="cpResult"></div>
@@ -101,13 +101,15 @@
 
     <section class="generation" id="generation">
         <h2 class="generation-title">Generation</h2>
-        <div class="generation-card">
-            <img class="card-img" src="./Image/generation111.jpg">
-            <button class="card-btn" id="cardBtni">Generation i</button>
-        </div>
-        <div class="generation-card">
-            <button class="card-btn" id="cardBtnii">Generation ii</button>
-            <img class="card-img" src="./Image/generation2.2.jpg">
+        <div class="generation-card-container">
+            <div class="generation-card">
+                <img class="card-img" src="./Image/generation111.jpg">
+                <button class="card-btn" id="cardBtni">Generation i</button>
+            </div>
+            <div class="generation-card generation-card-rigth">
+                <button class="card-btn" id="cardBtnii">Generation ii</button>
+                <img class="card-img" src="./Image/generation2.2.jpg">
+            </div>
         </div>
 
         <div class="generationR">
@@ -181,22 +183,27 @@
         </div>
     </section>
     <footer class="footer">
-        <div class="containerFooter">
-            <a href="https://es-la.facebook.com/" target="_blank" class="social"><i class="fa-brands fa-facebook-f"></i></a>
-            <a href="https://twitter.com/?lang=es" target="_blank" class="social"><i class="fa-brands fa-twitter"></i></a>
-            <a href="https://www.instagram.com/?hl=es-la" target="_blank" class="social"><i class="fa-brands fa-instagram"></i></a>
-            <a href="https://www.youtube.com/" target="_blank" class="social"><i class="fa-brands fa-youtube"></i></a>
-        </div>
-        <div class="infFooter">
-            <div class="comunity">
-                <p class="titleFooter">Official pages</p>
-                <a href="https://pokemongolive.com/es/" target="_blank" class="linksFooter">PokémonGO</a>
-                <a href="https://www.pokemon.com/el/" target="_blank" class="linksFooter">Pokémon Oficial</a>
+        <div class="mainContainer">
+            <div class="containerFooter">
+                <a href="https://es-la.facebook.com/" target="_blank" class="social"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://twitter.com/?lang=es" target="_blank" class="social"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://www.instagram.com/?hl=es-la" target="_blank" class="social"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.youtube.com/" target="_blank" class="social"><i class="fa-brands fa-youtube"></i></a>
             </div>
-            <div class="plusPokemon">
-                <p class="titleFooter">Comunity</p>
-                <a href="https://comunidadflyoficial.com/" target="_blank" class="linksFooter">Comunidad Fly Oficial</a>
-                <a href="https://pokemon.fandom.com/wiki/Pok%C3%A9mon_Wiki/" target="_blank" class="linksFooter">Pokemon fandom</a>
+            <div class="infFooter">
+                <div class="comunity">
+                    <p class="titleFooter">Official pages</p>
+                    <a href="https://pokemongolive.com/es/" target="_blank" class="linksFooter">PokémonGO</a>
+                    <a href="https://www.pokemon.com/el/" target="_blank" class="linksFooter">Pokémon Oficial</a>
+                </div>
+                <div class="plusPokemon">
+                    <p class="titleFooter">Comunity</p>
+                    <a href="https://comunidadflyoficial.com/" target="_blank" class="linksFooter">Comunidad Fly Oficial</a>
+                    <a href="https://pokemon.fandom.com/wiki/Pok%C3%A9mon_Wiki/" target="_blank" class="linksFooter">Pokemon fandom</a>
+                </div>
+            </div>
+            <div class="imgFooter">
+                <img src="./Image/PokemonVector.png" alt="">
             </div>
         </div>
     </footer>

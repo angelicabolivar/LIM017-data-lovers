@@ -745,7 +745,6 @@ li {
     margin-top: 2em;
     padding: 1em;
     background-color: #0066cc;
-    position: relative;
 }
 
 .generation-title {
@@ -786,11 +785,12 @@ li {
     cursor: pointer;
 }
 
-.generatioi,
+
+/* .generatioi,
 .generationii {
     width: 100%;
     height: auto;
-}
+} */
 
 .generationR {
     width: 100%;
@@ -849,6 +849,7 @@ li {
 .viewMoreBtn {
     width: 7em;
     height: 2.5em;
+    font-weight: bold;
     border: none;
     background-color: #FFD700;
     font-family: "Quicksand", sans-serif;
@@ -966,8 +967,6 @@ li {
 
 .footer {
     background: #004080;
-    display: flex;
-    flex-direction: column;
     width: 100%;
     padding: 1em;
     height: 10em;
@@ -975,14 +974,12 @@ li {
 
 .containerFooter {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+    width: 70%;
+    max-width: 18em;
+    margin: 0 auto;
     margin-bottom: 1.5em;
-}
-
-.social {
-    margin: 0 5%;
 }
 
 .containerFooter a {
@@ -1010,6 +1007,10 @@ li {
     width: 50%;
 }
 
+.imgFooter {
+    display: none;
+}
+
 .titleFooter {
     font-family: "Montserrat", sans-serif;
     color: #000000;
@@ -1027,6 +1028,119 @@ li {
     text-decoration: none;
 }
 
-@media screen and (min-width: 700px) {}
+@media screen and (min-width: 700px) {
+    .generation {
+        padding: 2em;
+    }
+    .generation-title {
+        font-size: 2em;
+    }
+    .generation-card-container {
+        display: flex;
+        margin: 0 auto;
+        max-width: 46em;
+        margin-top: 2em;
+    }
+    .generation-card {
+        height: 16em;
+        flex-direction: column;
+    }
+    .generation-card-rigth {
+        flex-direction: column-reverse;
+    }
+    .card-img {
+        max-width: 16em;
+    }
+    .card-btn {
+        width: 8em;
+        height: 2.5em;
+        font-size: 1em;
+        font-weight: bold;
+    }
+    .generationR {
+        margin: 0 auto;
+        max-width: 56em;
+    }
+    .generationTitleR {
+        font-size: 1.5em;
+        margin-bottom: 1em;
+    }
+    .pokemonStatsTitle {
+        font-size: 1.3em;
+    }
+    .select {
+        margin-top: 0.4em;
+    }
+    .selectTitle {
+        font-size: 1.2em;
+    }
+    .inputType1 {
+        font-size: 1em;
+    }
+    .statsResult {
+        font-size: 1.2em;
+    }
+    .topTen_title {
+        font-size: 2em;
+    }
+    .cardContainer {
+        max-width: 26em;
+    }
+    .nameNPokemon {
+        font-size: 0.8em;
+    }
+    .numberPokemon {
+        font-size: 0.7em;
+    }
+    .tPokemon,
+    .spawn-chance {
+        font-size: 0.8em;
+    }
+    .mainContainer {
+        display: flex;
+        justify-content: center;
+    }
+    .containerFooter {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 20%;
+        margin: 0;
+    }
+    .containerFooter a {
+        font-size: 1em;
+    }
+    .infFooter {
+        width: 40%;
+        display: flex;
+        justify-content: center;
+    }
+    .comunity {
+        width: 50%;
+    }
+    .plusPokemon {
+        width: 50%;
+    }
+    .imgFooter {
+        display: block;
+        width: 8em;
+    }
+    .titleFooter {
+        font-family: "Montserrat", sans-serif;
+        color: #000000;
+        font-size: 0.7em;
+        font-weight: 500;
+        margin-bottom: 2%;
+        color: #ffffff;
+    }
+    .linksFooter {
+        font-family: "Quicksand", sans-serif;
+        text-align: left;
+        font-size: 0.7em;
+        color: #FFD700;
+        text-decoration: none;
+    }
+}
 
 ;
