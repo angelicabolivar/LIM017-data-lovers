@@ -86,7 +86,7 @@ body {
     color: #ffffff;
 }
 
-.welcome{
+.welcome {
     display: none;
 }
 
@@ -680,17 +680,20 @@ li {
     font-family: "Montserrat", sans-serif;
     font-size: 1.5em;
 }
+
 .txt-spawn-chance,
-.text-p{
+.text-p {
     text-align: justify;
     padding: 2% 4%;
     font-size: 1em;
     font-family: "Montserrat", sans-serif;
 }
-.txt-spawn-chance{
+
+.txt-spawn-chance {
     font-weight: bold;
     padding: 0;
 }
+
 .cardContainer {
     width: 100%;
     max-width: 24em;
@@ -866,7 +869,7 @@ li {
         padding-top: 25%;
         width: 50%;
     }
-    .welcomeTitle{
+    .welcomeTitle {
         text-align: center;
         margin-top: 5%;
         font-weight: bold;
@@ -874,7 +877,7 @@ li {
         font-size: 1.5em;
         color: #ebfafa;
     }
-    .welcome-text-p{
+    .welcome-text-p {
         padding-bottom: 9%;
         color: #ebfafa;
     }
@@ -893,10 +896,9 @@ li {
     .inputSearch {
         padding: 0 70px;
     }
-    .welcome{
+    .welcome {
         display: block;
     }
-
     .silhouetteImg {
         width: 45%;
     }
@@ -931,7 +933,7 @@ li {
         height: 3em;
         right: 25.7%;
     }
-    .text-p{
+    .text-p {
         text-align: center;
     }
     .generation {
