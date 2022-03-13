@@ -32,7 +32,7 @@ body {
     width: 100%;
     font-family: "Montserrat", sans-serif;
     font-size: 1em;
-    font-weight: 500;
+    font-weight: bold;
 }
 
 .btnBars {
@@ -814,8 +814,7 @@ li {
 
 @media (min-width: 700px) {
     .header {
-        height: 6%;
-        max-height: 6em;
+        height: 6.6%;
     }
     .btnBars {
         display: none;
@@ -842,7 +841,7 @@ li {
         margin-right: 1em;
         padding: 1%;
         text-transform: uppercase;
-        width: max-content;
+        font-family: "Montserrat", sans-serif;
     }
     .navMenuItemDekstop:hover {
         background: #0066cc;
@@ -863,9 +862,25 @@ li {
     .searchInput {
         display: flex;
         flex-direction: column-reverse;
-        padding-top: 25%;
-        width: 50%;
+        padding-top: 10%;
+        width: 100%;
+        max-width: 100%;
     }
+    .inputSearch {
+        padding: 0 70px;
+        margin-left: 1em;
+        width: 100%;
+        max-width: 80%;
+    }
+    .autocom__box {
+        max-width: 80%;
+        max-height: 80px;
+        margin-left: 0.9em;
+    }
+    .autocom__box li {
+        max-width: 50%;
+    }
+
     .welcomeTitle{
         text-align: center;
         margin-top: 5%;
@@ -887,12 +902,7 @@ li {
         padding: 6% 0;
         width: 50%;
     }
-    .searchInput {
-        padding-top: 10%
-    }
-    .inputSearch {
-        padding: 0 70px;
-    }
+  
     .welcome{
         display: block;
     }
