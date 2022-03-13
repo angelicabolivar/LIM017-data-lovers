@@ -26,7 +26,7 @@ body {
 }
 
 .navResponsive {
-    background: #004080;
+    background: #004080; 
     color: #ffffff;
     height: 40px;
     width: 100%;
@@ -50,7 +50,7 @@ body {
     flex-direction: column;
     align-items: center;
     list-style: none;
-    background: #004080;
+    background:rgba(0, 64, 128, 0.95) ;
     top: 40px;
     width: 100%;
     padding: 1.5% 0;
@@ -69,13 +69,11 @@ body {
     text-transform: uppercase;
     width: max-content;
     height: 40px;
-    background: #004080;
 }
 
 .nav-link {
     color: #ffffff;
     text-decoration: none;
-    background: #004080;
 }
 
 .navMenuLink {
