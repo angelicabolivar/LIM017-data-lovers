@@ -26,7 +26,7 @@ body {
 }
 
 .navResponsive {
-    background: #004080; 
+    background: #004080;
     color: #ffffff;
     height: 40px;
     width: 100%;
@@ -50,7 +50,7 @@ body {
     flex-direction: column;
     align-items: center;
     list-style: none;
-    background:rgba(0, 64, 128, 0.95) ;
+    background: rgba(0, 64, 128, 0.95);
     top: 40px;
     width: 100%;
     padding: 1.5% 0;
@@ -878,15 +878,10 @@ li {
         max-height: 80px;
         margin-left: 0.9em;
     }
-<<<<<<< HEAD
-    .welcomeTitle {
-=======
     .autocom__box li {
         max-width: 50%;
     }
-
-    .welcomeTitle{
->>>>>>> 839cb728e5089b87bd63f1df989fa51defaaac9f
+    .welcomeTitle {
         text-align: center;
         margin-top: 5%;
         font-weight: bold;
@@ -907,18 +902,7 @@ li {
         padding: 6% 0;
         width: 50%;
     }
-<<<<<<< HEAD
-    .searchInput {
-        padding-top: 10%
-    }
-    .inputSearch {
-        padding: 0 70px;
-    }
     .welcome {
-=======
-  
-    .welcome{
->>>>>>> 839cb728e5089b87bd63f1df989fa51defaaac9f
         display: block;
     }
     .silhouetteImg {
