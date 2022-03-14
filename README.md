@@ -59,7 +59,7 @@ Como Entrenador Pokémon quiero una tabla para conocer los pokemones que tienen 
 ![Image text](https://i.ibb.co/BKDpv8K/final2pokemon.png)
 ![Image text](https://i.ibb.co/9v0tR0G/final22pokemon.png)
 
-[Pototipo en figma ](https://www.figma.com/file/dauIppZkhYeSEwCC0hqlET/Pokemon?node-id=153%3A373 )
+[Prototipo en Figma ](https://www.figma.com/file/dauIppZkhYeSEwCC0hqlET/Pokemon?node-id=153%3A373 )
 
 ### Diseño responsive:
 Modelos de prueba:
