@@ -31,7 +31,7 @@ Como principiante en el mundo Pokémon quiero diferenciar el tipo de Pokémon en
 ### Historia de Usuario 4
 Como Entrenador Pokémon quiero una tabla para conocer los pokemones que tienen mayor frecuencia de aparición.
 
-**Criterios de Aceptación**
+** Criterios de Aceptación**
 -	Los usuarios podrán apreciar en una tabla los 10 pokemones con mayor frecuencia aparición, ordenados de mayor a menor 
 
 ### Usuarios: 
@@ -50,7 +50,7 @@ Como Entrenador Pokémon quiero una tabla para conocer los pokemones que tienen 
 ### Prototipos
 
 ![Image text](https://i.ibb.co/dKd22qF/prototipo1-Pokemon.png)
-![Image text](https://i.ibb.co/41w6Rw3/prototipo2pokemon.png)
+![Image text](https://i.ibb.co/xMqLbby/prototipo2-2.png)
 
 ### Diseño Final
 
@@ -59,7 +59,7 @@ Como Entrenador Pokémon quiero una tabla para conocer los pokemones que tienen 
 ![Image text](https://i.ibb.co/BKDpv8K/final2pokemon.png)
 ![Image text](https://i.ibb.co/9v0tR0G/final22pokemon.png)
 
-[Prototipo en Figma ](https://www.figma.com/file/dauIppZkhYeSEwCC0hqlET/Pokemon?node-id=153%3A373 )
+
 
 ### Diseño responsive:
 Modelos de prueba:
@@ -71,7 +71,7 @@ Modelos de prueba:
 
 Tamaños en pixeles utilizados:
 
-**Móviles:** min-width: 360px
+**Móviles:**min-width: 360px
 
 **Tablets y Desktops:** min-width: 700px  and max-width: 1400px
 
