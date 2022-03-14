@@ -35,8 +35,8 @@ Como Entrenador Pokémon quiero una tabla para conocer los pokemones que tienen 
 -	Los usuarios podrán apreciar en una tabla los 10 pokemones con mayor frecuencia aparición, ordenados de mayor a menor 
 
 ### Usuarios: 
-**José: **es un estudiante universitario de 25 años que tiene como pasatiempo participar en las competencias de Pokémon por eso necesita comparar las estadísticas y distinguir quien tiene mayor poder de combate. 
-** María: **es profesora y jugadora de Pokémon. Su rol en el juego es capturar pokemones por lo que necesita saber cuáles tienen mayor frecuencia de aparición (Spawn-Chance).
+**José:**  es un estudiante universitario de 25 años que tiene como pasatiempo participar en las competencias de Pokémon por eso necesita comparar las estadísticas y distinguir quien tiene mayor poder de combate. 
+**María:**  es profesora y jugadora de Pokémon. Su rol en el juego es capturar pokemones por lo que necesita saber cuáles tienen mayor frecuencia de aparición (Spawn-Chance).
 **Javier:** es estudiante en su último año de secundario, esta comenzando en el mundo de Pokémon y le interesa saber todas las características de cada Pokémon. 
 
 ## Prototipos
@@ -50,6 +50,12 @@ Como Entrenador Pokémon quiero una tabla para conocer los pokemones que tienen 
 ![Image text](https://i.ibb.co/dKd22qF/prototipo1-Pokemon.png)
 ![Image text](https://i.ibb.co/41w6Rw3/prototipo2pokemon.png)
 
+### Diseño Final
+
+![Image text](https://i.ibb.co/4TJxVyw/final1pokemon.png)
+![Image text](https://i.ibb.co/FhXQ6Tg/final11pokemon.png)
+![Image text](https://i.ibb.co/BKDpv8K/final2pokemon.png)
+![Image text](https://i.ibb.co/9v0tR0G/final22pokemon.png)
 
 
 
@@ -57,9 +63,9 @@ Como Entrenador Pokémon quiero una tabla para conocer los pokemones que tienen 
 Modelos de prueba:
 **Móviles:** Samsung Galaxy S8+
 **Tablets:** iPad Mini
-**Desktops: **Nest Hub Max
+**Desktops:** Nest Hub Max
 Tamaños en pixeles utilizados:
-**Móviles: **min-width: 360px
+**Móviles:**min-width: 360px
 **Tablets y Desktops:** min-width: 700px  and max-width: 1400px
 
 
