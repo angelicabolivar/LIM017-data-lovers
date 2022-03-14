@@ -1,4 +1,54 @@
 # Data Lovers
+## Descripción:
+Pokémon consiste en buscar y capturar personajes, así como participar en competencias. **Pokémon World **es una página que contiene información sobre la primera y segunda generación. Encontraras datos como spawn-chance, stats, cp entre otros. 
+
+### Historia de Usuario 1
+Como Maestro Pokémon quiero un buscador para obtener información detallada del Pokémon.
+
+**Criterios de Aceptación**
+-	El usuario escribirá el nombre del Pokémon en el buscador para encontrarlo
+-	El usuario podrá ver la información del Pokémon (Nombre, Número, Descripción, Generación, Región, Base-Attack, Base-Defense)
+-	El usuario podrá hacer click en el botón de “+información” para obtener más información del Pokémon
+-	El usuario podrá ver más información del Pokémon (Tipo, Altura, Peso, Resistencia, Debilidades, Pokémon-rarity)
+
+###  Historia de Usuario 2
+Como jugador Pokémon quiero poder comparar dos pokemones para obtener las estadísticas y saber cuál tiene mayor poder de combate (CP).
+
+**Criterios de Aceptación**
+-	El usuario podrá introducir dos nombres de Pokemón y hacer click en un botón “Comparar”
+-	El usuario podrá observar información de las estadísticas de los dos pokemones (datos del Pokémon: Nombre, Número, Attack, Defense, Stamina, Max-cp, Max-hp)
+-	En usuario podrá observar el CP mayor de los dos pokemones. 
+
+### Historia de Usuario 3
+Como principiante en el mundo Pokémon quiero diferenciar el tipo de Pokémon en generación 1 y generación 2 para reconocer el porcentaje de cada tipo.
+
+**Criterios de Aceptación**
+-	El usuario podrá elegir entre dos botones: “Generación i” y “Generación ii”
+-	Cuando el usuario haga clic en cualquiera de los dos botones podrá observar los pokemones correspondientes a la generación seleccionada
+-	El usuario podrá seleccionar en una lista despegable el tipo de Pokémon para saber el porcentaje de ese tipo en cada generación
+-	El usuario podrá observar el porcentaje del tipo de Pokemon correspondiente a la generación elegida. 
+
+### Historia de Usuario 4
+Como Entrenador Pokémon quiero una tabla para conocer los pokemones que tienen mayor frecuencia de aparición.
+
+** Criterios de Aceptación**
+-	Los usuarios podrán apreciar en una tabla los 10 pokemones con mayor frecuencia aparición, ordenados de mayor a menor 
+
+### Usuarios: 
+**José: **es un estudiante universitario de 25 años que tiene como pasatiempo participar en las competencias de Pokémon por eso necesita comparar las estadísticas y distinguir quien tiene mayor poder de combate. 
+** María: **es profesora y jugadora de Pokémon. Su rol en el juego es capturar pokemones por lo que necesita saber cuáles tienen mayor frecuencia de aparición (Spawn-Chance).
+**Javier:** es estudiante en su último año de secundario, esta comenzando en el mundo de Pokémon y le interesa saber todas las características de cada Pokémon. 
+
+
+### Diseño responsive:
+Modelos de prueba:
+**Móviles:** Samsung Galaxy S8+
+**Tablets:** iPad Mini
+**Desktops: **Nest Hub Max
+Tamaños en pixeles utilizados:
+**Móviles: **min-width: 360px
+**Tablets y Desktops:** min-width: 700px  and max-width: 1400px
+
 
 ## Índice
 
