@@ -892,6 +892,7 @@ li {
     .welcome-text-p {
         padding-bottom: 9%;
         color: #ebfafa;
+        letter-spacing: 0.1em;
     }
     .imgPrincipal,
     .searchInput {
