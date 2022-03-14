@@ -39,6 +39,19 @@ Como Entrenador Pokémon quiero una tabla para conocer los pokemones que tienen 
 ** María: **es profesora y jugadora de Pokémon. Su rol en el juego es capturar pokemones por lo que necesita saber cuáles tienen mayor frecuencia de aparición (Spawn-Chance).
 **Javier:** es estudiante en su último año de secundario, esta comenzando en el mundo de Pokémon y le interesa saber todas las características de cada Pokémon. 
 
+## Prototipos
+
+### Bocetos 
+![Image text](https://i.ibb.co/17gh1KQ/Whats-App-Image-2022-03-14-at-11-15-48-AM.jpg)
+![Image text](https://i.ibb.co/QjLGtM8/Whats-App-Image-2022-03-14-at-11-15-18-AM.jpg)
+
+### Prototipos
+
+![Image text](https://i.ibb.co/dKd22qF/prototipo1-Pokemon.png)
+![Image text](https://i.ibb.co/41w6Rw3/prototipo2pokemon.png)
+
+
+
 
 ### Diseño responsive:
 Modelos de prueba:
