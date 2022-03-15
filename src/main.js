@@ -63,14 +63,6 @@ function showDataPokemon(list) {
     }
 }
 
-const autoComBox = document.querySelector('.autocom__box');
-autoComBox.addEventListener('click', function() {
-    document.querySelector('.autocom__box').style.display = 'none';
-});
-const inputSearch = document.getElementById('namePokemon');
-inputSearch.addEventListener('click', function() {
-    document.querySelector('.autocom__box').style.display = 'block';
-});
 
 const btnName = document.getElementById("btnName");
 btnName.addEventListener("click", function() {
@@ -83,8 +75,13 @@ btnName.addEventListener("click", function() {
 });
 
 btnName.addEventListener("click", function() {
+    document.querySelector('.autocom__box').style.display = 'none';
     document.querySelector('.cardPokemon').style.display = 'block';
     document.querySelector('.btnBlackCard').style.display = 'block';
+});
+const autoComBox = document.querySelector('.autocom__box');
+autoComBox.addEventListener('click', function() {
+    document.querySelector('.autocom__box').style.display = 'none';
 });
 
 const btnBlackCard = document.querySelector('.btnBlackCard');
@@ -103,6 +100,14 @@ btnName.addEventListener("click", function() {
 
 });
 
+
+document.addEventListener("DOMContentLoaded", function() {
+    const cardContainer = document.getElementById("cardContainer");
+    const topTenPokemon = topPokemon(datapokemon);
+    const topTenList = topTenPokemon.map(pokemonList);
+    cardContainer.innerHTML = `${topTenList.join('')}`;
+
+});
 
 const compareBtn = document.getElementById("compareBtn");
 compareBtn.addEventListener("click", function() {
@@ -132,6 +137,7 @@ compareBtn.addEventListener("click", function() {
 
 });
 
+//Codigo del boton generacion i
 const cardBtni = document.getElementById('cardBtni');
 cardBtni.addEventListener('click', function() {
     const generationi = 'generation i';
@@ -155,6 +161,7 @@ cardBtni.addEventListener('click', function() {
 
 });
 
+//Codigo del boton generacion ii
 const cardBtnii = document.getElementById('cardBtnii');
 cardBtnii.addEventListener('click', function() {
     const generationii = 'generation ii';
@@ -175,6 +182,8 @@ cardBtnii.addEventListener('click', function() {
     })
 
 });
+
+
 
 
 const options = document.getElementById('inputType');
@@ -199,12 +208,4 @@ optionsG2.addEventListener('click', () => {
     statsResult.innerHTML = filterTypeG;
     const percentGrassi = percentage(filterTypeG.length, inputData.length);
     statsResult.innerHTML = 'The percentage of the type ' + type + ' is : ' + percentGrassi + '%';
-});
-
-document.addEventListener("DOMContentLoaded", function() {
-    const cardContainer = document.getElementById("cardContainer");
-    const topTenPokemon = topPokemon(datapokemon);
-    const topTenList = topTenPokemon.map(pokemonList);
-    cardContainer.innerHTML = `${topTenList.join('')}`;
-
 });
