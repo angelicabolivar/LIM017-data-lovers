@@ -24,6 +24,7 @@ const navMenu = document.querySelector(".navMenu");
 btnBars.addEventListener("click", () => {
   navMenu.classList.toggle("navMenuHide");
 });
+
 navMenu.addEventListener("click", () => {
   navMenu.classList.toggle("navMenuHide");
 });
@@ -80,6 +81,8 @@ inputSearch.addEventListener("click", function () {
 
 const btnName = document.getElementById("btnName");
 btnName.addEventListener("click", function () {
+  document.querySelector(".cardPokemon").style.display = "block";
+  document.querySelector(".btnBlackCard").style.display = "block";
   const namePokemon = document.getElementById("namePokemon").value;
   const lowerCaseName = namePokemon.toLowerCase();
   const result = document.getElementById("result");
@@ -88,19 +91,10 @@ btnName.addEventListener("click", function () {
   result.innerHTML = `${pokemonList}`;
 });
 
-btnName.addEventListener("click", function () {
-  document.querySelector(".autocom__box").style.display = "none";
-  document.querySelector(".cardPokemon").style.display = "block";
-  document.querySelector(".btnBlackCard").style.display = "block";
-});
-
 const btnBlackCard = document.querySelector(".btnBlackCard");
 btnBlackCard.addEventListener("click", function () {
   document.querySelector(".cardPokemonBack").style.display = "block";
   document.querySelector(".btnBlackCard").style.display = "none";
-});
-
-btnName.addEventListener("click", function () {
   const namePokemon = document.getElementById("namePokemon").value;
   const lowerCaseName = namePokemon.toLowerCase();
   const resultBackCard = document.getElementById("resultBackCard");
