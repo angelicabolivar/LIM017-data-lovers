@@ -60,24 +60,19 @@ body {
 .navMenuHide {
   top: 0;
   transform: translateX(-100vw);
-  transition: left 0.3s;
 }
 
 .navMenuItem {
   font-size: 20px;
   margin-bottom: 1%;
   text-transform: uppercase;
-  width: max-content;
   height: 40px;
-}
-
-.nav-link {
-  color: #ffffff;
-  text-decoration: none;
 }
 
 .navMenuLink {
   padding: 8px 12px;
+  color: #ffffff;
+  text-decoration: none;
 }
 
 .navResponsive a:visited {
@@ -92,7 +87,7 @@ img {
   width: 100%;
 }
 
-.imgPrincipalImg {
+.heroImg {
   width: 80%;
   display: block;
   margin: auto;
@@ -169,12 +164,7 @@ img {
   flex-direction: column;
 }
 
-.inputName1 {
-  position: relative;
-  margin: auto;
-  width: 50%;
-}
-
+.inputName1,
 .inputName2 {
   position: relative;
   margin: auto;
@@ -203,10 +193,6 @@ img {
   height: 2.5em;
   font-family: "Quicksand", sans-serif;
   box-shadow: 0 1px 5px rgba(0, 0, 0, 0.7);
-}
-
-li {
-  list-style: none;
 }
 
 .resultMayorCp {
@@ -821,7 +807,7 @@ li {
     height: 0;
   }
   .navResponsive {
-    height: 0;
+   display: none;
   }
   .navDekstop {
     display: block;
@@ -881,6 +867,9 @@ li {
   .autocom__box li {
     max-width: 50%;
   }
+  .welcome {
+    display: block;
+  }
   .welcomeTitle {
     text-align: center;
     margin-top: 5%;
@@ -903,9 +892,7 @@ li {
     padding: 6% 0;
     width: 50%;
   }
-  .welcome {
-    display: block;
-  }
+  
   .silhouetteImg {
     width: 45%;
   }

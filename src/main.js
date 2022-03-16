@@ -81,6 +81,12 @@ inputSearch.addEventListener("click", function () {
 
 const btnName = document.getElementById("btnName");
 btnName.addEventListener("click", function () {
+  const inputName= document.getElementById("namePokemon").value;
+  if( inputName===''){
+    document.querySelector(".cardPokemon").style.display = "none";
+  // }else if(!datapokemon.pokemon.includes(inputName)){
+  //   document.querySelector(".cardPokemon").style.display = "none";
+  }else{
   document.querySelector(".cardPokemon").style.display = "block";
   document.querySelector(".btnBlackCard").style.display = "block";
   const namePokemon = document.getElementById("namePokemon").value;
@@ -89,6 +95,7 @@ btnName.addEventListener("click", function () {
   const resultData = searchPokemon(lowerCaseName, datapokemon);
   const pokemonList = resultData.map(pokemonComponent);
   result.innerHTML = `${pokemonList}`;
+  }
 });
 
 const btnBlackCard = document.querySelector(".btnBlackCard");
@@ -101,13 +108,6 @@ btnBlackCard.addEventListener("click", function () {
   const resultDataBack = searchPokemon(lowerCaseName, datapokemon);
   const pokemonListBack = resultDataBack.map(pokemonBackComponent);
   resultBackCard.innerHTML = `${pokemonListBack}`;
-});
-
-document.addEventListener("DOMContentLoaded", function () {
-  const cardContainer = document.getElementById("cardContainer");
-  const topTenPokemon = topPokemon(datapokemon);
-  const topTenList = topTenPokemon.map(pokemonList);
-  cardContainer.innerHTML = `${topTenList.join("")}`;
 });
 
 const compareBtn = document.getElementById("compareBtn");
@@ -128,7 +128,6 @@ compareBtn.addEventListener("click", function () {
   const lowerCaseName2 = pokemon2.toLowerCase();
   const resultPokemon2 = searchPokemon(lowerCaseName2, datapokemon);
   const resultMayorCp = document.getElementById("resultMayorCp");
-
   const listPokemon2 = resultPokemon2.map(cpResultPokemon2);
   pokemon2Result.innerHTML = `${listPokemon2}`;
   const cpResult = cpPokemon(resultPokemon1[0], resultPokemon2[0]);
@@ -183,7 +182,6 @@ options.addEventListener("click", () => {
   const generationi = "generation i";
   const inputData = filterGeneration(datapokemon, generationi);
   const filterTypeG = filterType(inputData, type);
-  statsResult.innerHTML = filterTypeG;
   const percentGrassi = percentage(filterTypeG.length, inputData.length);
   statsResult.innerHTML =
     "The percentage of the type " + type + " is : " + percentGrassi + "%";
@@ -196,8 +194,15 @@ optionsG2.addEventListener("click", () => {
   const generationii = "generation ii";
   const inputData = filterGeneration(datapokemon, generationii);
   const filterTypeG = filterType(inputData, type);
-  statsResult.innerHTML = filterTypeG;
   const percentGrassi = percentage(filterTypeG.length, inputData.length);
   statsResult.innerHTML =
     "The percentage of the type " + type + " is : " + percentGrassi + "%";
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+  const cardContainer = document.getElementById("cardContainer");
+  const topTenPokemon = topPokemon(datapokemon);
+  const topTenList = topTenPokemon.map(pokemonList);
+  cardContainer.innerHTML = `${topTenList.join("")}`;
+});
+
