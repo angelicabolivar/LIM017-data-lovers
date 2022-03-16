@@ -29,47 +29,6 @@ navMenu.addEventListener("click", () => {
     navMenu.classList.toggle("navMenuHide");
 });
 
-const searchWrapper = document.querySelector(".searchInput");
-const inputBox = searchWrapper.querySelector(".inputSearch");
-const dataBox = searchWrapper.querySelector(".autocom__box");
-
-inputBox.onkeyup = () => {
-    let userData = inputBox.value;
-    let emptyArray = [];
-    if (userData) {
-        emptyArray = datapokemon.pokemon.filter((pokemon) => {
-            return pokemon.name.includes(userData);
-        });
-        emptyArray = emptyArray.map((pokemon) => {
-            return (pokemon = `<li data-name='${pokemon.name}'>${pokemon.name}</li>`);
-        });
-        searchWrapper.classList.add("active");
-        showDataPokemon(emptyArray);
-        let allList = dataBox.querySelectorAll("li");
-        for (let i = 0; i < allList.length; i++) {
-            allList[i].addEventListener("click", selectName);
-        }
-    } else {
-        searchWrapper.classList.remove("active");
-    }
-};
-
-function selectName(event) {
-    let selectUserData = event.target.dataset.name;
-    inputBox.value = selectUserData;
-}
-
-function showDataPokemon(list) {
-    let listData;
-    if (!list.length) {
-        let userValue = inputBox.value;
-        listData = `<li>` + userValue + `</li>`;
-    } else {
-        listData = list.join("");
-        dataBox.innerHTML = listData;
-    }
-}
-
 const autoComBox = document.querySelector(".autocom__box");
 autoComBox.addEventListener("click", function() {
     document.querySelector(".autocom__box").style.display = "none";
@@ -87,8 +46,6 @@ btnName.addEventListener("click", function() {
     const resultData = searchPokemon(lowerCaseName, datapokemon);
     if (resultData.length == 0) {
         document.querySelector(".cardPokemon").style.display = "none";
-        // }else if(!datapokemon.pokemon.includes(inputName)){
-        //   document.querySelector(".cardPokemon").style.display = "none";
     } else {
         document.querySelector(".cardPokemon").style.display = "block";
         document.querySelector(".btnBlackCard").style.display = "block";
@@ -205,3 +162,44 @@ document.addEventListener("DOMContentLoaded", function() {
     const topTenList = topTenPokemon.map(pokemonList);
     cardContainer.innerHTML = `${topTenList.join("")}`;
 });
+
+const searchWrapper = document.querySelector(".searchInput");
+const inputBox = searchWrapper.querySelector(".inputSearch");
+const dataBox = searchWrapper.querySelector(".autocom__box");
+
+inputBox.onkeyup = () => {
+    let userData = inputBox.value;
+    let emptyArray = [];
+    if (userData) {
+        emptyArray = datapokemon.pokemon.filter((pokemon) => {
+            return pokemon.name.includes(userData);
+        });
+        emptyArray = emptyArray.map((pokemon) => {
+            return (pokemon = `<li data-name='${pokemon.name}'>${pokemon.name}</li>`);
+        });
+        searchWrapper.classList.add("active");
+        showDataPokemon(emptyArray);
+        let allList = dataBox.querySelectorAll("li");
+        for (let i = 0; i < allList.length; i++) {
+            allList[i].addEventListener("click", selectName);
+        }
+    } else {
+        searchWrapper.classList.remove("active");
+    }
+};
+
+function selectName(event) {
+    let selectUserData = event.target.dataset.name;
+    inputBox.value = selectUserData;
+}
+
+function showDataPokemon(list) {
+    let listData;
+    if (!list.length) {
+        let userValue = inputBox.value;
+        listData = `<li>` + userValue + `</li>`;
+    } else {
+        listData = list.join("");
+        dataBox.innerHTML = listData;
+    }
+}
