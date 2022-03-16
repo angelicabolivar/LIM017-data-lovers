@@ -41,27 +41,27 @@ export function pokemonList(pokemon) {
 }
 export function cpResultPokemon1(pokemon) {
     return `<li class="containerCp">
-    <p class="namePokemonCp">${pokemon.name} </p>
-    <p class="numPokemonCp">${pokemon.num} </p>
-    <div class="divImgPokemonCp"><img class= "imgPokemonCp" src="${pokemon.img}"></div>
-    <p class="base-attackCp">Attack: ${pokemon.stats['base-attack']}</p>
-    <p class="base-defenseCp">Defense: ${pokemon.stats['base-defense']}</p>
-    <p class="base-staminaCp">Stamina: ${pokemon.stats['base-stamina']}</p>
-    <p class="max-cp">Max-cp: ${pokemon.stats['max-cp']}</p>
-    <p class="max-hp">Max-hp: ${pokemon.stats['max-hp']}</p>
-    </li>`
+       <p class="namePokemonCp">${pokemon.name} </p>
+       <p class="numPokemonCp">${pokemon.num} </p>
+       <div class="divImgPokemonCp"><img class= "imgPokemonCp" src="${pokemon.img}"></div>
+       <p class="base-attackCp">Attack: ${pokemon.stats['base-attack']}</p>
+       <p class="base-defenseCp">Defense: ${pokemon.stats['base-defense']}</p>
+       <p class="base-staminaCp">Stamina: ${pokemon.stats['base-stamina']}</p>
+       <p class="max-cp">Max-cp: ${pokemon.stats['max-cp']}</p>
+       <p class="max-hp">Max-hp: ${pokemon.stats['max-hp']}</p>
+       </li>`
 }
 export function cpResultPokemon2(pokemon) {
     return `<li class="containerCp">
-    <p class="namePokemonCp">${pokemon.name} </p>
-    <p class="numPokemonCp">${pokemon.num} </p>
-    <div class="divImgPokemonCp"><img class= "imgPokemonCp" src="${pokemon.img}"></div>
-    <p class="base-attackCp">Attack: ${pokemon.stats['base-attack']}</p>
-    <p class="base-defenseCp">Defense: ${pokemon.stats['base-defense']}</p>
-    <p class="base-staminaCp">Stamina: ${pokemon.stats['base-stamina']}</p>
-    <p class="max-cp">Max-cp: ${pokemon.stats['max-cp']}</p>
-    <p class="max-hp">Max-hp: ${pokemon.stats['max-hp']}</p>
-    </li>`
+       <p class="namePokemonCp">${pokemon.name} </p>
+       <p class="numPokemonCp">${pokemon.num} </p>
+       <div class="divImgPokemonCp"><img class= "imgPokemonCp" src="${pokemon.img}"></div>
+       <p class="base-attackCp">Attack: ${pokemon.stats['base-attack']}</p>
+       <p class="base-defenseCp">Defense: ${pokemon.stats['base-defense']}</p>
+       <p class="base-staminaCp">Stamina: ${pokemon.stats['base-stamina']}</p>
+       <p class="max-cp">Max-cp: ${pokemon.stats['max-cp']}</p>
+       <p class="max-hp">Max-hp: ${pokemon.stats['max-hp']}</p>
+       </li>`
 }
 
 export function cpResultListName(pokemon) {
